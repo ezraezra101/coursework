@@ -1,0 +1,18 @@
+Command Line arguments & variable length array
+
+int main(int argc, char **argv){
+	return 0;
+}
+
+Command line arguments look like:
+int argc
+char **argv
+
+./progx stuff 2303
+
+argc = 3
+
+argv = ["./progx", "stuff", "2303"] //not sure this is accurate, but I think it is
+
+//ascii to integer (stdlib.h)
+ atoi("2303") == 2303

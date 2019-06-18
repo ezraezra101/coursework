@@ -1,0 +1,31 @@
+Big-O is asymptotically tight upper bound.
+	(Little-o is not tight)
+Θ is tight ob both sides.
+
+Ω Is worst case running time (asymptotically tight)
+
+
+"In recursive T(n/2) notation, the depth of the recursion may depend on the constant."
+
+Master Theorem:
+	Can only be used if the recurrence relation is in the form of:
+		T(n) = aT(n/b) + f(n)
+		
+		This means:
+			n = size of problem
+			It gets divided into a subproblems of size n/b
+			f(n) is the cost of dividing & combining the subproblems.
+
+	T(n) = aT(n/b) + f(n)
+	
+	Case 1: f(n) = O(n^c) where c < logb(a)
+			f(n) = O( n^(logb(a-e)) )
+		T(n) = Θ( n^(logb(a)) )
+		
+	Case 2: f(n) = Θ( n^(logb(a)) )
+		T(n) = Θ( n^(logb(a)) * log2(n) )
+		
+	Case 3: f(n) = Ω( n^(logb(a+e)) )
+		T(n) = Θ( f(n) )
+
+	*e is epsilon, which is some positive constant.

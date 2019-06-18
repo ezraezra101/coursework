@@ -1,0 +1,28 @@
+Command line:
+   decodeAnodetest_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  36898
+
+Thu Dec 05 09:05:40 2013
+
+
+ Elaboration Time: 0.156002 sec
+
+ Current Memory Usage: 823.976 Meg
+
+ Total Signals          : 18
+ Total Nets             : 20
+ Total Signal Drivers   : 9
+ Total Blocks           : 3
+ Total Primitive Blocks : 2
+ Total Processes        : 11
+ Total Traceable Variables  : 21
+ Total Scalar Nets and Variables : 103
+
+ Total Simulation Time: 0.156002 sec
+
+ Current Memory Usage: 1138.55 Meg
+
+Thu Dec 05 09:06:31 2013
+

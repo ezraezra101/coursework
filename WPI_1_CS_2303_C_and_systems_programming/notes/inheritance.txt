@@ -1,0 +1,36 @@
+C++ offers 3 types of inheritance:
+
+public
+	every object of a derived class is also an object of that derived class's base class. '
+private
+	is an alternative to composition
+inheritence:
+
+
+Inheritance implies an is-a relationship,
+Composition implies a  has-a relationship.
+
+public inheritance is specified by:
+
+class SubClass : public BaseClass
+{
+	//Stuff
+};
+
+
+
+Friend functions aren't inherited :-(  '
+	
+	private members of BaseClass can't access private members.'
+
+
+C++ does multiple inheritance!
+
+class SubClass : public Base1, public Base2 { void funcIWantFromOnlyB() };
+{
+
+}
+
+
+Overloaded assignment operators are NOT inherited by derived classes.
+	Nor are constructors or destructors

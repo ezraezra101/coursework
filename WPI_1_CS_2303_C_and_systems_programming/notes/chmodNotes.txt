@@ -1,0 +1,40 @@
+chmod notes
+
+chmod u+x prog4.cpp
+chmod u-x prog4.cpp
+chmod u=xrw prog4.cpp
+chmod g+x prog3.cpp
+chmod w-r prog5.cpp
+
+#chmods options are User, Group, World can Read, Write, and eXecute
+
+chmod 700 prog4.cpp
+chmod 750 prog4.cpp
+
+ps prints currently active processes
+
+w
+who
+write <username>
+finger <username>
+
+sftp <username@server>
+	help
+
+
+float floatVar = 1;
+printf(“%6.2f”, floatVar);
+prints: “     1.00”
+
+prototypes —> defining programs before & after main:
+int funcName (int i);
+
+int main()
+{
+	return funcName(42);
+}
+
+char funcName(int i){
+	printf(“%d”, i);
+	return 0;
+}

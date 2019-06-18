@@ -1,0 +1,82 @@
+Author:				Ezra Davis & Artian Kica
+Date:				Thursday, January 30th, 2014
+Version:			1.0
+Project ID:			prog4
+CS Class:			CS2303
+Programming Language:		C++
+OS/Hardware dependencies:	No significant OS/Hardware dependencies
+				
+Problem Description:		
+	#####
+
+Overall Design:
+	######
+
+Modifiable attributes:
+	#######
+
+Implementation Details:
+	########
+
+How to build the program:	
+	#######
+	
+Program Source:
+	########
+
+Additional Files:		
+	README Makefile output1.txt output2.txt output3.txt output4.txt
+
+Results:
+	Each file listed below contains the output of a single execution. The options changed are in header.h, as are more information about what they do.
+
+	output1.txt
+		Options:
+			HEIGHT 3
+			WIDTH 18
+			MAXROUNDS 100
+			TEAMSIZE 8
+			TEAM1 'Q'
+			TEAM2 '$'
+			TURNSBETWEENPRINTS 12
+			RANDOMIZEDTURNORDER true
+			VERBOSE true
+			
+	output2.txt
+		Options:
+			HEIGHT 5
+			WIDTH 5
+			MAXROUNDS 105
+			TEAMSIZE 8
+			TEAM1 'Z'
+			TEAM2 'r'
+			TURNSBETWEENPRINTS 15
+			RANDOMIZEDTURNORDER false
+			VERBOSE false
+			
+	output3.txt (May go off your screen if your terminal isn't extra wide)
+		Options:
+			HEIGHT 50
+			WIDTH 50
+			MAXROUNDS 555
+			TEAMSIZE 17
+			TEAM1 'A'
+			TEAM2 'B'
+			TURNSBETWEENPRINTS 15
+			RANDOMIZEDTURNORDER false
+			VERBOSE false
+	
+	output4.txt
+		Options:
+			HEIGHT 25
+			WIDTH 25
+			MAXROUNDS 100
+			TEAMSIZE 9
+			TEAM1 'A'
+			TEAM2 'B'
+			TURNSBETWEENPRINTS 10
+			RANDOMIZEDTURNORDER false
+			VERBOSE false
+
+References:	
+	Assignment PDF: http://web.cs.wpi.edu/~rek/Systems/C14/Program2_C14.pdf

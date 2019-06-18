@@ -1,0 +1,176 @@
+--------------------------------------------------------------------------------
+Release 14.5 Trace  (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx\14.5\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 3
+-n 3 -fastpaths -xml ALU4bit.twx ALU4bit.ncd -o ALU4bit.twr ALU4bit.pcf -ucf
+ALU4bit.ucf
+
+Design file:              ALU4bit.ncd
+Physical constraint file: ALU4bit.pcf
+Device,package,speed:     xc6slx16,csg324,C,-3 (PRODUCTION 1.23 2013-03-26)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Pad to Pad
+---------------+---------------+---------+
+Source Pad     |Destination Pad|  Delay  |
+---------------+---------------+---------+
+A<0>           |OverFlow       |    8.774|
+A<0>           |Result<0>      |    7.731|
+A<0>           |Result<1>      |    8.659|
+A<0>           |Result<2>      |    9.066|
+A<0>           |Result<3>      |    8.757|
+A<0>           |negSign        |    8.661|
+A<0>           |segs7<0>       |   10.371|
+A<0>           |segs7<1>       |   10.227|
+A<0>           |segs7<2>       |   10.449|
+A<0>           |segs7<3>       |   10.461|
+A<0>           |segs7<4>       |   10.259|
+A<0>           |segs7<5>       |    9.934|
+A<0>           |segs7<6>       |   10.422|
+A<1>           |OverFlow       |    8.629|
+A<1>           |Result<1>      |    8.514|
+A<1>           |Result<2>      |    8.921|
+A<1>           |Result<3>      |    8.612|
+A<1>           |negSign        |    8.516|
+A<1>           |segs7<0>       |   10.226|
+A<1>           |segs7<1>       |   10.082|
+A<1>           |segs7<2>       |   10.304|
+A<1>           |segs7<3>       |   10.316|
+A<1>           |segs7<4>       |   10.114|
+A<1>           |segs7<5>       |    9.789|
+A<1>           |segs7<6>       |   10.277|
+A<2>           |OverFlow       |    8.412|
+A<2>           |Result<1>      |    8.297|
+A<2>           |Result<2>      |    8.704|
+A<2>           |Result<3>      |    8.494|
+A<2>           |negSign        |    8.299|
+A<2>           |segs7<0>       |   10.009|
+A<2>           |segs7<1>       |    9.865|
+A<2>           |segs7<2>       |   10.087|
+A<2>           |segs7<3>       |   10.099|
+A<2>           |segs7<4>       |    9.897|
+A<2>           |segs7<5>       |    9.572|
+A<2>           |segs7<6>       |   10.060|
+A<3>           |OverFlow       |    8.204|
+A<3>           |Result<1>      |    8.551|
+A<3>           |Result<2>      |    8.958|
+A<3>           |Result<3>      |    8.241|
+A<3>           |negSign        |    8.553|
+A<3>           |segs7<0>       |   10.263|
+A<3>           |segs7<1>       |   10.119|
+A<3>           |segs7<2>       |   10.341|
+A<3>           |segs7<3>       |   10.353|
+A<3>           |segs7<4>       |   10.151|
+A<3>           |segs7<5>       |    9.826|
+A<3>           |segs7<6>       |   10.314|
+B<0>           |OverFlow       |    9.593|
+B<0>           |Result<0>      |    8.172|
+B<0>           |Result<1>      |    9.478|
+B<0>           |Result<2>      |    9.885|
+B<0>           |Result<3>      |    9.613|
+B<0>           |negSign        |    9.480|
+B<0>           |segs7<0>       |   11.190|
+B<0>           |segs7<1>       |   11.046|
+B<0>           |segs7<2>       |   11.268|
+B<0>           |segs7<3>       |   11.280|
+B<0>           |segs7<4>       |   11.078|
+B<0>           |segs7<5>       |   10.753|
+B<0>           |segs7<6>       |   11.241|
+B<1>           |OverFlow       |    9.268|
+B<1>           |Result<1>      |    9.153|
+B<1>           |Result<2>      |    9.560|
+B<1>           |Result<3>      |    9.288|
+B<1>           |negSign        |    9.155|
+B<1>           |segs7<0>       |   10.865|
+B<1>           |segs7<1>       |   10.721|
+B<1>           |segs7<2>       |   10.943|
+B<1>           |segs7<3>       |   10.955|
+B<1>           |segs7<4>       |   10.753|
+B<1>           |segs7<5>       |   10.428|
+B<1>           |segs7<6>       |   10.916|
+B<2>           |OverFlow       |    9.089|
+B<2>           |Result<1>      |    8.974|
+B<2>           |Result<2>      |    9.381|
+B<2>           |Result<3>      |    9.235|
+B<2>           |negSign        |    8.976|
+B<2>           |segs7<0>       |   10.686|
+B<2>           |segs7<1>       |   10.559|
+B<2>           |segs7<2>       |   10.764|
+B<2>           |segs7<3>       |   10.776|
+B<2>           |segs7<4>       |   10.591|
+B<2>           |segs7<5>       |   10.249|
+B<2>           |segs7<6>       |   10.737|
+B<3>           |OverFlow       |    8.727|
+B<3>           |Result<1>      |    8.523|
+B<3>           |Result<2>      |    8.930|
+B<3>           |Result<3>      |    8.063|
+B<3>           |negSign        |    8.525|
+B<3>           |segs7<0>       |   10.235|
+B<3>           |segs7<1>       |   10.091|
+B<3>           |segs7<2>       |   10.313|
+B<3>           |segs7<3>       |   10.325|
+B<3>           |segs7<4>       |   10.123|
+B<3>           |segs7<5>       |    9.798|
+B<3>           |segs7<6>       |   10.286|
+op<0>          |OverFlow       |   11.324|
+op<0>          |Result<0>      |   10.082|
+op<0>          |Result<1>      |   11.195|
+op<0>          |Result<2>      |   11.602|
+op<0>          |Result<3>      |   11.330|
+op<0>          |negSign        |   11.197|
+op<0>          |segs7<0>       |   12.907|
+op<0>          |segs7<1>       |   12.763|
+op<0>          |segs7<2>       |   12.985|
+op<0>          |segs7<3>       |   12.997|
+op<0>          |segs7<4>       |   12.795|
+op<0>          |segs7<5>       |   12.470|
+op<0>          |segs7<6>       |   12.958|
+op<1>          |OverFlow       |   12.434|
+op<1>          |Result<0>      |   10.858|
+op<1>          |Result<1>      |   12.319|
+op<1>          |Result<2>      |   12.726|
+op<1>          |Result<3>      |   12.454|
+op<1>          |negSign        |   12.321|
+op<1>          |segs7<0>       |   14.031|
+op<1>          |segs7<1>       |   13.887|
+op<1>          |segs7<2>       |   14.109|
+op<1>          |segs7<3>       |   14.121|
+op<1>          |segs7<4>       |   13.919|
+op<1>          |segs7<5>       |   13.594|
+op<1>          |segs7<6>       |   14.082|
+---------------+---------------+---------+
+
+
+Analysis completed Sun Nov 24 17:24:51 2013 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 219 MB
+
+
+

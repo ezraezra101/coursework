@@ -1,0 +1,102 @@
+C, with classes!
+
+Objects, Inheritance, Polymorphism, Exception handling, and Templates
+Will all be on exam, but not on homeworks.
+
+Extensions:
+	.cpp .cxx .C  also .h
+	
+Classes are defined in .h files
+
+
+
+inline function = macro
+	Declaring a function inline means that it may (compiler's choice) be used as a macro
+		//definition of the function cube, which is inline
+		inline double cube(const double side)
+		{
+			return side * side * side; //calculate the cube of a side
+		}
+
+
+booleans exist:
+	bool var = true;
+	var = 0; //var is set to false
+	
+Reference parameters
+	An alias to another varible
+	
+	Aliases MUST be initialized (and can't be repointed)
+	& placed after the parameter type eg:
+	
+	int &count; //reference to an int
+	
+	
+	eg:
+		void squaredByReference( int &x){
+			x *= x;
+		}
+		in main:
+		
+		int val = 10;
+		squaredByReference(val);
+		
+		//val now equals 100
+
+	or:
+		int x = 3;
+		int &y = x; //y refers to (is an alias for) x
+		
+		y = 6; //now x == 6
+
+	Functions can return references to variables.
+	A Dangling reference is reutrning a reference to an auto (non-static) variable.
+		A bad idea
+		
+
+Default argument
+	A default value to be passed to a parameter
+	
+	Must be the rightmost arguments
+	
+	Should be specified with the first occurrance of the function (typically in the prototype)
+	
+	eg:
+		int boxVolume( int length = 1, int width = 1, int height = 1);
+		
+		boxVolume(); //returns 1
+
+		where: int boxvolume(int x, int y, int z){ return x*y*z; }
+
+:: is the unary scope resolution operator
+	eg:
+		int number = 7;
+		
+		int main()
+		{
+			double number = 10.5;
+			
+			number; //is 10.5
+			::number;/ is 7
+		}
+
+
+Overloading works.
+
+
+
+
+
+
+class Listnode
+{
+
+Listnode ()
+{ link = NULL; }
+
+Listnode( string word)
+{link = NULL; lword = word;}
+//... stuff
+Private:
+	Listnode* link;
+	string lword;

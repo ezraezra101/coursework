@@ -1,0 +1,173 @@
+(DELAYFILE
+  (SDFVERSION "3.0")
+  (DESIGN "lab1_verilog")
+  (DATE "Thu Nov 07 09:22:26 2013")
+  (VENDOR "Xilinx")
+  (PROGRAM "Xilinx SDF Writer")
+  (VERSION "P.58f")
+  (DIVIDER /)
+  (VOLTAGE 1.14)
+  (TEMPERATURE 85)
+  (TIMESCALE 1 ps)
+  (CELL (CELLTYPE "X_OBUF")
+    (INSTANCE e_OBUF)
+      (DELAY
+        (ABSOLUTE
+          (PORT I ( 0 )( 0 ))
+          (IOPATH I O (1038:2001:2001)(1038:2001:2001))
+        )
+      )
+  )
+  (CELL (CELLTYPE "X_OBUF")
+    (INSTANCE f_OBUF)
+      (DELAY
+        (ABSOLUTE
+          (PORT I ( 0 )( 0 ))
+          (IOPATH I O (1038:2001:2001)(1038:2001:2001))
+        )
+      )
+  )
+  (CELL (CELLTYPE "X_BUF")
+    (INSTANCE a_IBUF)
+      (DELAY
+        (PATHPULSE (115))
+        (ABSOLUTE
+          (IOPATH I O (230:648:648)(230:648:648))
+        )
+      )
+  )
+  (CELL (CELLTYPE "X_BUF")
+    (INSTANCE ProtoComp2\.IMUX)
+      (DELAY
+        (PATHPULSE (115))
+        (ABSOLUTE
+          (IOPATH I O (73:115:115)(73:115:115))
+        )
+      )
+  )
+  (CELL (CELLTYPE "X_INV")
+    (INSTANCE ProtoComp2\.IINV)
+      (DELAY
+        (PATHPULSE (115))
+        (ABSOLUTE
+          (IOPATH I O (10:27:27)(10:27:27))
+        )
+      )
+  )
+  (CELL (CELLTYPE "X_BUF")
+    (INSTANCE b_IBUF)
+      (DELAY
+        (PATHPULSE (115))
+        (ABSOLUTE
+          (IOPATH I O (230:648:648)(230:648:648))
+        )
+      )
+  )
+  (CELL (CELLTYPE "X_BUF")
+    (INSTANCE ProtoComp3\.IMUX)
+      (DELAY
+        (PATHPULSE (115))
+        (ABSOLUTE
+          (IOPATH I O (73:115:115)(73:115:115))
+        )
+      )
+  )
+  (CELL (CELLTYPE "X_OBUF")
+    (INSTANCE c_OBUF)
+      (DELAY
+        (ABSOLUTE
+          (PORT I ( 0 )( 0 ))
+          (IOPATH I O (1038:2001:2001)(1038:2001:2001))
+        )
+      )
+  )
+  (CELL (CELLTYPE "X_OBUF")
+    (INSTANCE d_OBUF)
+      (DELAY
+        (ABSOLUTE
+          (PORT I ( 0 )( 0 ))
+          (IOPATH I O (1038:2001:2001)(1038:2001:2001))
+        )
+      )
+  )
+  (CELL (CELLTYPE "X_LUT6")
+    (INSTANCE c1)
+      (DELAY
+        (ABSOLUTE
+          (PORT ADR2 (1188:1188:1844)(1188:1188:1844))
+          (PORT ADR4 (1298:1298:1933)(1298:1298:1933))
+          (IOPATH ADR2 O (156:203:203)(156:203:203))
+          (IOPATH ADR4 O (156:203:203)(156:203:203))
+        )
+      )
+  )
+  (CELL (CELLTYPE "X_BUF")
+    (INSTANCE d_OBUF\/d_OBUF_AMUX_Delay)
+      (DELAY
+        (PATHPULSE (115))
+        (ABSOLUTE
+          (IOPATH I O (48:74:74)(48:74:74))
+        )
+      )
+  )
+  (CELL (CELLTYPE "X_LUT6")
+    (INSTANCE d1)
+      (DELAY
+        (ABSOLUTE
+          (PORT ADR0 (2004:2004:3107)(2004:2004:3107))
+          (PORT ADR3 (1871:1871:2812)(1871:1871:2812))
+          (PORT ADR5 ( 0 )( 0 ))
+          (IOPATH ADR0 O (156:203:203)(156:203:203))
+          (IOPATH ADR3 O (156:203:203)(156:203:203))
+          (IOPATH ADR5 O (156:203:203)(156:203:203))
+        )
+      )
+  )
+  (CELL (CELLTYPE "X_LUT5")
+    (INSTANCE Mxor_e_xo\<0\>1)
+      (DELAY
+        (ABSOLUTE
+          (PORT ADR0 (2004:2004:3107)(2004:2004:3107))
+          (PORT ADR3 (1871:1871:2812)(1871:1871:2812))
+          (IOPATH ADR0 O (143:187:187)(143:187:187))
+          (IOPATH ADR3 O (143:187:187)(143:187:187))
+        )
+      )
+  )
+  (CELL (CELLTYPE "X_BUF")
+    (INSTANCE NlwBufferBlock_e_OBUF\/I)
+      (DELAY
+        (PATHPULSE (115))
+        (ABSOLUTE
+          (IOPATH I O (1188:1188:1744)(1188:1188:1744))
+        )
+      )
+  )
+  (CELL (CELLTYPE "X_BUF")
+    (INSTANCE NlwBufferBlock_f_OBUF\/I)
+      (DELAY
+        (PATHPULSE (115))
+        (ABSOLUTE
+          (IOPATH I O (2768:2768:4158)(2768:2768:4158))
+        )
+      )
+  )
+  (CELL (CELLTYPE "X_BUF")
+    (INSTANCE NlwBufferBlock_c_OBUF\/I)
+      (DELAY
+        (PATHPULSE (115))
+        (ABSOLUTE
+          (IOPATH I O (1710:1710:2548)(1710:1710:2548))
+        )
+      )
+  )
+  (CELL (CELLTYPE "X_BUF")
+    (INSTANCE NlwBufferBlock_d_OBUF\/I)
+      (DELAY
+        (PATHPULSE (115))
+        (ABSOLUTE
+          (IOPATH I O (1140:1140:1666)(1140:1140:1666))
+        )
+      )
+  )
+)

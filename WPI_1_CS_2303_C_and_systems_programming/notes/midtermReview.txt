@@ -1,0 +1,88 @@
+Intro
+
+Unix Basics
+	Directories
+		pwd ls mkdir cd cp mv
+*		chmod
+			user/group/world
+			read/write/execute
+		rm ps kill
+		
+Intro to C
+	C i/o
+		printf, scanf
+	Type declarations
+		sizeof
+		address of a variable
+	Preprocessor directives
+		#include
+		#define
+	C constructs
+		if, while, for, switch, conditional
+		promotion, casting, operator precedence
+
+Functions
+	A simple function example
+		function prototypes
+	Math library functions
+	Header files
+	Random number generation ex.
+	Call by value
+	Call by Reference
+*	Scope
+		Globals
+		Locals
+		auto vs. static variables
+
+Arrays
+	Initialization
+	Array Example
+	Subscriptng out of range
+	Passing arrays to functions
+*	Multiple dimensional Arrays
+		Double-Subscripted Arrays
+		enum & switch example
+
+Pointers
+	Address and typed (& *)
+	Indirection
+	Using pointers in call by reference example
+	Swap with pointers ex.
+	Pointers and Arrays
+***	Operator Precedence w/ Pointers Example
+
+Strings
+	Strings as arrays of characters ending with '\0'
+	Pointers to Strings
+	An Array of Strings Example
+
+Make		(no questions on midterm)
+	A make example
+
+Structures
+	Definitions and typedef
+	Structure member operator (.)
+	Structure pointer operator (->)
+	Structures with Functions
+	A Structure Example
+
+Command Line Arguments
+	argc and argv, stdlib.h's atoi function
+
+Introduction to Data Structures
+*	malloc and free
+	LinkedLists
+		Insertion ex.
+		LinkedList ex.
+
+Computer System Performance and Simulation
+*	Performance Metrics
+		Utilization, throughput, response time, and delay
+	System queue model vs. queue data structure
+	Event Lists and script driven simulations
+
+Data Structures
+	Queues
+		Examples of queues in systems and networks
+		Enqueue & dequeue
+		Head and tail of queue data structure

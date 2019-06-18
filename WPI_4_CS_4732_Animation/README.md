@@ -1,0 +1,1 @@
+This contains work for my (computer) animation course.

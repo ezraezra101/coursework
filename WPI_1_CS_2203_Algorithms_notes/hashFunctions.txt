@@ -1,0 +1,37 @@
+Hash functions:
+
+
+	Multiply key k by a constant A and then modulo by the number of buckets
+	h(k) = (A * k) % buckets
+
+	Or:
+
+	Modulo by some number (Usually a prime) for a prime number of buckets
+		h(k) = k % buckets
+
+	Or:
+
+	Universal Hashing:
+	Pick a (usually paramaterized) hash function at runtime.
+	The advantage is that the hash function can't be targetted by an adversary
+
+
+Open Addressing:
+
+	Use a parameterized hash function.
+	When inserting, if a collision occurs, keep changing the parameter until an empty bucket is reached.
+	When searching, do the same until either the search is successful or an empty slot is reached
+
+
+Perfect Hashing:
+
+	Ensure that there are never any collisions.
+	Only possible for static data.
+		EG: Keywords in a programming language
+
+		One possibility:
+		Use a parameterized hash function.
+		Hash all the keys, if any collisions, try a different parameter
+		Remember the final parameter.
+	
+

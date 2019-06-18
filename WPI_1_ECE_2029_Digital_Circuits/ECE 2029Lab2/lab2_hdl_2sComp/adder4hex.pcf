@@ -1,0 +1,32 @@
+//! **************************************************************************
+// Written by: Map P.58f on Thu Nov 14 17:29:43 2013
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "segs7<6>" LOCATE = SITE "T17" LEVEL 1;
+COMP "A<0>" LOCATE = SITE "N8" LEVEL 1;
+COMP "A<1>" LOCATE = SITE "U8" LEVEL 1;
+COMP "A<2>" LOCATE = SITE "V8" LEVEL 1;
+COMP "OverFlow" LOCATE = SITE "T11" LEVEL 1;
+COMP "A<3>" LOCATE = SITE "T5" LEVEL 1;
+COMP "B<0>" LOCATE = SITE "T10" LEVEL 1;
+COMP "B<1>" LOCATE = SITE "T9" LEVEL 1;
+COMP "B<2>" LOCATE = SITE "V9" LEVEL 1;
+COMP "Anodes<0>" LOCATE = SITE "N16" LEVEL 1;
+COMP "B<3>" LOCATE = SITE "M8" LEVEL 1;
+COMP "Anodes<1>" LOCATE = SITE "N15" LEVEL 1;
+COMP "Anodes<2>" LOCATE = SITE "P18" LEVEL 1;
+COMP "Anodes<3>" LOCATE = SITE "P17" LEVEL 1;
+COMP "Sum<0>" LOCATE = SITE "U16" LEVEL 1;
+COMP "Sum<1>" LOCATE = SITE "V16" LEVEL 1;
+COMP "Sum<2>" LOCATE = SITE "U15" LEVEL 1;
+COMP "Sum<3>" LOCATE = SITE "V15" LEVEL 1;
+COMP "period" LOCATE = SITE "M13" LEVEL 1;
+COMP "segs7<0>" LOCATE = SITE "L14" LEVEL 1;
+COMP "segs7<1>" LOCATE = SITE "N14" LEVEL 1;
+COMP "segs7<2>" LOCATE = SITE "M14" LEVEL 1;
+COMP "segs7<3>" LOCATE = SITE "U18" LEVEL 1;
+COMP "segs7<4>" LOCATE = SITE "U17" LEVEL 1;
+COMP "segs7<5>" LOCATE = SITE "T18" LEVEL 1;
+SCHEMATIC END;
+

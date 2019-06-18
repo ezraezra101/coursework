@@ -1,0 +1,266 @@
+<html>
+<head>
+	<title> Ezra's Project 3 - Boids</title>
+
+	<!-- This is a minimal library that is basically syntactic sugar for some WebGL setup tasks. -->
+	<!-- It's much simpler than three.js -->
+	<!-- http://twgljs.org/ -->
+	<script type="text/javascript" src="./twgl.js"></script>
+
+	<!-- This is a library that adds WebGL style matrix and quaternion operations. -->
+	<!-- http://glmatrix.net -->
+	<script type="text/javascript" src="./gl-matrix.js"></script>
+
+	<!-- Fragment Shader - very simple -->
+	<script id="fs" type="x-shader/x-fragment">
+	precision mediump float;
+	uniform vec4 color;
+	varying float shade;
+	void main() {
+		gl_FragColor = shade * color;
+	}
+	</script>
+
+	<!-- Vertex Shader - sets color based on vertex position. -->
+	<script id="vs" type="x-shader/x-vertex">
+	attribute vec4 position;
+	uniform mat4 viewMat;
+	uniform mat4 modelMat;
+	varying float shade;
+
+	void main() {
+		shade = (position[0] * position[1] * position[2] + 3.0) / 6.0;
+		gl_Position = viewMat * modelMat * position;
+	}
+	</script>
+
+	<script type="text/javascript" src="./Quaternion.js"></script>
+	<script type="text/javascript" src="./Boid.js"></script>
+	<script type="text/javascript" src="./readOBJ.js"></script>
+
+	<script type="text/javascript" src="./interpolate.js"></script>
+
+
+	<script type="text/javascript">
+
+	// List of objects in the scene. Each object is a Boid
+	var objects = [];
+
+	function populateObjects() {
+		objects = [
+			new Boid('Obstacle'),
+			new Boid('Obstacle')
+		];
+		for(var i=0; i< 99; i++) {
+			objects.push(new Boid(Boid.possibleColors[i % 3]));
+		}
+	}
+
+	
+
+	var gl; // The webgl context of the primary canvas
+	// The current program uses a single webgl program.
+	// Both of these are twgl objects
+	var programInfo;
+
+	// Starts up the animation and initializes variables
+	function start() {
+		var canvas = document.querySelector('canvas#project-canvas');
+		gl = canvas.getContext('webgl');
+
+		programInfo = twgl.createProgramInfo(gl, ['vs', 'fs']);
+
+		populateObjects();
+		updateControls();
+
+		document.querySelectorAll('input')
+			.forEach(function(n){
+				n.onblur = updateControls;
+				n.onkeyup = function(e) {
+					if(e.keyCode == 13) {
+						this.blur()
+					}
+				}
+			});
+
+		requestAnimationFrame(render);
+	}
+
+	// Renders a frame of the animation. Intended to be called  via requestAnimationFrame()
+	var currentTime = undefined;
+	function render(time) {
+		// note: time = performance.now()
+		// Setup canvas
+		twgl.resizeCanvasToDisplaySize(gl.canvas);
+		gl.viewport(0, 0, gl.canvas.width, gl.canvas.width);
+		gl.enable(gl.DEPTH_TEST);
+		gl.depthFunc(gl.LESS);
+		gl.useProgram(programInfo.program);
+
+		// Move each object
+		var elapsed = time/1000 - (currentTime || 0);
+		currentTime = time/1000;
+		objects.forEach(function(o) {
+			o.move(elapsed, objects);
+		});
+
+		// Render each object
+		viewMat = mat4.create();
+		mat4.scale(viewMat, viewMat, [0.02, 0.02, 0.02]);
+
+		mat4.translate(viewMat, viewMat, [0,0, 20]);
+		mat4.scale(viewMat, viewMat, [1,1, 0.001]);
+
+		objects.forEach(function(o) {
+			o.draw(gl, viewMat);
+		});
+		updateCounts();
+		// Request the next frame
+		requestAnimationFrame(render);
+	}
+
+	function count() {
+		var counts = { Red: 0, Green: 0, Blue: 0 };
+		objects.forEach(function(o) {
+			if(counts[o.color]) {
+				counts[o.color] = 1 + counts[o.color];
+			} else {
+				counts[o.color] = 1;
+			}
+		});
+		return counts;
+	}
+
+
+	// Updates the counters to reflect the simulation's current state
+	function updateCounts() {
+		var counts = count();
+		document.getElementById('red-count').innerText = counts['Red'];
+		document.getElementById('green-count').innerText = counts['Green'];
+		document.getElementById('blue-count').innerText = counts['Blue'];
+	}
+
+	// Controls the speed and sightlines based on the numbers you put into the inputs
+	function updateControls() {
+		var names = [
+			'red-speed',
+			'green-speed',
+			'blue-speed'
+		];
+		names.forEach(function(name, i) {
+			var val = document.querySelector('input[name='+name+']').value;
+			if(Number(val)) {
+				Boid.speeds[i] = Number(val);
+			}
+		});
+
+		var names = [
+			'red-sight',
+			'green-sight',
+			'blue-sight'
+		];
+		names.forEach(function(name, i) {
+			var val = document.querySelector('input[name='+name+']').value;
+			if(Number(val)) {
+				Boid.sightThresholds[i] = Number(val);
+			}
+		});
+		
+	}
+
+	</script>
+
+	<link rel="stylesheet" href="style.css">
+</head>
+<body onload="start();">
+	<canvas id="project-canvas"></canvas>
+
+<div id="controls">
+	<h5>Speed <small>(only controls hunger/fear)</small></h5>
+	<ul>
+		<li>
+			<label name="red-speed">Red</label>
+			<input name="red-speed" type="text" value="1"></input>
+		</li>
+		<li>
+			<label name="blue-speed">Blue</label>
+			<input name="blue-speed" type="text" value="1"></input>
+		</li>
+		<li>
+			<label name="green-speed">Green</label>
+			<input name="green-speed" type="text" value="1"></input>
+		</li>
+	</ul>
+	<h5>Sight</h5>
+		<ul>
+		<li>
+			<label name="red-sight">Red</label>
+			<input name="red-sight" type="text" value="20"></input>
+		</li>
+		<li>
+			<label name="blue-sight">Blue</label>
+			<input name="blue-sight" type="text"  value="40"></input>
+		</li>
+		<li>
+			<label name="green-sight">Green</label>
+			<input name="green-sight" type="text" value="11"></input>
+		</li>
+	</ul>
+
+	<h5>Count</h5>
+	<ul>
+		<li>
+			<label name="red-count">Red</label>
+			<span id="red-count">33</span>
+		</li>
+		<li>
+			<label name="blue-count">Blue</label>
+			<span id="blue-count" >33</span>
+		</li>
+		<li>
+			<label name="green-count">Green</label>
+			<span id="green-count">33</span>
+		</li>
+	</ul>
+
+	<button onclick="populateObjects();">Restart</button>
+</div>
+
+<!-- This is an simple OBJ file with a cube in it -->
+<textarea id="boidModel" style="display:none;">
+# Blender v2.77 (sub 0) OBJ File: ''
+# www.blender.org
+mtllib cube.mtl
+o Cube
+v 1.000000 -1.000000 -1.000000
+v 1.000000 -1.000000 1.000000
+v -1.000000 -1.000000 1.000000
+v -1.000000 -1.000000 -1.000000
+v 1.000000 1.000000 -0.999999
+v 0.999999 1.000000 1.000001
+v -1.000000 1.000000 1.000000
+v -1.000000 1.000000 -1.000000
+vn 0.0000 -1.0000 0.0000
+vn 0.0000 1.0000 0.0000
+vn 1.0000 -0.0000 0.0000
+vn 0.0000 -0.0000 1.0000
+vn -1.0000 -0.0000 -0.0000
+vn 0.0000 0.0000 -1.0000
+usemtl Material
+s off
+f 1//1 3//1 4//1
+f 8//2 6//2 5//2
+f 5//3 2//3 1//3
+f 6//4 3//4 2//4
+f 3//5 8//5 4//5
+f 1//6 8//6 5//6
+f 1//1 2//1 3//1
+f 8//2 7//2 6//2
+f 5//3 6//3 2//3
+f 6//4 7//4 3//4
+f 3//5 7//5 8//5
+f 1//6 4//6 8//6
+
+</textarea>
+</body>
+</html>

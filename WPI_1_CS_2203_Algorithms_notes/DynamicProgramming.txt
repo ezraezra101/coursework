@@ -1,0 +1,43 @@
+#Dynamic Programming
+
+Created in the 1940s by someone in Los Alamos & RAND Corporation.
+
+Appropriate for optimization problems.
+
+###Basic idea:
+Divide a problem into overlapping subproblems.
+	The overlaps form subsubproblems.
+Once you solve a subsubproblem, remember its solution so you don't have to recalculate it.
+		This is called memoization.
+
+###Steps from textbook:
+1.	Characterize the structure (of an optimal solution)
+2.	Recursive Solution (define the value of an optimal solution recursively)
+3.	Compute Optimal Costs (Typically bottom up)
+4.	Construct an Optimal Solution (from computed information, can be very simple)
+
+##Application: Matrix-Chain Multiplication
+Changing the order of the parenthesis dramatically modifies the number of multiplication operations, but doesn't change the answer.
+
+
+Define:
+	m[i,j] is the minimum number of scalar multiplications needed to compute A[i..j]
+		So we need to find m[1, n].
+	The number of columns in A[i] is p[i]
+		To be compatible, the number of rows in A[i] is p[i-1]
+		So for 2 consecutive matrices, m[k, k+1] = p[k-1] * p[k] *p[k] *p[k+1]
+
+########LOOK AT ALGORITHM IN BOOK################################
+
+###Intractable Problem:
+A problem that is solvable, theoretically, but take far too long.
+
+
+###Warning:
+Not all problems have optimal substructure (greedy algorithms & dynamic programming doesn't work)
+EG: Longest unweighted non-looping path (Travelling Salesman Problem)
+
+
+##A few applications are:
+Longest Common Subsequence
+Optimal Binary Search Tree

@@ -1,0 +1,15 @@
+1. Phase 1:
+When a car arrives at the intersection, it waits on a condition variable if there are any cars in the intersection.
+When each car goes through, it signals (wakes up) the next car waiting on the condition variable.
+
+This method is suboptimal because only one car can be in the intersection at a time. This means that there are unused quadrants of the intersection at all times.
+
+2. Phase 2:
+If there are four cars coming from each direction heading straight (or turning left) that all enter the intersection at the same time, they will all be waiting for the car ahead of them and be unable to move.
+
+We prevent a deadlock by always making sure that there are no more than three cars in the intersection that are trying to enter another quadrant.
+
+3. Phase 3:
+
+We just prevent any non-emergency vehicles from entering the intersection while
+there is an emergency vehicle waiting.

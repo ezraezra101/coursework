@@ -1,0 +1,13 @@
+//! **************************************************************************
+// Written by: Map P.58f on Thu Nov 07 09:22:10 2013
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "e" LOCATE = SITE "V16" LEVEL 1;
+COMP "f" LOCATE = SITE "U16" LEVEL 1;
+COMP "a" LOCATE = SITE "T10" LEVEL 1;
+COMP "b" LOCATE = SITE "T9" LEVEL 1;
+COMP "c" LOCATE = SITE "V15" LEVEL 1;
+COMP "d" LOCATE = SITE "U15" LEVEL 1;
+SCHEMATIC END;
+

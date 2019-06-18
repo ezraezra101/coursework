@@ -1,0 +1,37 @@
+Concurrency
+	OS has to deal with concurrency (virtual or actual)
+	It can be something like: The CPU can be working on something at the same time as the I/O processor, or
+	it can be something like Round Robin...
+	
+
+Communication
+
+
+Source Routing
+
+
+
+
+Multilevel Feed Back
+	Multiple queues heading into the CPU
+	One for shortest jobs, one for medium jobs ...
+	The shortest job queue is serviced first.
+	
+	If something is sitting in the longest queue for a long time, it is moved into a higher priority queue.
+			This can also be applied to networks
+			
+			
+Source Routing allows the source to specify the routing of a packet. (as opposed to non-source routing, where the routers specifies the route)
+
+Packets have a source.
+A node's connection is established on first communication.
+Packets know their route.
+	
+Senders			Mules					Receivers
+S										R
+				M						R
+S
+S					__-	M -----------	R58
+				 __/
+S12	 -  - \		/				M
+			M -'

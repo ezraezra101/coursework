@@ -1,0 +1,17 @@
+﻿Build started 10/2/2014 9:48:08 PM.
+     1>Project "R:\Graphics\Ezra_Davis_hw3 -3\graphics_starting_code_2\GLSLExperiment\GLSLExperiment.vcxproj" on node 2 (build target(s)).
+     1>InitializeBuildStatus:
+         Creating "Debug\GLSLExperiment.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         All outputs are up-to-date.
+       Link:
+         All outputs are up-to-date.
+         GLSLExperiment.vcxproj -> R:\Graphics\Ezra_Davis_hw3 -3\graphics_starting_code_2\Debug\GLSLExperiment.exe
+       FinalizeBuildStatus:
+         Deleting file "Debug\GLSLExperiment.unsuccessfulbuild".
+         Touching "Debug\GLSLExperiment.lastbuildstate".
+     1>Done Building Project "R:\Graphics\Ezra_Davis_hw3 -3\graphics_starting_code_2\GLSLExperiment\GLSLExperiment.vcxproj" (build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:00.12

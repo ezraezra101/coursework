@@ -1,0 +1,3 @@
+verilog work "Hex2Seg.v"
+verilog work "Hex2seg_Test.v"
+verilog work "C:/Xilinx/14.5/ISE_DS/ISE//verilog/src/glbl.v"

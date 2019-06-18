@@ -1,0 +1,28 @@
+Command line:
+   Hex2seg_Test_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  8786
+
+Thu Nov 21 08:35:07 2013
+
+
+ Elaboration Time: 0.0936 sec
+
+ Current Memory Usage: 823.984 Meg
+
+ Total Signals          : 18
+ Total Nets             : 28
+ Total Signal Drivers   : 8
+ Total Blocks           : 3
+ Total Primitive Blocks : 2
+ Total Processes        : 10
+ Total Traceable Variables  : 19
+ Total Scalar Nets and Variables : 112
+
+ Total Simulation Time: 0.140401 sec
+
+ Current Memory Usage: 823.984 Meg
+
+Thu Nov 21 08:37:29 2013
+

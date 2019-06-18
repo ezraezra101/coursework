@@ -1,0 +1,31 @@
+
+#project-canvas {
+  width:100%;
+  min-height:500px;
+  border:none;
+}
+
+textarea#spline {
+  width:100%;
+  min-height:100px;
+}
+
+#controls ul {
+	list-style:none;
+	padding:5px;
+	margin:3px;
+	margin-left:10px;
+}
+#controls {
+	position: absolute;
+	left:0;
+	top:0;
+}
+#controls input {
+	width: 4em;
+	text-align:right;
+}
+#controls h5, button {
+	margin-left: 5px;
+	margin-bottom: 2px;
+}

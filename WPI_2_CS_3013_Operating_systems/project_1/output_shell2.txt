@@ -1,0 +1,177 @@
+> It's working!
+
+--------
+Job finished: [1]	2464	echo It's working! 
+-   19.122 milliseconds passed.
+-    0.000 ms of CPU time (user and system) used
+-        0 involuntary process preemptions
+-        4 voluntary process preemptions
+-        0 page faults
+-      184 page faults satisfied by page reclaims
+--------
+> > running runCommand
+
+  10.032 milliseconds passed.
+   0.000 ms of CPU time (user and system) used
+       0 involuntary process preemptions
+       4 voluntary process preemptions
+       0 page faults
+     184 page faults satisfied by page reclaims
+
+  55.851 milliseconds passed.
+   0.000 ms of CPU time (user and system) used
+       0 involuntary process preemptions
+      17 voluntary process preemptions
+       0 page faults
+     342 page faults satisfied by page reclaims
+
+--------
+Job finished: [2]	2465	./runCommand ./runCommand echo running runCommand 
+-  107.435 milliseconds passed.
+-    0.000 ms of CPU time (user and system) used
+-        1 involuntary process preemptions
+-       30 voluntary process preemptions
+-        0 page faults
+-      500 page faults satisfied by page reclaims
+--------
+> > > Backgrounding...
+
+--------
+Job finished: [4]	2469	echo Backgrounding... 
+-   26.600 milliseconds passed.
+-    0.000 ms of CPU time (user and system) used
+-        0 involuntary process preemptions
+-        4 voluntary process preemptions
+-        0 page faults
+-      187 page faults satisfied by page reclaims
+--------
+> /media/sf_Operating_Systems/HW/project_1
+
+--------
+Job finished: [5]	2470	pwd 
+-   23.929 milliseconds passed.
+-    0.000 ms of CPU time (user and system) used
+-        0 involuntary process preemptions
+-        4 voluntary process preemptions
+-        0 page faults
+-      191 page faults satisfied by page reclaims
+--------
+> > /media/sf_Operating_Systems/HW
+
+--------
+Job finished: [6]	2471	pwd 
+-   17.685 milliseconds passed.
+-    0.000 ms of CPU time (user and system) used
+-        0 involuntary process preemptions
+-        4 voluntary process preemptions
+-        0 page faults
+-      191 page faults satisfied by page reclaims
+--------
+> total 100
+drwxr-xr-x  22 root root  4096 Jan 16 15:30 .
+drwxr-xr-x  22 root root  4096 Jan 16 15:30 ..
+drwxr-xr-x   2 root root  4096 Jan 16 15:25 bin
+drwxr-xr-x   3 root root  4096 Jan 17 16:19 boot
+drwxrwxr-x   2 root root  4096 Jan 16 15:08 cdrom
+drwxr-xr-x  15 root root  4100 Jan 26 19:37 dev
+drwxr-xr-x 132 root root 12288 Jan 26 19:37 etc
+drwxr-xr-x   3 root root  4096 Jan 16 15:09 home
+lrwxrwxrwx   1 root root    33 Jan 16 15:30 initrd.img -> boot/initrd.img-3.13.0-44-generic
+lrwxrwxrwx   1 root root    33 Jan 16 15:12 initrd.img.old -> boot/initrd.img-3.13.0-32-generic
+drwxr-xr-x  23 root root  4096 Jan 16 15:23 lib
+drwx------   2 root root 16384 Jan 16 15:06 lost+found
+drwxr-xr-x   4 root root  4096 Jan 16 15:59 media
+drwxr-xr-x   2 root root  4096 Apr 10  2014 mnt
+drwxr-xr-x   3 root root  4096 Jan 16 15:18 opt
+dr-xr-xr-x 168 root root     0 Jan 26 19:37 proc
+drwx------   2 root root  4096 Jul 22  2014 root
+drwxr-xr-x  22 root root   760 Jan 26 20:12 run
+drwxr-xr-x   2 root root 12288 Jan 17 16:28 sbin
+drwxr-xr-x   2 root root  4096 Jul 22  2014 srv
+dr-xr-xr-x  13 root root     0 Jan 26 19:37 sys
+drwxrwxrwt   4 root root  4096 Jan 26 20:21 tmp
+drwxr-xr-x  10 root root  4096 Jul 22  2014 usr
+drwxr-xr-x  13 root root  4096 Jul 22  2014 var
+lrwxrwxrwx   1 root root    30 Jan 16 15:30 vmlinuz -> boot/vmlinuz-3.13.0-44-generic
+lrwxrwxrwx   1 root root    30 Jan 16 15:12 vmlinuz.old -> boot/vmlinuz-3.13.0-32-generic
+
+--------
+Job finished: [7]	2472	ls -al / 
+-   11.225 milliseconds passed.
+-    0.000 ms of CPU time (user and system) used
+-        0 involuntary process preemptions
+-        4 voluntary process preemptions
+-        0 page faults
+-      398 page faults satisfied by page reclaims
+--------
+> 
+--------
+Job finished: [8]	2473	illegal commands: 
+Error: Unix exit code 2
+--------
+> Error: command should have less than 32 arguments.
+> Error: Command should be less than 129 characters.
+> Error: Can't run cd as background process.
+> Error: Can't run jobs as background process.
+> Error: Can't run exit as background process.
+> > 
+Num	PID	CMD
+[3]	2468	sleep 0.5 
+> > > > 
+--------
+Job finished: [11]	2476	sleep 0.1 
+-  107.305 milliseconds passed.
+-    0.000 ms of CPU time (user and system) used
+-        0 involuntary process preemptions
+-        6 voluntary process preemptions
+-        0 page faults
+-      244 page faults satisfied by page reclaims
+--------
+> > our shell should auto exit at end of file...
+
+--------
+Job finished: [12]	2477	echo our shell should auto exit at end of file... 
+-   15.120 milliseconds passed.
+-    0.000 ms of CPU time (user and system) used
+-        0 involuntary process preemptions
+-        4 voluntary process preemptions
+-        0 page faults
+-      185 page faults satisfied by page reclaims
+--------
+> [End of file]
+Waiting for the following processes to finish.
+
+Num	PID	CMD
+[3]	2468	sleep 0.5 
+[9]	2474	sleep 0.5 
+[10]	2475	sleep 0.3 
+
+--------
+Job finished: [10]	2475	sleep 0.3 
+-  311.361 milliseconds passed.
+-    0.000 ms of CPU time (user and system) used
+-        1 involuntary process preemptions
+-        3 voluntary process preemptions
+-        0 page faults
+-      194 page faults satisfied by page reclaims
+--------
+
+--------
+Job finished: [3]	2468	sleep 0.5 
+-  505.951 milliseconds passed.
+-    0.000 ms of CPU time (user and system) used
+-        1 involuntary process preemptions
+-        2 voluntary process preemptions
+-        0 page faults
+-      193 page faults satisfied by page reclaims
+--------
+
+--------
+Job finished: [9]	2474	sleep 0.5 
+-  507.392 milliseconds passed.
+-    0.000 ms of CPU time (user and system) used
+-        2 involuntary process preemptions
+-        3 voluntary process preemptions
+-        0 page faults
+-      194 page faults satisfied by page reclaims
+--------

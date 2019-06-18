@@ -1,0 +1,10 @@
+Command line:
+   lab1_verilog_test_isim_par.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  41311
+
+Thu Nov 07 09:26:51 2013
+
+
+ Elaboration Time: 0.0936 sec

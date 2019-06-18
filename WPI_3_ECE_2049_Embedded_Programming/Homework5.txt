@@ -1,0 +1,123 @@
+///////////////
+// Problem 1 //
+///////////////
+
+// 1A
+A parallel interface has a number of wires (typically the word length's worth) that allows it to communicate multiple bits in a single transmission/clock cycle.
+Serial interfaces use only a few wires (typically one for transmission, one for recieving, one for clock, and one for power, though the clock and power lines are sometimes left out) and communicates a single bit at a time.
+Parallel busses are better when a large amount of data needs to be transmitted very quickly, but require a large number of connections and doesn't usually allow for transmission and recieving of data at the same time. Serial connections are better when transmitting data over long distances, sending complicated data or communicating between devices that use different word lengths.
+
+// 1B
+Serial interface on the MSP430:
+	The Accelerometer uses a Serial SPI connection to the MSP430
+Parallel interface on the MSP430:
+	The ADC12 uses a parallel interface.
+
+// 1C
+SPI interfaces communicate between one 'Master' and multiple 'Slave' chips. In addition to the normal communication lines (Tx, Rx, CLK), there is a Chip Select line between each peripheral and the 'Master'. Only one Chip Select line is set to digital high at a time - it lets the 'Slave' chip know that the 'Master' is trying to talk to it and not any of the other peripherals.
+
+MSP430 Chip select uses Port pins' digital output. 
+
+// 1D
+False
+
+// 1E
+An interrupt will send a high voltage to the CPU, which will trigger interrupt handling. It clear and save (onto the stack) the Status register, and then will go to the interrupt lookup table and begin the indicated function.
+Clearing the status register returns the CPU to active mode, and it will continue being in active mode until the interrupt ends and the data saved to the stack goes back into the status register.
+
+///////////////
+// Problem 2 //
+///////////////
+
+2A) 2B) 2C)
+Remain undone. :-(
+
+2D)
+Not many chips support 20 bit words and/or have 20 digital IO pins open (which would be required for a parallel interface), so it makes much more sense to implement a serial connection.
+
+///////////////
+// Problem 3 //
+///////////////
+
+3A), 3C), 3D), 3E) Done by hand
+
+3B)
+Modify Cma3000_init to configure the CMA3000 to use its +/- 2 g range but in the 40Hz, 10 Hz mode.
+
+void Cma3000_init() {
+	...
+		// Bit7 = 1 --G_RANGE 2g, I2C disabled, MODE = 011--40 Hz measurement mode
+		accelData = Cma3000_writeRegister(CTRL, BIT7 | I2C_DIS | (0x3) << 1);
+	...
+}
+
+///////////////
+// Problem 4 //
+///////////////
+
+4A)
+A watch dog timer shuts down/restarts the embedded system if it hasn't been reset recently. This helps prevent programs from running infinite loops when they shouldn't be.
+
+4B)
+It's important to configure the WDT as soon as possible, because if it isn't changed from the default settings, it could constantly reset the device before it gets a chance to be configured.
+
+4C)
+The watch dog timer is counting down for 32ms by default.
+
+4D)
+When keypressed == 4, the program enters an infinite loop of drawing to the screen, because the keys pressed isn't ever changed/checked within the while loop.
+(Also, the WDT runs for 250ms before resetting)
+
+///////////////
+// Problem 5 //
+///////////////
+
+5A)
+Active Mode
+Low-Power mode 0,
+Low-Power mode 1,
+Low-power mode 2,
+Low-power mode 3,
+Low-power mode 4,
+Low-power mode 4.5
+
+5B)
+Power used is the typical supply current when chip is running at 3.0V and 25°C
+Low-Power mode 0:	83µA
+Low-Power mode 1:	Same as LPM-0
+Low-power mode 2:	7.0µA
+Low-power mode 3:	2.1-2.3µA (Crystal mode) 1.4-1.6µA (VLO mode)
+Low-power mode 4:	1.1-1.3µA
+Low-power mode 4.5:	0.18µA
+
+It takes 3.5-4.5µs to wake up from LPM2-LPM4 when SVSLFP = 1 (depends on the if the frequency of MCLK is above or below 4MHz).
+It takes 150µs to wake up when SVSLFP = 0.
+Waking up from LPM4.5 takes around 2ms.
+
+5C)
+Low power modes can be entered by running:
+_BIS_SR(LPM0_bits|GIE); //(for low-power mode 0. Others are similar).
+
+Leaving low power modes can be achieved by sending one of various interrupts:
+Low-Power mode 0:	All but the MCLK can be used to generate interrupts
+Low-Power mode 1:	Same as LPM0.
+Low-power mode 2:	ALCK or the DCO's dc generator can be used to generate interrupts.
+Low-power mode 3:	ACLK interrupt vectors can be used.
+Low-power mode 4:	Requires a reset/non-maskable interrupt or an interrupt from Ports 1 or 2.
+Low-power mode 4.5:	The same as LPM4 except there's no data retention, so a reset is a pretty good idea
+
+5D)
+When entering a interrupt service routine, the current status register is saved to the stack and cleared, this tells the CPU to wake up (and informs the various clocks).
+
+///////////////
+// Problem 6 //
+///////////////
+
+The power required in active mode varies a huge amount depending on what clock (and clock speed) is being used. I'm going to assume that we're using 150 μA/MHz at 8 MHz, 3.0 V, RAM Program Execution (Typical)
+
+power_required = 10 years * (active * 0.062 + LPM0 * 0.158 + LPM4 * 0.780)
+power_required = 10 years * (1200µA * 0.062 + 83µA * 0.158 + 1.3µA* 0.780)
+power_required = 885.28 µA Years
+power_required = 88.525 * 1000µA/mA * 365.26*24 Hours/Year
+
+The battery system must provide: 776031396 mA-hrs

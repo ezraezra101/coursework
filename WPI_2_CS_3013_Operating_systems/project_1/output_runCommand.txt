@@ -1,0 +1,41 @@
+Using runCommand to run echo.
+
+   0.771 milliseconds passed.
+   0.000 ms of CPU time (user and system) used
+       1 involuntary process preemptions
+       2 voluntary process preemptions
+       0 page faults
+     186 page faults satisfied by page reclaims
+Waiting 1.0 seconds next.
+
+1004.791 milliseconds passed.
+   0.000 ms of CPU time (user and system) used
+       0 involuntary process preemptions
+       3 voluntary process preemptions
+       0 page faults
+     192 page faults satisfied by page reclaims
+joblist.c
+Makefile
+output_runCommand.txt
+output_shell2_no-stats.txt
+output_shell2.txt
+output_shell.txt
+README.txt
+runCommand
+runCommand.c
+shell
+shell2
+shell2.c
+shell2.h
+shell.c
+test_runCommand.sh
+test_shell2_no-stats.txt
+test_shell2.txt
+test_shell.txt
+
+   2.117 milliseconds passed.
+   0.000 ms of CPU time (user and system) used
+       1 involuntary process preemptions
+       7 voluntary process preemptions
+       0 page faults
+     267 page faults satisfied by page reclaims

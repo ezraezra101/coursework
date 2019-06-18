@@ -1,0 +1,280 @@
+///////////////
+// Problem 1 //
+///////////////
+
+A)
+
+Resulting values of:
+ACLK:  32768 Hz
+MCLK:  393216 Hz
+SMCLK: 393216 Hz
+
+ACLK - Uses XT1CLK, dividers are 1
+SMCLK- Using DCO,   dividers are 1 
+MCLK - Using DCO,   dividers are 1 
+
+DCO speed: (11+1) * (XT1CLK/1)
+
+FLLD = D (default 2), FLLN = N, 
+f_DCOCLK =  D × (N + 1) × (fFLLREFCLK ÷ n)
+f_DCOCLKDIV =   (N + 1) x (fFLLREFCLK ÷ n)
+
+UCSCTL0 = 0001 0101 1010 0000 b  --- DCO = 21, DCOMOD = 20
+UCSCTL1 = 0000 0000 0010 0000 b  --- DCORSEL = 2, modulation disabled (DISMOD = 0)
+UCSCTL2 = 0001 0000 0000 1011 --- FLLD=0 (additional_multiplier = 1), FLLN=B (multiplier = 11)
+UCSCTL3 = 0x0000 --- Using XT1CLK, FLLREFDIV=0 (divide by 1)
+UCSCTL4 = 0x0044 --- MCLK source and SMCLK source = DCOCLKDIV, 
+UCSCTL5 = 0x0000 --- ACLK, MCLK, and SMCLK divider = 1, 
+UCSCTL6 = 0x018C --- XT2 sourced internally, XT2 oscillator operating range is 4MHz to 8MHz, XT2 is off if it isn't a source for ACLK, MCLK, or SMCLK
+				 --- XT1 drive strength allows operation between 8MHz and 16MHz, XCAP bits not used, XT1 is internally sourced. XT1 is on and SMCLK is on
+UCSCTL7 = 0x0403 --- XT1 oscillator & DCO fault flag exists
+UCSCTL8 = 0x0707 --- MCLK, SMCLK, and ACLK conditional requests enabled.
+
+B)
+ (Incomplete, ran out of time!)
+Resulting values of:
+ACLK:  
+MCLK:  
+SMCLK: 
+
+ACLK - Use XT1CLK,dividers are 1 
+MCLK - Using DCO, dividers are 1
+SMCLK- Using DCO, dividers are 1
+
+DCO speed: 
+D=2, N = 2, using XT1CLK, n=1
+f_DCOCLK =  D × (N + 1) × (fFLLREFCLK ÷ n)
+f_DCOCLKDIV =   (N + 1) x (fFLLREFCLK ÷ n)
+
+C)
+Frequency of:
+XT1: 32,768 Hz
+XT2: 4MHz
+Default settings for:
+ACLK: 32768 Hz
+MCLK: 1.048576 MHz
+SMCLK: 1.048576 MHz
+Range of clock frequencies:
+MCLK: 10KHz to 25MHz
+SMCK: 10KHz to 25MHz
+
+Usual use of:
+ACLK - Usually timed outside the chip and used for peripherals
+MCLK - Drives the processor
+SMCLK- Usually used by internal peripherals
+
+
+D)
+This configures P5SEL bits 5, 4, 3, and 2 to its non-digital IO action, which is XT2 (high frequency crystal clock) and XT1 (low frequency crystal clock. Respectively, the pins are used for XT1 output, XT1 input, XT2 output, XT2 input.
+
+E)
+void init_clocks() {
+	// Turn on SMCLK, XT1, and XT2.
+	UCSCTL6 &= ~(XT2OFF|XT1OFF|SMCLKOFF);
+
+	// Set MCLK and SMCLK are close to 5.4 MHz as I can
+	###
+}
+
+///////////////
+// Problem 2 //
+///////////////
+A)
+Interrupt happens 0.005001068... times per second.
+
+t_int = (1310+1)*4*(1/1.048576MHz)
+Using SMCLK, Up mode, /4 divider. Count up to 1310, 
+
+B)
+4682 interrupts (23.405 seconds) until the display is off by 0.005 seconds
+
+error_amt = (expected_time - actual_time) * number_of_interrupts
+0.005 = (0.005 - 0.005001068115234375) * number_of_interrupts
+4681.142857143313 = number_of_interrupts
+
+C)
+int leap_count=0;
+long int time_count = 0;
+
+#pragma vector=TIMER2_A0_VECTOR
+__interrupt void TimerA2_ISR(void) {
+	// Jump count when error_amt > 4681, figured out in part B.
+	// The new count gets off by 0.005 seconds
+		// Calculation:
+		// 	error_amt = (expected_time - actual_time) * (number_of_interrupts/4681)
+		//  0.005 = (0.005*4681 - 0.005*4681.142857143313) * (number_of_interrupts/4681)
+		//  1 = (1-4681.142857143313/4681)*number_of_interrupts
+		//  number_of_interrupts = 1/(1-4681/4681.142857143313)
+		//  number_of_interrupts = 32767.999895334244
+	// This clock will get an error after 32768 interrupts, or 164.840 seconds
+	
+	if(leap_count > 4681) {
+		time_count += 2;
+		leap_count = 0;
+	} else {
+		time_count++;
+		leap_count++;
+	}
+}
+
+D)
+SMCLK should be set to 4.0MHz (Presumably with XT2CLK)
+TimerA2 should be configured to not divide the clock at all, use up mode, and count to 3.
+This means that SMCLK will tick four times a microsecond, and TimerA2 will tick up to equal three once per microsecond.
+This allows the interrupt to be called once per microsecond, and thus get a time resolution in the program of 1 microsecond.
+
+There are other equivalent configurations (e.g. setting TimerA2 to have a divider of 4 and count to 0), but this one seemed particularly simple.
+
+///////////////
+// Problem 3 //
+///////////////
+
+A)
+// Sets SMCLK to run at 4.0MHz
+void setup_SMCLK() {
+	// Initialize XT2 and turn on SMCLK
+	UCSCCTL6 &= ~(XT2OFF|SMCLKOFF);
+
+	// Allow use of XT1 and XT2 clocks
+	P5SEL |= (BIT5|BIT4|BIT3|BIT2);
+}
+B)
+long int timer = 0; // Timer increments each 0.5 ms.
+
+// Configures timerA2 to twice per millisecond.
+void config_timerA2() {
+	// Use SMCLK (TASSEL_2), up mode (MC_1), and clock divider of 1 (ID_0)
+	TA2CTL = TASSEL_1 + MC_1 + ID_0;
+	TACCR0 = 1999;  // max_count +1 = 0.5ms * 4.0Hz = 2000
+	TA2CCTL0 = CCIE; // TA2CCR0 interrupt enabled
+
+	// Count shouldn't be off because there's no rounding for figuring out max_count
+	//   so I'm not going to do leap counting 
+}
+
+#pragma vector=TIMER2_A0_VECTOR
+__interrupt void TimerA2_ISR(void) {
+	timer++;
+}
+
+C)
+No. If SMCLK truely runs at 4.0MHz, then timerA2 will send an interrupt each 0.5ms exactly (because there is no rounding when calculating max_count).
+
+D)
+#define MILISECOND_TENTHS() ((timer*5)) // 1 tick = 5 millisecond tenths
+
+float time_to_display = MILISECOND_TENTHS()/10000.0f
+
+E)
+The timer won't quite be fast or slow. Given another few seconds, it might be, however.
+The clock would have ticked 1920 extra times (time * extra_hz = 48s * 40Hz), but that isn't enough to cause inaccuracy yet.
+The timer will soon be too fast - the clock is ticking too fast, thus so will the timer.
+The measurement system will become out of tolerance only after 50 seconds, which is outside the measurement window, so it is not terribly important.
+
+///////////////
+// Problem 4 //
+///////////////
+
+A)
+Coordinated Universal Time is a time standard that is used as a basis for time zones.
+Eastern Daylight Time is -4:00 from UTC.
+Zulu time is another name for UTC. It's often used in Aviation and military.
+
+B)
+The last date that can be recorded is:
+January 18th, 3 am 14:07, 1968
+
+seconds_per_year = days_per_year * hours_per_days * minutes_per_hour * seconds_per_hour
+seconds_per_year = 365.25 * 24 * 60 * 60 = 31,557,600
+
+(2^31 - 1) / seconds_per_year
+2,147,483,647 / 31,558,464 = 68.04965038532715 years (so: 1968)
+68 is divisable by four, so I don't need to worry about leap years. (and 68 < 100, so I refrain from worrying about leap months/hours)
+0.04965038532715 years * days_per_year = 18.1348032407433 days
+0.1348032407433 days * hours_per_days = 3.2352777778392 hours
+0.2352777778392 hours * minutes_per_hour = 14.116666670352 minutes
+0.116666670352 minutes * minutes_per_second = 7.00000022112 seconds
+
+C)
+A time_t struct consists of two 32 bit integers:
+	A value for nanoseconds which has to hold up to 999999999 (which is less than 2147483647)
+	A value for seconds that has to be able to hold more than the number of seconds in a year (366*24*60*60 = 31622400 which fits in a 32 bit integer)
+
+D)
+July 27th, 1pm 40:51
+
+18,020,451 seconds / seconds_per_day = 208.57003472222223 days (July 27 on non-leap years)
+0.57003472222223 days * hours_per_day= 13.680833333333519 hours
+0.680833333333519 hours * minutes_per_hour = 40.85 minutes
+0.85000000001114 minutes * seconds_per_minute = 51 seconds
+
+
+E)
+long int seconds = 0;
+
+// Configures timerA2 to tick approx. once/second
+void config_timerA2() {
+	// Use ACLK (TASSEL_1), up mode (MC_1), and clock divider of 1 (ID_0)
+	TA2CTL = TASSEL_1 + MC_1 + ID_0;
+	TACCR0 = 32767;  // max_count +1 = 1s * 32768Hz = 32768
+	TA2CCTL0 = CCIE; // TA2CCR0 interrupt enabled
+
+	// Count shouldn't be off because there's no rounding for figuring out max_count
+	//   so I'm not going to do leap counting 
+}
+
+#pragma vector=TIMER2_A0_VECTOR
+__interrupt void TimerA2_ISR(void) {
+	seconds++;
+}
+
+F)
+
+// Helpful list of the # of days in each month
+int daysInMonths[12] = {
+	31, 28/*Not a leap year*/, 31, 30, 31, 30, // January-June
+	31, 31, 30, 31, 30, 31 // July-December
+}
+
+// Returns how many days it has been since the start of the year
+// It's a helper function, not part of the final date.
+int timerDayCount(long int timer) {
+	return (timer/ (60*60*24)) % 365; // not a leap year
+}
+
+// Returns the month of the year
+int timerMonth(long int timer) {
+	int days = timerDayCount(timer);
+	int month = 0;
+	while(days >= daysInMonths[month]) {
+		days -= daysInMonths[month];
+		month++;
+	}
+	return month+1;
+}
+
+// Returns the day of the month
+int timerDayOfMonth(long int timer) {
+	int days = timerDayCount(timer);
+	int month = 0;
+	while(days > daysInMonths[month]) {
+		days -= daysInMonths[month];
+		month++;
+	}
+	return days+1;
+}
+
+
+// The hour (0 to 24) of the time given
+int timerHour(long int timer) {
+	return (timer/(60*60)) % 24;
+}
+
+// The minute value of the time given
+int timerMinutes(long int timer) {
+	return (timer/60) % 60;
+}
+// The second value of the time given
+int timerSeconds(long int timer) {
+	return timer % 60;
+}

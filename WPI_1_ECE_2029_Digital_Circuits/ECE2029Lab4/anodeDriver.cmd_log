@@ -1,0 +1,14 @@
+xst -intstyle ise -ifn "M:/ECE 2029/ECE2029Lab4/anodeDriver.xst" -ofn "M:/ECE 2029/ECE2029Lab4/anodeDriver.syr" 
+xst -intstyle ise -ifn "M:/ECE 2029/ECE2029Lab4/anodeDriver.xst" -ofn "M:/ECE 2029/ECE2029Lab4/anodeDriver.syr" 
+xst -intstyle ise -ifn "M:/ECE 2029/ECE2029Lab4/anodeDriver.xst" -ofn "M:/ECE 2029/ECE2029Lab4/anodeDriver.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc anodeDriver.ucf -p xc6slx16-csg324-3 "anodeDriver.ngc" anodeDriver.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o anodeDriver_map.ncd anodeDriver.ngd anodeDriver.pcf 
+par -w -intstyle ise -ol high -mt off anodeDriver_map.ncd anodeDriver.ncd anodeDriver.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml anodeDriver.twx anodeDriver.ncd -o anodeDriver.twr anodeDriver.pcf -ucf anodeDriver.ucf 
+bitgen -intstyle ise -f anodeDriver.ut anodeDriver.ncd 
+xst -intstyle ise -ifn "M:/ECE 2029/ECE2029Lab4/anodeDriver.xst" -ofn "M:/ECE 2029/ECE2029Lab4/anodeDriver.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc anodeDriver.ucf -p xc6slx16-csg324-3 "anodeDriver.ngc" anodeDriver.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o anodeDriver_map.ncd anodeDriver.ngd anodeDriver.pcf 
+par -w -intstyle ise -ol high -mt off anodeDriver_map.ncd anodeDriver.ncd anodeDriver.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml anodeDriver.twx anodeDriver.ncd -o anodeDriver.twr anodeDriver.pcf -ucf anodeDriver.ucf 
+bitgen -intstyle ise -f anodeDriver.ut anodeDriver.ncd 

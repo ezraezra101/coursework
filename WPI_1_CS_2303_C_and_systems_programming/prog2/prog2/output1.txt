@@ -1,0 +1,2073 @@
+Initializing the field for a match between Q and $
+Placing team Q
+Checking for a collision at point 0x17
+Making player Q1, facing direction 1 at 0x17
+Checking for a collision at point 1x13
+Making player Q2, facing direction 1 at 1x13
+Checking for a collision at point 2x10
+Making player Q3, facing direction 2 at 2x10
+Checking for a collision at point 0x2
+Making player Q4, facing direction 3 at 0x2
+Checking for a collision at point 1x12
+Making player Q5, facing direction 1 at 1x12
+Checking for a collision at point 0x9
+Making player Q6, facing direction 2 at 0x9
+Checking for a collision at point 0x0
+Making player Q7, facing direction 2 at 0x0
+Checking for a collision at point 0x0
+Checking for a collision at point 2x13
+Making player Q8, facing direction 2 at 2x13
+Placing team $
+Checking for a collision at point 0x9
+Checking for a collision at point 2x9
+Making player $1, facing direction 3 at 2x9
+Checking for a collision at point 0x8
+Making player $2, facing direction 0 at 0x8
+Checking for a collision at point 2x1
+Making player $3, facing direction 1 at 2x1
+Checking for a collision at point 2x9
+Checking for a collision at point 2x6
+Making player $4, facing direction 2 at 2x6
+Checking for a collision at point 2x9
+Checking for a collision at point 1x14
+Making player $5, facing direction 2 at 1x14
+Checking for a collision at point 0x8
+Checking for a collision at point 1x10
+Making player $6, facing direction 0 at 1x10
+Checking for a collision at point 2x10
+Checking for a collision at point 2x10
+Checking for a collision at point 0x10
+Making player $7, facing direction 0 at 0x10
+Checking for a collision at point 0x1
+Making player $8, facing direction 3 at 0x1
+Randomizing turn orderPlayer:	| Location: | Direction: |
+ Q8	|   2x 13   | South      |
+ $6	|   1x 10   | North      |
+ Q5	|   1x 12   | East       |
+ $8	|   0x  1   | West       |
+ $4	|   2x  6   | South      |
+ Q6	|   0x  9   | South      |
+ $5	|   1x 14   | South      |
+ $1	|   2x  9   | West       |
+ Q7	|   0x  0   | South      |
+ $2	|   0x  8   | North      |
+ $3	|   2x  1   | East       |
+ $7	|   0x 10   | North      |
+ Q1	|   0x 17   | East       |
+ Q3	|   2x 10   | South      |
+ Q2	|   1x 13   | East       |
+ Q4	|   0x  2   | West       |
+Turn: 0
+---------------------------------------------------------
+| Q7 $8 Q4                $2 Q6 $7                   Q1 |
+|                               $6    Q5 Q2 $5          |
+|    $3             $4       $1 Q3       Q8             |
+---------------------------------------------------------
+Player:	| Location: | Direction: |
+ Q8	|   2x 13   | South      |
+ $6	|   1x 10   | North      |
+ Q5	|   1x 12   | East       |
+ $8	|   0x  1   | West       |
+ $4	|   2x  6   | South      |
+ Q6	|   0x  9   | South      |
+ $5	|   1x 14   | South      |
+ $1	|   2x  9   | West       |
+ Q7	|   0x  0   | South      |
+ $2	|   0x  8   | North      |
+ $3	|   2x  1   | East       |
+ $7	|   0x 10   | North      |
+ Q1	|   0x 17   | East       |
+ Q3	|   2x 10   | South      |
+ Q2	|   1x 13   | East       |
+ Q4	|   0x  2   | West       |
+Running a round!
+Moving player Q8 on the field in the 2 direction
+Moving player Q8 on the field in the 0 direction
+Checking for a collision at point 1x13
+Player of team Q is hopping onto space 1x13
+Player Q2 has been hopped over
+Moving player Q8 on the field in the 0 direction
+Checking for a collision at point 0x13
+people of both teams are alive!
+Moving player $6 on the field in the 0 direction
+Checking for a collision at point 0x10
+Player of team $ is hopping onto space 0x10
+Player $7 has been hopped over
+Moving player $6 on the field in the 0 direction
+Moving player $6 on the field in the 2 direction
+Checking for a collision at point 1x10
+people of both teams are alive!
+Moving player Q5 on the field in the 1 direction
+Checking for a collision at point 1x13
+Player of team Q is hopping onto space 1x13
+Player Q2 has been hopped over
+Moving player Q5 on the field in the 1 direction
+Checking for a collision at point 1x14
+Player of team Q is hopping onto space 1x14
+Player $5 has been crushed
+people of both teams are alive!
+Moving player $8 on the field in the 3 direction
+Checking for a collision at point 0x0
+Player of team $ is hopping onto space 0x0
+Player Q7 has been crushed
+people of both teams are alive!
+Moving player $4 on the field in the 2 direction
+Moving player $4 on the field in the 0 direction
+Checking for a collision at point 1x6
+people of both teams are alive!
+Moving player Q6 on the field in the 2 direction
+Checking for a collision at point 1x9
+people of both teams are alive!
+Moving player $5 on the field in the 2 direction
+Nevermind, the player has been hit & can't move.
+people of both teams are alive!
+Moving player $1 on the field in the 3 direction
+Checking for a collision at point 2x8
+people of both teams are alive!
+Moving player Q7 on the field in the 2 direction
+Nevermind, the player has been hit & can't move.
+people of both teams are alive!
+Moving player $2 on the field in the 0 direction
+Moving player $2 on the field in the 2 direction
+Checking for a collision at point 1x8
+people of both teams are alive!
+Moving player $3 on the field in the 1 direction
+Checking for a collision at point 2x2
+people of both teams are alive!
+Moving player $7 on the field in the 0 direction
+Moving player $7 on the field in the 2 direction
+Checking for a collision at point 1x10
+Player of team $ is hopping onto space 1x10
+Player $6 has been hopped over
+Moving player $7 on the field in the 2 direction
+Checking for a collision at point 2x10
+Player of team $ is hopping onto space 2x10
+Player Q3 has been crushed
+people of both teams are alive!
+Moving player Q1 on the field in the 1 direction
+Moving player Q1 on the field in the 3 direction
+Checking for a collision at point 0x16
+people of both teams are alive!
+Moving player Q3 on the field in the 2 direction
+Nevermind, the player has been hit & can't move.
+people of both teams are alive!
+Moving player Q2 on the field in the 1 direction
+Checking for a collision at point 1x14
+Player of team Q is hopping onto space 1x14
+Player Q5 has been hopped over
+Moving player Q2 on the field in the 1 direction
+Checking for a collision at point 1x15
+people of both teams are alive!
+Moving player Q4 on the field in the 3 direction
+Checking for a collision at point 0x1
+people of both teams are alive!
+Turn: 1
+---------------------------------------------------------
+| $8 Q4                                  Q8       Q1    |
+|                   $4    $2 Q6 $6          Q5 Q2       |
+|       $3                $1    $7                      |
+---------------------------------------------------------
+Player:	| Location: | Direction: |
+ Q8	|   0x 13   | North      |
+ $6	|   1x 10   | South      |
+ Q5	|   1x 14   | East       |
+ $8	|   0x  0   | West       |
+ $4	|   1x  6   | North      |
+ Q6	|   1x  9   | South      |
+ $1	|   2x  8   | West       |
+ $2	|   1x  8   | South      |
+ $3	|   2x  2   | East       |
+ $7	|   2x 10   | South      |
+ Q1	|   0x 16   | West       |
+ Q2	|   1x 15   | East       |
+ Q4	|   0x  1   | West       |
+Running a round!
+Moving player Q8 on the field in the 0 direction
+Moving player Q8 on the field in the 2 direction
+Checking for a collision at point 1x13
+people of both teams are alive!
+Moving player $6 on the field in the 2 direction
+Checking for a collision at point 2x10
+Player of team $ is hopping onto space 2x10
+Player $7 has been hopped over
+Moving player $6 on the field in the 2 direction
+Moving player $6 on the field in the 0 direction
+Checking for a collision at point 1x10
+people of both teams are alive!
+Moving player Q5 on the field in the 1 direction
+Checking for a collision at point 1x15
+Player of team Q is hopping onto space 1x15
+Player Q2 has been hopped over
+Moving player Q5 on the field in the 1 direction
+Checking for a collision at point 1x16
+people of both teams are alive!
+Moving player $8 on the field in the 3 direction
+Moving player $8 on the field in the 1 direction
+Checking for a collision at point 0x1
+Player of team $ is hopping onto space 0x1
+Player Q4 has been crushed
+people of both teams are alive!
+Moving player $4 on the field in the 0 direction
+Checking for a collision at point 0x6
+people of both teams are alive!
+Moving player Q6 on the field in the 2 direction
+Checking for a collision at point 2x9
+people of both teams are alive!
+Moving player $5 on the field in the 2 direction
+Nevermind, the player has been hit & can't move.
+people of both teams are alive!
+Moving player $1 on the field in the 3 direction
+Checking for a collision at point 2x7
+people of both teams are alive!
+Moving player Q7 on the field in the 2 direction
+Nevermind, the player has been hit & can't move.
+people of both teams are alive!
+Moving player $2 on the field in the 2 direction
+Checking for a collision at point 2x8
+people of both teams are alive!
+Moving player $3 on the field in the 1 direction
+Checking for a collision at point 2x3
+people of both teams are alive!
+Moving player $7 on the field in the 2 direction
+Moving player $7 on the field in the 0 direction
+Checking for a collision at point 1x10
+Player of team $ is hopping onto space 1x10
+Player $6 has been hopped over
+Moving player $7 on the field in the 0 direction
+Checking for a collision at point 0x10
+people of both teams are alive!
+Moving player Q1 on the field in the 3 direction
+Checking for a collision at point 0x15
+people of both teams are alive!
+Moving player Q3 on the field in the 2 direction
+Nevermind, the player has been hit & can't move.
+people of both teams are alive!
+Moving player Q2 on the field in the 1 direction
+Checking for a collision at point 1x16
+Player of team Q is hopping onto space 1x16
+Player Q5 has been hopped over
+Moving player Q2 on the field in the 1 direction
+Checking for a collision at point 1x17
+people of both teams are alive!
+Moving player Q4 on the field in the 3 direction
+Nevermind, the player has been hit & can't move.
+people of both teams are alive!
+Turn: 2
+---------------------------------------------------------
+|    $8             $4          $7             Q1       |
+|                               $6       Q8       Q5 Q2 |
+|          $3          $1 $2 Q6                         |
+---------------------------------------------------------
+Player:	| Location: | Direction: |
+ Q8	|   1x 13   | South      |
+ $6	|   1x 10   | North      |
+ Q5	|   1x 16   | East       |
+ $8	|   0x  1   | East       |
+ $4	|   0x  6   | North      |
+ Q6	|   2x  9   | South      |
+ $1	|   2x  7   | West       |
+ $2	|   2x  8   | South      |
+ $3	|   2x  3   | East       |
+ $7	|   0x 10   | North      |
+ Q1	|   0x 15   | West       |
+ Q2	|   1x 17   | East       |
+Running a round!
+Moving player Q8 on the field in the 2 direction
+Checking for a collision at point 2x13
+people of both teams are alive!
+Moving player $6 on the field in the 0 direction
+Checking for a collision at point 0x10
+Player of team $ is hopping onto space 0x10
+Player $7 has been hopped over
+Moving player $6 on the field in the 0 direction
+Moving player $6 on the field in the 2 direction
+Checking for a collision at point 1x10
+people of both teams are alive!
+Moving player Q5 on the field in the 1 direction
+Checking for a collision at point 1x17
+Player of team Q is hopping onto space 1x17
+Player Q2 has been hopped over
+Moving player Q5 on the field in the 1 direction
+Moving player Q5 on the field in the 3 direction
+Checking for a collision at point 1x16
+people of both teams are alive!
+Moving player $8 on the field in the 1 direction
+Checking for a collision at point 0x2
+people of both teams are alive!
+Moving player $4 on the field in the 0 direction
+Moving player $4 on the field in the 2 direction
+Checking for a collision at point 1x6
+people of both teams are alive!
+Moving player Q6 on the field in the 2 direction
+Moving player Q6 on the field in the 0 direction
+Checking for a collision at point 1x9
+people of both teams are alive!
+Moving player $5 on the field in the 2 direction
+Nevermind, the player has been hit & can't move.
+people of both teams are alive!
+Moving player $1 on the field in the 3 direction
+Checking for a collision at point 2x6
+people of both teams are alive!
+Moving player Q7 on the field in the 2 direction
+Nevermind, the player has been hit & can't move.
+people of both teams are alive!
+Moving player $2 on the field in the 2 direction
+Moving player $2 on the field in the 0 direction
+Checking for a collision at point 1x8
+people of both teams are alive!
+Moving player $3 on the field in the 1 direction
+Checking for a collision at point 2x4
+people of both teams are alive!
+Moving player $7 on the field in the 0 direction
+Moving player $7 on the field in the 2 direction
+Checking for a collision at point 1x10
+Player of team $ is hopping onto space 1x10
+Player $6 has been hopped over
+Moving player $7 on the field in the 2 direction
+Checking for a collision at point 2x10
+people of both teams are alive!
+Moving player Q1 on the field in the 3 direction
+Checking for a collision at point 0x14
+people of both teams are alive!
+Moving player Q3 on the field in the 2 direction
+Nevermind, the player has been hit & can't move.
+people of both teams are alive!
+Moving player Q2 on the field in the 1 direction
+Moving player Q2 on the field in the 3 direction
+Checking for a collision at point 1x16
+Player of team Q is hopping onto space 1x16
+Player Q5 has been hopped over
+Moving player Q2 on the field in the 3 direction
+Checking for a collision at point 1x15
+people of both teams are alive!
+Moving player Q4 on the field in the 3 direction
+Nevermind, the player has been hit & can't move.
+people of both teams are alive!
+Turn: 3
+---------------------------------------------------------
+|       $8                                  Q1          |
+|                   $4    $2 Q6 $6             Q2 Q5    |
+|             $3    $1          $7       Q8             |
+---------------------------------------------------------
+Player:	| Location: | Direction: |
+ Q8	|   2x 13   | South      |
+ $6	|   1x 10   | South      |
+ Q5	|   1x 16   | West       |
+ $8	|   0x  2   | East       |
+ $4	|   1x  6   | South      |
+ Q6	|   1x  9   | North      |
+ $1	|   2x  6   | West       |
+ $2	|   1x  8   | North      |
+ $3	|   2x  4   | East       |
+ $7	|   2x 10   | South      |
+ Q1	|   0x 14   | West       |
+ Q2	|   1x 15   | West       |
+Running a round!
+Moving player Q8 on the field in the 2 direction
+Moving player Q8 on the field in the 0 direction
+Checking for a collision at point 1x13
+people of both teams are alive!
+Moving player $6 on the field in the 2 direction
+Checking for a collision at point 2x10
+Player of team $ is hopping onto space 2x10
+Player $7 has been hopped over
+Moving player $6 on the field in the 2 direction
+Moving player $6 on the field in the 0 direction
+Checking for a collision at point 1x10
+people of both teams are alive!
+Moving player Q5 on the field in the 3 direction
+Checking for a collision at point 1x15
+Player of team Q is hopping onto space 1x15
+Player Q2 has been hopped over
+Moving player Q5 on the field in the 3 direction
+Checking for a collision at point 1x14
+people of both teams are alive!
+Moving player $8 on the field in the 1 direction
+Checking for a collision at point 0x3
+people of both teams are alive!
+Moving player $4 on the field in the 2 direction
+Checking for a collision at point 2x6
+Player of team $ is hopping onto space 2x6
+Player $1 has been hopped over
+Moving player $4 on the field in the 2 direction
+Moving player $4 on the field in the 0 direction
+Checking for a collision at point 1x6
+people of both teams are alive!
+Moving player Q6 on the field in the 0 direction
+Checking for a collision at point 0x9
+people of both teams are alive!
+Moving player $5 on the field in the 2 direction
+Nevermind, the player has been hit & can't move.
+people of both teams are alive!
+Moving player $1 on the field in the 3 direction
+Checking for a collision at point 2x5
+people of both teams are alive!
+Moving player Q7 on the field in the 2 direction
+Nevermind, the player has been hit & can't move.
+people of both teams are alive!
+Moving player $2 on the field in the 0 direction
+Checking for a collision at point 0x8
+people of both teams are alive!
+Moving player $3 on the field in the 1 direction
+Checking for a collision at point 2x5
+Player of team $ is hopping onto space 2x5
+Player $1 has been hopped over
+Moving player $3 on the field in the 1 direction
+Checking for a collision at point 2x6
+people of both teams are alive!
+Moving player $7 on the field in the 2 direction
+Moving player $7 on the field in the 0 direction
+Checking for a collision at point 1x10
+Player of team $ is hopping onto space 1x10
+Player $6 has been hopped over
+Moving player $7 on the field in the 0 direction
+Checking for a collision at point 0x10
+people of both teams are alive!
+Moving player Q1 on the field in the 3 direction
+Checking for a collision at point 0x13
+people of both teams are alive!
+Moving player Q3 on the field in the 2 direction
+Nevermind, the player has been hit & can't move.
+people of both teams are alive!
+Moving player Q2 on the field in the 3 direction
+Checking for a collision at point 1x14
+Player of team Q is hopping onto space 1x14
+Player Q5 has been hopped over
+Moving player Q2 on the field in the 3 direction
+Checking for a collision at point 1x13
+Player of team Q is hopping onto space 1x13
+Player Q8 has been hopped over
+Moving player Q2 on the field in the 3 direction
+Checking for a collision at point 1x12
+people of both teams are alive!
+Moving player Q4 on the field in the 3 direction
+Nevermind, the player has been hit & can't move.
+people of both teams are alive!
+Turn: 4
+---------------------------------------------------------
+|          $8             $2 Q6 $7       Q1             |
+|                   $4          $6    Q2 Q8 Q5          |
+|                $1 $3                                  |
+---------------------------------------------------------
+Player:	| Location: | Direction: |
+ Q8	|   1x 13   | North      |
+ $6	|   1x 10   | North      |
+ Q5	|   1x 14   | West       |
+ $8	|   0x  3   | East       |
+ $4	|   1x  6   | North      |
+ Q6	|   0x  9   | North      |
+ $1	|   2x  5   | West       |
+ $2	|   0x  8   | North      |
+ $3	|   2x  6   | East       |
+ $7	|   0x 10   | North      |
+ Q1	|   0x 13   | West       |
+ Q2	|   1x 12   | West       |
+Running a round!
+Moving player Q8 on the field in the 0 direction
+Checking for a collision at point 0x13
+Player of team Q is hopping onto space 0x13
+Player Q1 has been hopped over
+Moving player Q8 on the field in the 0 direction
+Moving player Q8 on the field in the 2 direction
+Checking for a collision at point 1x13
+people of both teams are alive!
+Moving player $6 on the field in the 0 direction
+Checking for a collision at point 0x10
+Player of team $ is hopping onto space 0x10
+Player $7 has been hopped over
+Moving player $6 on the field in the 0 direction
+Moving player $6 on the field in the 2 direction
+Checking for a collision at point 1x10
+people of both teams are alive!
+Moving player Q5 on the field in the 3 direction
+Checking for a collision at point 1x13
+Player of team Q is hopping onto space 1x13
+Player Q8 has been hopped over
+Moving player Q5 on the field in the 3 direction
+Checking for a collision at point 1x12
+Player of team Q is hopping onto space 1x12
+Player Q2 has been hopped over
+Moving player Q5 on the field in the 3 direction
+Checking for a collision at point 1x11
+people of both teams are alive!
+Moving player $8 on the field in the 1 direction
+Checking for a collision at point 0x4
+people of both teams are alive!
+Moving player $4 on the field in the 0 direction
+Checking for a collision at point 0x6
+people of both teams are alive!
+Moving player Q6 on the field in the 0 direction
+Moving player Q6 on the field in the 2 direction
+Checking for a collision at point 1x9
+people of both teams are alive!
+Moving player $5 on the field in the 2 direction
+Nevermind, the player has been hit & can't move.
+people of both teams are alive!
+Moving player $1 on the field in the 3 direction
+Checking for a collision at point 2x4
+people of both teams are alive!
+Moving player Q7 on the field in the 2 direction
+Nevermind, the player has been hit & can't move.
+people of both teams are alive!
+Moving player $2 on the field in the 0 direction
+Moving player $2 on the field in the 2 direction
+Checking for a collision at point 1x8
+people of both teams are alive!
+Moving player $3 on the field in the 1 direction
+Checking for a collision at point 2x7
+people of both teams are alive!
+Moving player $7 on the field in the 0 direction
+Moving player $7 on the field in the 2 direction
+Checking for a collision at point 1x10
+Player of team $ is hopping onto space 1x10
+Player $6 has been hopped over
+Moving player $7 on the field in the 2 direction
+Checking for a collision at point 2x10
+people of both teams are alive!
+Moving player Q1 on the field in the 3 direction
+Checking for a collision at point 0x12
+people of both teams are alive!
+Moving player Q3 on the field in the 2 direction
+Nevermind, the player has been hit & can't move.
+people of both teams are alive!
+Moving player Q2 on the field in the 3 direction
+Checking for a collision at point 1x11
+Player of team Q is hopping onto space 1x11
+Player Q5 has been hopped over
+Moving player Q2 on the field in the 3 direction
+Checking for a collision at point 1x10
+Player of team Q is hopping onto space 1x10
+Player $6 has been crushed
+people of both teams are alive!
+Moving player Q4 on the field in the 3 direction
+Nevermind, the player has been hit & can't move.
+people of both teams are alive!
+Turn: 5
+---------------------------------------------------------
+|             $8    $4                Q1                |
+|                         $2 Q6 Q2 Q5    Q8             |
+|             $1       $3       $7                      |
+---------------------------------------------------------
+Player:	| Location: | Direction: |
+ Q8	|   1x 13   | South      |
+ Q5	|   1x 11   | West       |
+ $8	|   0x  4   | East       |
+ $4	|   0x  6   | North      |
+ Q6	|   1x  9   | South      |
+ $1	|   2x  4   | West       |
+ $2	|   1x  8   | South      |
+ $3	|   2x  7   | East       |
+ $7	|   2x 10   | South      |
+ Q1	|   0x 12   | West       |
+ Q2	|   1x 10   | West       |
+Running a round!
+Moving player Q8 on the field in the 2 direction
+Checking for a collision at point 2x13
+people of both teams are alive!
+Moving player $6 on the field in the 2 direction
+Nevermind, the player has been hit & can't move.
+people of both teams are alive!
+Moving player Q5 on the field in the 3 direction
+Checking for a collision at point 1x10
+Player of team Q is hopping onto space 1x10
+Player Q2 has been hopped over
+Moving player Q5 on the field in the 3 direction
+Checking for a collision at point 1x9
+Player of team Q is hopping onto space 1x9
+Player Q6 has been hopped over
+Moving player Q5 on the field in the 3 direction
+Checking for a collision at point 1x8
+Player of team Q is hopping onto space 1x8
+Player $2 has been crushed
+people of both teams are alive!
+Moving player $8 on the field in the 1 direction
+Checking for a collision at point 0x5
+people of both teams are alive!
+Moving player $4 on the field in the 0 direction
+Moving player $4 on the field in the 2 direction
+Checking for a collision at point 1x6
+people of both teams are alive!
+Moving player Q6 on the field in the 2 direction
+Checking for a collision at point 2x9
+people of both teams are alive!
+Moving player $5 on the field in the 2 direction
+Nevermind, the player has been hit & can't move.
+people of both teams are alive!
+Moving player $1 on the field in the 3 direction
+Checking for a collision at point 2x3
+people of both teams are alive!
+Moving player Q7 on the field in the 2 direction
+Nevermind, the player has been hit & can't move.
+people of both teams are alive!
+Moving player $2 on the field in the 2 direction
+Nevermind, the player has been hit & can't move.
+people of both teams are alive!
+Moving player $3 on the field in the 1 direction
+Checking for a collision at point 2x8
+people of both teams are alive!
+Moving player $7 on the field in the 2 direction
+Moving player $7 on the field in the 0 direction
+Checking for a collision at point 1x10
+Player of team $ is hopping onto space 1x10
+Player Q2 has been crushed
+people of both teams are alive!
+Moving player Q1 on the field in the 3 direction
+Checking for a collision at point 0x11
+people of both teams are alive!
+Moving player Q3 on the field in the 2 direction
+Nevermind, the player has been hit & can't move.
+people of both teams are alive!
+Moving player Q2 on the field in the 3 direction
+Nevermind, the player has been hit & can't move.
+people of both teams are alive!
+Moving player Q4 on the field in the 3 direction
+Nevermind, the player has been hit & can't move.
+people of both teams are alive!
+Turn: 6
+---------------------------------------------------------
+|                $8                Q1                   |
+|                   $4    Q5    $7                      |
+|          $1             $3 Q6          Q8             |
+---------------------------------------------------------
+Player:	| Location: | Direction: |
+ Q8	|   2x 13   | South      |
+ Q5	|   1x  8   | West       |
+ $8	|   0x  5   | East       |
+ $4	|   1x  6   | South      |
+ Q6	|   2x  9   | South      |
+ $1	|   2x  3   | West       |
+ $3	|   2x  8   | East       |
+ $7	|   1x 10   | North      |
+ Q1	|   0x 11   | West       |
+Running a round!
+Moving player Q8 on the field in the 2 direction
+Moving player Q8 on the field in the 0 direction
+Checking for a collision at point 1x13
+people of both teams are alive!
+Moving player $6 on the field in the 2 direction
+Nevermind, the player has been hit & can't move.
+people of both teams are alive!
+Moving player Q5 on the field in the 3 direction
+Checking for a collision at point 1x7
+people of both teams are alive!
+Moving player $8 on the field in the 1 direction
+Checking for a collision at point 0x6
+people of both teams are alive!
+Moving player $4 on the field in the 2 direction
+Checking for a collision at point 2x6
+people of both teams are alive!
+Moving player Q6 on the field in the 2 direction
+Moving player Q6 on the field in the 0 direction
+Checking for a collision at point 1x9
+people of both teams are alive!
+Moving player $5 on the field in the 2 direction
+Nevermind, the player has been hit & can't move.
+people of both teams are alive!
+Moving player $1 on the field in the 3 direction
+Checking for a collision at point 2x2
+people of both teams are alive!
+Moving player Q7 on the field in the 2 direction
+Nevermind, the player has been hit & can't move.
+people of both teams are alive!
+Moving player $2 on the field in the 2 direction
+Nevermind, the player has been hit & can't move.
+people of both teams are alive!
+Moving player $3 on the field in the 1 direction
+Checking for a collision at point 2x9
+people of both teams are alive!
+Moving player $7 on the field in the 0 direction
+Checking for a collision at point 0x10
+people of both teams are alive!
+Moving player Q1 on the field in the 3 direction
+Checking for a collision at point 0x10
+Player of team Q is hopping onto space 0x10
+Player $7 has been crushed
+people of both teams are alive!
+Moving player Q3 on the field in the 2 direction
+Nevermind, the player has been hit & can't move.
+people of both teams are alive!
+Moving player Q2 on the field in the 3 direction
+Nevermind, the player has been hit & can't move.
+people of both teams are alive!
+Moving player Q4 on the field in the 3 direction
+Nevermind, the player has been hit & can't move.
+people of both teams are alive!
+Turn: 7
+---------------------------------------------------------
+|                   $8          Q1                      |
+|                      Q5    Q6          Q8             |
+|       $1          $4       $3                         |
+---------------------------------------------------------
+Player:	| Location: | Direction: |
+ Q8	|   1x 13   | North      |
+ Q5	|   1x  7   | West       |
+ $8	|   0x  6   | East       |
+ $4	|   2x  6   | South      |
+ Q6	|   1x  9   | North      |
+ $1	|   2x  2   | West       |
+ $3	|   2x  9   | East       |
+ Q1	|   0x 10   | West       |
+Running a round!
+Moving player Q8 on the field in the 0 direction
+Checking for a collision at point 0x13
+people of both teams are alive!
+Moving player $6 on the field in the 2 direction
+Nevermind, the player has been hit & can't move.
+people of both teams are alive!
+Moving player Q5 on the field in the 3 direction
+Checking for a collision at point 1x6
+people of both teams are alive!
+Moving player $8 on the field in the 1 direction
+Checking for a collision at point 0x7
+people of both teams are alive!
+Moving player $4 on the field in the 2 direction
+Moving player $4 on the field in the 0 direction
+Checking for a collision at point 1x6
+Player of team $ is hopping onto space 1x6
+Player Q5 has been crushed
+people of both teams are alive!
+Moving player Q6 on the field in the 0 direction
+Checking for a collision at point 0x9
+people of both teams are alive!
+Moving player $5 on the field in the 2 direction
+Nevermind, the player has been hit & can't move.
+people of both teams are alive!
+Moving player $1 on the field in the 3 direction
+Checking for a collision at point 2x1
+people of both teams are alive!
+Moving player Q7 on the field in the 2 direction
+Nevermind, the player has been hit & can't move.
+people of both teams are alive!
+Moving player $2 on the field in the 2 direction
+Nevermind, the player has been hit & can't move.
+people of both teams are alive!
+Moving player $3 on the field in the 1 direction
+Checking for a collision at point 2x10
+people of both teams are alive!
+Moving player $7 on the field in the 0 direction
+Nevermind, the player has been hit & can't move.
+people of both teams are alive!
+Moving player Q1 on the field in the 3 direction
+Checking for a collision at point 0x9
+Player of team Q is hopping onto space 0x9
+Player Q6 has been hopped over
+Moving player Q1 on the field in the 3 direction
+Checking for a collision at point 0x8
+people of both teams are alive!
+Moving player Q3 on the field in the 2 direction
+Nevermind, the player has been hit & can't move.
+people of both teams are alive!
+Moving player Q2 on the field in the 3 direction
+Nevermind, the player has been hit & can't move.
+people of both teams are alive!
+Moving player Q4 on the field in the 3 direction
+Nevermind, the player has been hit & can't move.
+people of both teams are alive!
+Turn: 8
+---------------------------------------------------------
+|                      $8 Q1 Q6          Q8             |
+|                   $4                                  |
+|    $1                         $3                      |
+---------------------------------------------------------
+Player:	| Location: | Direction: |
+ Q8	|   0x 13   | North      |
+ $8	|   0x  7   | East       |
+ $4	|   1x  6   | North      |
+ Q6	|   0x  9   | North      |
+ $1	|   2x  1   | West       |
+ $3	|   2x 10   | East       |
+ Q1	|   0x  8   | West       |
+Running a round!
+Moving player Q8 on the field in the 0 direction
+Moving player Q8 on the field in the 2 direction
+Checking for a collision at point 1x13
+people of both teams are alive!
+Moving player $6 on the field in the 2 direction
+Nevermind, the player has been hit & can't move.
+people of both teams are alive!
+Moving player Q5 on the field in the 3 direction
+Nevermind, the player has been hit & can't move.
+people of both teams are alive!
+Moving player $8 on the field in the 1 direction
+Checking for a collision at point 0x8
+Player of team $ is hopping onto space 0x8
+Player Q1 has been crushed
+people of both teams are alive!
+Moving player $4 on the field in the 0 direction
+Checking for a collision at point 0x6
+people of both teams are alive!
+Moving player Q6 on the field in the 0 direction
+Moving player Q6 on the field in the 2 direction
+Checking for a collision at point 1x9
+people of both teams are alive!
+Moving player $5 on the field in the 2 direction
+Nevermind, the player has been hit & can't move.
+people of both teams are alive!
+Moving player $1 on the field in the 3 direction
+Checking for a collision at point 2x0
+people of both teams are alive!
+Moving player Q7 on the field in the 2 direction
+Nevermind, the player has been hit & can't move.
+people of both teams are alive!
+Moving player $2 on the field in the 2 direction
+Nevermind, the player has been hit & can't move.
+people of both teams are alive!
+Moving player $3 on the field in the 1 direction
+Checking for a collision at point 2x11
+people of both teams are alive!
+Moving player $7 on the field in the 0 direction
+Nevermind, the player has been hit & can't move.
+people of both teams are alive!
+Moving player Q1 on the field in the 3 direction
+Nevermind, the player has been hit & can't move.
+people of both teams are alive!
+Moving player Q3 on the field in the 2 direction
+Nevermind, the player has been hit & can't move.
+people of both teams are alive!
+Moving player Q2 on the field in the 3 direction
+Nevermind, the player has been hit & can't move.
+people of both teams are alive!
+Moving player Q4 on the field in the 3 direction
+Nevermind, the player has been hit & can't move.
+people of both teams are alive!
+Turn: 9
+---------------------------------------------------------
+|                   $4    $8                            |
+|                            Q6          Q8             |
+| $1                               $3                   |
+---------------------------------------------------------
+Player:	| Location: | Direction: |
+ Q8	|   1x 13   | South      |
+ $8	|   0x  8   | East       |
+ $4	|   0x  6   | North      |
+ Q6	|   1x  9   | South      |
+ $1	|   2x  0   | West       |
+ $3	|   2x 11   | East       |
+Running a round!
+Moving player Q8 on the field in the 2 direction
+Checking for a collision at point 2x13
+people of both teams are alive!
+Moving player $6 on the field in the 2 direction
+Nevermind, the player has been hit & can't move.
+people of both teams are alive!
+Moving player Q5 on the field in the 3 direction
+Nevermind, the player has been hit & can't move.
+people of both teams are alive!
+Moving player $8 on the field in the 1 direction
+Checking for a collision at point 0x9
+people of both teams are alive!
+Moving player $4 on the field in the 0 direction
+Moving player $4 on the field in the 2 direction
+Checking for a collision at point 1x6
+people of both teams are alive!
+Moving player Q6 on the field in the 2 direction
+Checking for a collision at point 2x9
+people of both teams are alive!
+Moving player $5 on the field in the 2 direction
+Nevermind, the player has been hit & can't move.
+people of both teams are alive!
+Moving player $1 on the field in the 3 direction
+Moving player $1 on the field in the 1 direction
+Checking for a collision at point 2x1
+people of both teams are alive!
+Moving player Q7 on the field in the 2 direction
+Nevermind, the player has been hit & can't move.
+people of both teams are alive!
+Moving player $2 on the field in the 2 direction
+Nevermind, the player has been hit & can't move.
+people of both teams are alive!
+Moving player $3 on the field in the 1 direction
+Checking for a collision at point 2x12
+people of both teams are alive!
+Moving player $7 on the field in the 0 direction
+Nevermind, the player has been hit & can't move.
+people of both teams are alive!
+Moving player Q1 on the field in the 3 direction
+Nevermind, the player has been hit & can't move.
+people of both teams are alive!
+Moving player Q3 on the field in the 2 direction
+Nevermind, the player has been hit & can't move.
+people of both teams are alive!
+Moving player Q2 on the field in the 3 direction
+Nevermind, the player has been hit & can't move.
+people of both teams are alive!
+Moving player Q4 on the field in the 3 direction
+Nevermind, the player has been hit & can't move.
+people of both teams are alive!
+Turn: 10
+---------------------------------------------------------
+|                            $8                         |
+|                   $4                                  |
+|    $1                      Q6       $3 Q8             |
+---------------------------------------------------------
+Player:	| Location: | Direction: |
+ Q8	|   2x 13   | South      |
+ $8	|   0x  9   | East       |
+ $4	|   1x  6   | South      |
+ Q6	|   2x  9   | South      |
+ $1	|   2x  1   | East       |
+ $3	|   2x 12   | East       |
+Running a round!
+Moving player Q8 on the field in the 2 direction
+Moving player Q8 on the field in the 0 direction
+Checking for a collision at point 1x13
+people of both teams are alive!
+Moving player $6 on the field in the 2 direction
+Nevermind, the player has been hit & can't move.
+people of both teams are alive!
+Moving player Q5 on the field in the 3 direction
+Nevermind, the player has been hit & can't move.
+people of both teams are alive!
+Moving player $8 on the field in the 1 direction
+Checking for a collision at point 0x10
+people of both teams are alive!
+Moving player $4 on the field in the 2 direction
+Checking for a collision at point 2x6
+people of both teams are alive!
+Moving player Q6 on the field in the 2 direction
+Moving player Q6 on the field in the 0 direction
+Checking for a collision at point 1x9
+people of both teams are alive!
+Moving player $5 on the field in the 2 direction
+Nevermind, the player has been hit & can't move.
+people of both teams are alive!
+Moving player $1 on the field in the 1 direction
+Checking for a collision at point 2x2
+people of both teams are alive!
+Moving player Q7 on the field in the 2 direction
+Nevermind, the player has been hit & can't move.
+people of both teams are alive!
+Moving player $2 on the field in the 2 direction
+Nevermind, the player has been hit & can't move.
+people of both teams are alive!
+Moving player $3 on the field in the 1 direction
+Checking for a collision at point 2x13
+people of both teams are alive!
+Moving player $7 on the field in the 0 direction
+Nevermind, the player has been hit & can't move.
+people of both teams are alive!
+Moving player Q1 on the field in the 3 direction
+Nevermind, the player has been hit & can't move.
+people of both teams are alive!
+Moving player Q3 on the field in the 2 direction
+Nevermind, the player has been hit & can't move.
+people of both teams are alive!
+Moving player Q2 on the field in the 3 direction
+Nevermind, the player has been hit & can't move.
+people of both teams are alive!
+Moving player Q4 on the field in the 3 direction
+Nevermind, the player has been hit & can't move.
+people of both teams are alive!
+Turn: 11
+---------------------------------------------------------
+|                               $8                      |
+|                            Q6          Q8             |
+|       $1          $4                   $3             |
+---------------------------------------------------------
+Player:	| Location: | Direction: |
+ Q8	|   1x 13   | North      |
+ $8	|   0x 10   | East       |
+ $4	|   2x  6   | South      |
+ Q6	|   1x  9   | North      |
+ $1	|   2x  2   | East       |
+ $3	|   2x 13   | East       |
+Running a round!
+Moving player Q8 on the field in the 0 direction
+Checking for a collision at point 0x13
+people of both teams are alive!
+Moving player $6 on the field in the 2 direction
+Nevermind, the player has been hit & can't move.
+people of both teams are alive!
+Moving player Q5 on the field in the 3 direction
+Nevermind, the player has been hit & can't move.
+people of both teams are alive!
+Moving player $8 on the field in the 1 direction
+Checking for a collision at point 0x11
+people of both teams are alive!
+Moving player $4 on the field in the 2 direction
+Moving player $4 on the field in the 0 direction
+Checking for a collision at point 1x6
+people of both teams are alive!
+Moving player Q6 on the field in the 0 direction
+Checking for a collision at point 0x9
+people of both teams are alive!
+Moving player $5 on the field in the 2 direction
+Nevermind, the player has been hit & can't move.
+people of both teams are alive!
+Moving player $1 on the field in the 1 direction
+Checking for a collision at point 2x3
+people of both teams are alive!
+Moving player Q7 on the field in the 2 direction
+Nevermind, the player has been hit & can't move.
+people of both teams are alive!
+Moving player $2 on the field in the 2 direction
+Nevermind, the player has been hit & can't move.
+people of both teams are alive!
+Moving player $3 on the field in the 1 direction
+Checking for a collision at point 2x14
+people of both teams are alive!
+Moving player $7 on the field in the 0 direction
+Nevermind, the player has been hit & can't move.
+people of both teams are alive!
+Moving player Q1 on the field in the 3 direction
+Nevermind, the player has been hit & can't move.
+people of both teams are alive!
+Moving player Q3 on the field in the 2 direction
+Nevermind, the player has been hit & can't move.
+people of both teams are alive!
+Moving player Q2 on the field in the 3 direction
+Nevermind, the player has been hit & can't move.
+people of both teams are alive!
+Moving player Q4 on the field in the 3 direction
+Nevermind, the player has been hit & can't move.
+people of both teams are alive!
+Turn: 12
+---------------------------------------------------------
+|                            Q6    $8    Q8             |
+|                   $4                                  |
+|          $1                               $3          |
+---------------------------------------------------------
+Player:	| Location: | Direction: |
+ Q8	|   0x 13   | North      |
+ $8	|   0x 11   | East       |
+ $4	|   1x  6   | North      |
+ Q6	|   0x  9   | North      |
+ $1	|   2x  3   | East       |
+ $3	|   2x 14   | East       |
+Running a round!
+Moving player Q8 on the field in the 0 direction
+Moving player Q8 on the field in the 2 direction
+Checking for a collision at point 1x13
+people of both teams are alive!
+Moving player $6 on the field in the 2 direction
+Nevermind, the player has been hit & can't move.
+people of both teams are alive!
+Moving player Q5 on the field in the 3 direction
+Nevermind, the player has been hit & can't move.
+people of both teams are alive!
+Moving player $8 on the field in the 1 direction
+Checking for a collision at point 0x12
+people of both teams are alive!
+Moving player $4 on the field in the 0 direction
+Checking for a collision at point 0x6
+people of both teams are alive!
+Moving player Q6 on the field in the 0 direction
+Moving player Q6 on the field in the 2 direction
+Checking for a collision at point 1x9
+people of both teams are alive!
+Moving player $5 on the field in the 2 direction
+Nevermind, the player has been hit & can't move.
+people of both teams are alive!
+Moving player $1 on the field in the 1 direction
+Checking for a collision at point 2x4
+people of both teams are alive!
+Moving player Q7 on the field in the 2 direction
+Nevermind, the player has been hit & can't move.
+people of both teams are alive!
+Moving player $2 on the field in the 2 direction
+Nevermind, the player has been hit & can't move.
+people of both teams are alive!
+Moving player $3 on the field in the 1 direction
+Checking for a collision at point 2x15
+people of both teams are alive!
+Moving player $7 on the field in the 0 direction
+Nevermind, the player has been hit & can't move.
+people of both teams are alive!
+Moving player Q1 on the field in the 3 direction
+Nevermind, the player has been hit & can't move.
+people of both teams are alive!
+Moving player Q3 on the field in the 2 direction
+Nevermind, the player has been hit & can't move.
+people of both teams are alive!
+Moving player Q2 on the field in the 3 direction
+Nevermind, the player has been hit & can't move.
+people of both teams are alive!
+Moving player Q4 on the field in the 3 direction
+Nevermind, the player has been hit & can't move.
+people of both teams are alive!
+Turn: 13
+---------------------------------------------------------
+|                   $4                $8                |
+|                            Q6          Q8             |
+|             $1                               $3       |
+---------------------------------------------------------
+Player:	| Location: | Direction: |
+ Q8	|   1x 13   | South      |
+ $8	|   0x 12   | East       |
+ $4	|   0x  6   | North      |
+ Q6	|   1x  9   | South      |
+ $1	|   2x  4   | East       |
+ $3	|   2x 15   | East       |
+Running a round!
+Moving player Q8 on the field in the 2 direction
+Checking for a collision at point 2x13
+people of both teams are alive!
+Moving player $6 on the field in the 2 direction
+Nevermind, the player has been hit & can't move.
+people of both teams are alive!
+Moving player Q5 on the field in the 3 direction
+Nevermind, the player has been hit & can't move.
+people of both teams are alive!
+Moving player $8 on the field in the 1 direction
+Checking for a collision at point 0x13
+people of both teams are alive!
+Moving player $4 on the field in the 0 direction
+Moving player $4 on the field in the 2 direction
+Checking for a collision at point 1x6
+people of both teams are alive!
+Moving player Q6 on the field in the 2 direction
+Checking for a collision at point 2x9
+people of both teams are alive!
+Moving player $5 on the field in the 2 direction
+Nevermind, the player has been hit & can't move.
+people of both teams are alive!
+Moving player $1 on the field in the 1 direction
+Checking for a collision at point 2x5
+people of both teams are alive!
+Moving player Q7 on the field in the 2 direction
+Nevermind, the player has been hit & can't move.
+people of both teams are alive!
+Moving player $2 on the field in the 2 direction
+Nevermind, the player has been hit & can't move.
+people of both teams are alive!
+Moving player $3 on the field in the 1 direction
+Checking for a collision at point 2x16
+people of both teams are alive!
+Moving player $7 on the field in the 0 direction
+Nevermind, the player has been hit & can't move.
+people of both teams are alive!
+Moving player Q1 on the field in the 3 direction
+Nevermind, the player has been hit & can't move.
+people of both teams are alive!
+Moving player Q3 on the field in the 2 direction
+Nevermind, the player has been hit & can't move.
+people of both teams are alive!
+Moving player Q2 on the field in the 3 direction
+Nevermind, the player has been hit & can't move.
+people of both teams are alive!
+Moving player Q4 on the field in the 3 direction
+Nevermind, the player has been hit & can't move.
+people of both teams are alive!
+Turn: 14
+---------------------------------------------------------
+|                                        $8             |
+|                   $4                                  |
+|                $1          Q6          Q8       $3    |
+---------------------------------------------------------
+Player:	| Location: | Direction: |
+ Q8	|   2x 13   | South      |
+ $8	|   0x 13   | East       |
+ $4	|   1x  6   | South      |
+ Q6	|   2x  9   | South      |
+ $1	|   2x  5   | East       |
+ $3	|   2x 16   | East       |
+Running a round!
+Moving player Q8 on the field in the 2 direction
+Moving player Q8 on the field in the 0 direction
+Checking for a collision at point 1x13
+people of both teams are alive!
+Moving player $6 on the field in the 2 direction
+Nevermind, the player has been hit & can't move.
+people of both teams are alive!
+Moving player Q5 on the field in the 3 direction
+Nevermind, the player has been hit & can't move.
+people of both teams are alive!
+Moving player $8 on the field in the 1 direction
+Checking for a collision at point 0x14
+people of both teams are alive!
+Moving player $4 on the field in the 2 direction
+Checking for a collision at point 2x6
+people of both teams are alive!
+Moving player Q6 on the field in the 2 direction
+Moving player Q6 on the field in the 0 direction
+Checking for a collision at point 1x9
+people of both teams are alive!
+Moving player $5 on the field in the 2 direction
+Nevermind, the player has been hit & can't move.
+people of both teams are alive!
+Moving player $1 on the field in the 1 direction
+Checking for a collision at point 2x6
+Player of team $ is hopping onto space 2x6
+Player $4 has been hopped over
+Moving player $1 on the field in the 1 direction
+Checking for a collision at point 2x7
+people of both teams are alive!
+Moving player Q7 on the field in the 2 direction
+Nevermind, the player has been hit & can't move.
+people of both teams are alive!
+Moving player $2 on the field in the 2 direction
+Nevermind, the player has been hit & can't move.
+people of both teams are alive!
+Moving player $3 on the field in the 1 direction
+Checking for a collision at point 2x17
+people of both teams are alive!
+Moving player $7 on the field in the 0 direction
+Nevermind, the player has been hit & can't move.
+people of both teams are alive!
+Moving player Q1 on the field in the 3 direction
+Nevermind, the player has been hit & can't move.
+people of both teams are alive!
+Moving player Q3 on the field in the 2 direction
+Nevermind, the player has been hit & can't move.
+people of both teams are alive!
+Moving player Q2 on the field in the 3 direction
+Nevermind, the player has been hit & can't move.
+people of both teams are alive!
+Moving player Q4 on the field in the 3 direction
+Nevermind, the player has been hit & can't move.
+people of both teams are alive!
+Turn: 15
+---------------------------------------------------------
+|                                           $8          |
+|                            Q6          Q8             |
+|                   $4 $1                            $3 |
+---------------------------------------------------------
+Player:	| Location: | Direction: |
+ Q8	|   1x 13   | North      |
+ $8	|   0x 14   | East       |
+ $4	|   2x  6   | South      |
+ Q6	|   1x  9   | North      |
+ $1	|   2x  7   | East       |
+ $3	|   2x 17   | East       |
+Running a round!
+Moving player Q8 on the field in the 0 direction
+Checking for a collision at point 0x13
+people of both teams are alive!
+Moving player $6 on the field in the 2 direction
+Nevermind, the player has been hit & can't move.
+people of both teams are alive!
+Moving player Q5 on the field in the 3 direction
+Nevermind, the player has been hit & can't move.
+people of both teams are alive!
+Moving player $8 on the field in the 1 direction
+Checking for a collision at point 0x15
+people of both teams are alive!
+Moving player $4 on the field in the 2 direction
+Moving player $4 on the field in the 0 direction
+Checking for a collision at point 1x6
+people of both teams are alive!
+Moving player Q6 on the field in the 0 direction
+Checking for a collision at point 0x9
+people of both teams are alive!
+Moving player $5 on the field in the 2 direction
+Nevermind, the player has been hit & can't move.
+people of both teams are alive!
+Moving player $1 on the field in the 1 direction
+Checking for a collision at point 2x8
+people of both teams are alive!
+Moving player Q7 on the field in the 2 direction
+Nevermind, the player has been hit & can't move.
+people of both teams are alive!
+Moving player $2 on the field in the 2 direction
+Nevermind, the player has been hit & can't move.
+people of both teams are alive!
+Moving player $3 on the field in the 1 direction
+Moving player $3 on the field in the 3 direction
+Checking for a collision at point 2x16
+people of both teams are alive!
+Moving player $7 on the field in the 0 direction
+Nevermind, the player has been hit & can't move.
+people of both teams are alive!
+Moving player Q1 on the field in the 3 direction
+Nevermind, the player has been hit & can't move.
+people of both teams are alive!
+Moving player Q3 on the field in the 2 direction
+Nevermind, the player has been hit & can't move.
+people of both teams are alive!
+Moving player Q2 on the field in the 3 direction
+Nevermind, the player has been hit & can't move.
+people of both teams are alive!
+Moving player Q4 on the field in the 3 direction
+Nevermind, the player has been hit & can't move.
+people of both teams are alive!
+Turn: 16
+---------------------------------------------------------
+|                            Q6          Q8    $8       |
+|                   $4                                  |
+|                         $1                      $3    |
+---------------------------------------------------------
+Player:	| Location: | Direction: |
+ Q8	|   0x 13   | North      |
+ $8	|   0x 15   | East       |
+ $4	|   1x  6   | North      |
+ Q6	|   0x  9   | North      |
+ $1	|   2x  8   | East       |
+ $3	|   2x 16   | West       |
+Running a round!
+Moving player Q8 on the field in the 0 direction
+Moving player Q8 on the field in the 2 direction
+Checking for a collision at point 1x13
+people of both teams are alive!
+Moving player $6 on the field in the 2 direction
+Nevermind, the player has been hit & can't move.
+people of both teams are alive!
+Moving player Q5 on the field in the 3 direction
+Nevermind, the player has been hit & can't move.
+people of both teams are alive!
+Moving player $8 on the field in the 1 direction
+Checking for a collision at point 0x16
+people of both teams are alive!
+Moving player $4 on the field in the 0 direction
+Checking for a collision at point 0x6
+people of both teams are alive!
+Moving player Q6 on the field in the 0 direction
+Moving player Q6 on the field in the 2 direction
+Checking for a collision at point 1x9
+people of both teams are alive!
+Moving player $5 on the field in the 2 direction
+Nevermind, the player has been hit & can't move.
+people of both teams are alive!
+Moving player $1 on the field in the 1 direction
+Checking for a collision at point 2x9
+people of both teams are alive!
+Moving player Q7 on the field in the 2 direction
+Nevermind, the player has been hit & can't move.
+people of both teams are alive!
+Moving player $2 on the field in the 2 direction
+Nevermind, the player has been hit & can't move.
+people of both teams are alive!
+Moving player $3 on the field in the 3 direction
+Checking for a collision at point 2x15
+people of both teams are alive!
+Moving player $7 on the field in the 0 direction
+Nevermind, the player has been hit & can't move.
+people of both teams are alive!
+Moving player Q1 on the field in the 3 direction
+Nevermind, the player has been hit & can't move.
+people of both teams are alive!
+Moving player Q3 on the field in the 2 direction
+Nevermind, the player has been hit & can't move.
+people of both teams are alive!
+Moving player Q2 on the field in the 3 direction
+Nevermind, the player has been hit & can't move.
+people of both teams are alive!
+Moving player Q4 on the field in the 3 direction
+Nevermind, the player has been hit & can't move.
+people of both teams are alive!
+Turn: 17
+---------------------------------------------------------
+|                   $4                            $8    |
+|                            Q6          Q8             |
+|                            $1                $3       |
+---------------------------------------------------------
+Player:	| Location: | Direction: |
+ Q8	|   1x 13   | South      |
+ $8	|   0x 16   | East       |
+ $4	|   0x  6   | North      |
+ Q6	|   1x  9   | South      |
+ $1	|   2x  9   | East       |
+ $3	|   2x 15   | West       |
+Running a round!
+Moving player Q8 on the field in the 2 direction
+Checking for a collision at point 2x13
+people of both teams are alive!
+Moving player $6 on the field in the 2 direction
+Nevermind, the player has been hit & can't move.
+people of both teams are alive!
+Moving player Q5 on the field in the 3 direction
+Nevermind, the player has been hit & can't move.
+people of both teams are alive!
+Moving player $8 on the field in the 1 direction
+Checking for a collision at point 0x17
+people of both teams are alive!
+Moving player $4 on the field in the 0 direction
+Moving player $4 on the field in the 2 direction
+Checking for a collision at point 1x6
+people of both teams are alive!
+Moving player Q6 on the field in the 2 direction
+Checking for a collision at point 2x9
+Player of team Q is hopping onto space 2x9
+Player $1 has been crushed
+people of both teams are alive!
+Moving player $5 on the field in the 2 direction
+Nevermind, the player has been hit & can't move.
+people of both teams are alive!
+Moving player $1 on the field in the 1 direction
+Nevermind, the player has been hit & can't move.
+people of both teams are alive!
+Moving player Q7 on the field in the 2 direction
+Nevermind, the player has been hit & can't move.
+people of both teams are alive!
+Moving player $2 on the field in the 2 direction
+Nevermind, the player has been hit & can't move.
+people of both teams are alive!
+Moving player $3 on the field in the 3 direction
+Checking for a collision at point 2x14
+people of both teams are alive!
+Moving player $7 on the field in the 0 direction
+Nevermind, the player has been hit & can't move.
+people of both teams are alive!
+Moving player Q1 on the field in the 3 direction
+Nevermind, the player has been hit & can't move.
+people of both teams are alive!
+Moving player Q3 on the field in the 2 direction
+Nevermind, the player has been hit & can't move.
+people of both teams are alive!
+Moving player Q2 on the field in the 3 direction
+Nevermind, the player has been hit & can't move.
+people of both teams are alive!
+Moving player Q4 on the field in the 3 direction
+Nevermind, the player has been hit & can't move.
+people of both teams are alive!
+Turn: 18
+---------------------------------------------------------
+|                                                    $8 |
+|                   $4                                  |
+|                            Q6          Q8 $3          |
+---------------------------------------------------------
+Player:	| Location: | Direction: |
+ Q8	|   2x 13   | South      |
+ $8	|   0x 17   | East       |
+ $4	|   1x  6   | South      |
+ Q6	|   2x  9   | South      |
+ $3	|   2x 14   | West       |
+Running a round!
+Moving player Q8 on the field in the 2 direction
+Moving player Q8 on the field in the 0 direction
+Checking for a collision at point 1x13
+people of both teams are alive!
+Moving player $6 on the field in the 2 direction
+Nevermind, the player has been hit & can't move.
+people of both teams are alive!
+Moving player Q5 on the field in the 3 direction
+Nevermind, the player has been hit & can't move.
+people of both teams are alive!
+Moving player $8 on the field in the 1 direction
+Moving player $8 on the field in the 3 direction
+Checking for a collision at point 0x16
+people of both teams are alive!
+Moving player $4 on the field in the 2 direction
+Checking for a collision at point 2x6
+people of both teams are alive!
+Moving player Q6 on the field in the 2 direction
+Moving player Q6 on the field in the 0 direction
+Checking for a collision at point 1x9
+people of both teams are alive!
+Moving player $5 on the field in the 2 direction
+Nevermind, the player has been hit & can't move.
+people of both teams are alive!
+Moving player $1 on the field in the 1 direction
+Nevermind, the player has been hit & can't move.
+people of both teams are alive!
+Moving player Q7 on the field in the 2 direction
+Nevermind, the player has been hit & can't move.
+people of both teams are alive!
+Moving player $2 on the field in the 2 direction
+Nevermind, the player has been hit & can't move.
+people of both teams are alive!
+Moving player $3 on the field in the 3 direction
+Checking for a collision at point 2x13
+people of both teams are alive!
+Moving player $7 on the field in the 0 direction
+Nevermind, the player has been hit & can't move.
+people of both teams are alive!
+Moving player Q1 on the field in the 3 direction
+Nevermind, the player has been hit & can't move.
+people of both teams are alive!
+Moving player Q3 on the field in the 2 direction
+Nevermind, the player has been hit & can't move.
+people of both teams are alive!
+Moving player Q2 on the field in the 3 direction
+Nevermind, the player has been hit & can't move.
+people of both teams are alive!
+Moving player Q4 on the field in the 3 direction
+Nevermind, the player has been hit & can't move.
+people of both teams are alive!
+Turn: 19
+---------------------------------------------------------
+|                                                 $8    |
+|                            Q6          Q8             |
+|                   $4                   $3             |
+---------------------------------------------------------
+Player:	| Location: | Direction: |
+ Q8	|   1x 13   | North      |
+ $8	|   0x 16   | West       |
+ $4	|   2x  6   | South      |
+ Q6	|   1x  9   | North      |
+ $3	|   2x 13   | West       |
+Running a round!
+Moving player Q8 on the field in the 0 direction
+Checking for a collision at point 0x13
+people of both teams are alive!
+Moving player $6 on the field in the 2 direction
+Nevermind, the player has been hit & can't move.
+people of both teams are alive!
+Moving player Q5 on the field in the 3 direction
+Nevermind, the player has been hit & can't move.
+people of both teams are alive!
+Moving player $8 on the field in the 3 direction
+Checking for a collision at point 0x15
+people of both teams are alive!
+Moving player $4 on the field in the 2 direction
+Moving player $4 on the field in the 0 direction
+Checking for a collision at point 1x6
+people of both teams are alive!
+Moving player Q6 on the field in the 0 direction
+Checking for a collision at point 0x9
+people of both teams are alive!
+Moving player $5 on the field in the 2 direction
+Nevermind, the player has been hit & can't move.
+people of both teams are alive!
+Moving player $1 on the field in the 1 direction
+Nevermind, the player has been hit & can't move.
+people of both teams are alive!
+Moving player Q7 on the field in the 2 direction
+Nevermind, the player has been hit & can't move.
+people of both teams are alive!
+Moving player $2 on the field in the 2 direction
+Nevermind, the player has been hit & can't move.
+people of both teams are alive!
+Moving player $3 on the field in the 3 direction
+Checking for a collision at point 2x12
+people of both teams are alive!
+Moving player $7 on the field in the 0 direction
+Nevermind, the player has been hit & can't move.
+people of both teams are alive!
+Moving player Q1 on the field in the 3 direction
+Nevermind, the player has been hit & can't move.
+people of both teams are alive!
+Moving player Q3 on the field in the 2 direction
+Nevermind, the player has been hit & can't move.
+people of both teams are alive!
+Moving player Q2 on the field in the 3 direction
+Nevermind, the player has been hit & can't move.
+people of both teams are alive!
+Moving player Q4 on the field in the 3 direction
+Nevermind, the player has been hit & can't move.
+people of both teams are alive!
+Turn: 20
+---------------------------------------------------------
+|                            Q6          Q8    $8       |
+|                   $4                                  |
+|                                     $3                |
+---------------------------------------------------------
+Player:	| Location: | Direction: |
+ Q8	|   0x 13   | North      |
+ $8	|   0x 15   | West       |
+ $4	|   1x  6   | North      |
+ Q6	|   0x  9   | North      |
+ $3	|   2x 12   | West       |
+Running a round!
+Moving player Q8 on the field in the 0 direction
+Moving player Q8 on the field in the 2 direction
+Checking for a collision at point 1x13
+people of both teams are alive!
+Moving player $6 on the field in the 2 direction
+Nevermind, the player has been hit & can't move.
+people of both teams are alive!
+Moving player Q5 on the field in the 3 direction
+Nevermind, the player has been hit & can't move.
+people of both teams are alive!
+Moving player $8 on the field in the 3 direction
+Checking for a collision at point 0x14
+people of both teams are alive!
+Moving player $4 on the field in the 0 direction
+Checking for a collision at point 0x6
+people of both teams are alive!
+Moving player Q6 on the field in the 0 direction
+Moving player Q6 on the field in the 2 direction
+Checking for a collision at point 1x9
+people of both teams are alive!
+Moving player $5 on the field in the 2 direction
+Nevermind, the player has been hit & can't move.
+people of both teams are alive!
+Moving player $1 on the field in the 1 direction
+Nevermind, the player has been hit & can't move.
+people of both teams are alive!
+Moving player Q7 on the field in the 2 direction
+Nevermind, the player has been hit & can't move.
+people of both teams are alive!
+Moving player $2 on the field in the 2 direction
+Nevermind, the player has been hit & can't move.
+people of both teams are alive!
+Moving player $3 on the field in the 3 direction
+Checking for a collision at point 2x11
+people of both teams are alive!
+Moving player $7 on the field in the 0 direction
+Nevermind, the player has been hit & can't move.
+people of both teams are alive!
+Moving player Q1 on the field in the 3 direction
+Nevermind, the player has been hit & can't move.
+people of both teams are alive!
+Moving player Q3 on the field in the 2 direction
+Nevermind, the player has been hit & can't move.
+people of both teams are alive!
+Moving player Q2 on the field in the 3 direction
+Nevermind, the player has been hit & can't move.
+people of both teams are alive!
+Moving player Q4 on the field in the 3 direction
+Nevermind, the player has been hit & can't move.
+people of both teams are alive!
+Turn: 21
+---------------------------------------------------------
+|                   $4                      $8          |
+|                            Q6          Q8             |
+|                                  $3                   |
+---------------------------------------------------------
+Player:	| Location: | Direction: |
+ Q8	|   1x 13   | South      |
+ $8	|   0x 14   | West       |
+ $4	|   0x  6   | North      |
+ Q6	|   1x  9   | South      |
+ $3	|   2x 11   | West       |
+Running a round!
+Moving player Q8 on the field in the 2 direction
+Checking for a collision at point 2x13
+people of both teams are alive!
+Moving player $6 on the field in the 2 direction
+Nevermind, the player has been hit & can't move.
+people of both teams are alive!
+Moving player Q5 on the field in the 3 direction
+Nevermind, the player has been hit & can't move.
+people of both teams are alive!
+Moving player $8 on the field in the 3 direction
+Checking for a collision at point 0x13
+people of both teams are alive!
+Moving player $4 on the field in the 0 direction
+Moving player $4 on the field in the 2 direction
+Checking for a collision at point 1x6
+people of both teams are alive!
+Moving player Q6 on the field in the 2 direction
+Checking for a collision at point 2x9
+people of both teams are alive!
+Moving player $5 on the field in the 2 direction
+Nevermind, the player has been hit & can't move.
+people of both teams are alive!
+Moving player $1 on the field in the 1 direction
+Nevermind, the player has been hit & can't move.
+people of both teams are alive!
+Moving player Q7 on the field in the 2 direction
+Nevermind, the player has been hit & can't move.
+people of both teams are alive!
+Moving player $2 on the field in the 2 direction
+Nevermind, the player has been hit & can't move.
+people of both teams are alive!
+Moving player $3 on the field in the 3 direction
+Checking for a collision at point 2x10
+people of both teams are alive!
+Moving player $7 on the field in the 0 direction
+Nevermind, the player has been hit & can't move.
+people of both teams are alive!
+Moving player Q1 on the field in the 3 direction
+Nevermind, the player has been hit & can't move.
+people of both teams are alive!
+Moving player Q3 on the field in the 2 direction
+Nevermind, the player has been hit & can't move.
+people of both teams are alive!
+Moving player Q2 on the field in the 3 direction
+Nevermind, the player has been hit & can't move.
+people of both teams are alive!
+Moving player Q4 on the field in the 3 direction
+Nevermind, the player has been hit & can't move.
+people of both teams are alive!
+Turn: 22
+---------------------------------------------------------
+|                                        $8             |
+|                   $4                                  |
+|                            Q6 $3       Q8             |
+---------------------------------------------------------
+Player:	| Location: | Direction: |
+ Q8	|   2x 13   | South      |
+ $8	|   0x 13   | West       |
+ $4	|   1x  6   | South      |
+ Q6	|   2x  9   | South      |
+ $3	|   2x 10   | West       |
+Running a round!
+Moving player Q8 on the field in the 2 direction
+Moving player Q8 on the field in the 0 direction
+Checking for a collision at point 1x13
+people of both teams are alive!
+Moving player $6 on the field in the 2 direction
+Nevermind, the player has been hit & can't move.
+people of both teams are alive!
+Moving player Q5 on the field in the 3 direction
+Nevermind, the player has been hit & can't move.
+people of both teams are alive!
+Moving player $8 on the field in the 3 direction
+Checking for a collision at point 0x12
+people of both teams are alive!
+Moving player $4 on the field in the 2 direction
+Checking for a collision at point 2x6
+people of both teams are alive!
+Moving player Q6 on the field in the 2 direction
+Moving player Q6 on the field in the 0 direction
+Checking for a collision at point 1x9
+people of both teams are alive!
+Moving player $5 on the field in the 2 direction
+Nevermind, the player has been hit & can't move.
+people of both teams are alive!
+Moving player $1 on the field in the 1 direction
+Nevermind, the player has been hit & can't move.
+people of both teams are alive!
+Moving player Q7 on the field in the 2 direction
+Nevermind, the player has been hit & can't move.
+people of both teams are alive!
+Moving player $2 on the field in the 2 direction
+Nevermind, the player has been hit & can't move.
+people of both teams are alive!
+Moving player $3 on the field in the 3 direction
+Checking for a collision at point 2x9
+people of both teams are alive!
+Moving player $7 on the field in the 0 direction
+Nevermind, the player has been hit & can't move.
+people of both teams are alive!
+Moving player Q1 on the field in the 3 direction
+Nevermind, the player has been hit & can't move.
+people of both teams are alive!
+Moving player Q3 on the field in the 2 direction
+Nevermind, the player has been hit & can't move.
+people of both teams are alive!
+Moving player Q2 on the field in the 3 direction
+Nevermind, the player has been hit & can't move.
+people of both teams are alive!
+Moving player Q4 on the field in the 3 direction
+Nevermind, the player has been hit & can't move.
+people of both teams are alive!
+Turn: 23
+---------------------------------------------------------
+|                                     $8                |
+|                            Q6          Q8             |
+|                   $4       $3                         |
+---------------------------------------------------------
+Player:	| Location: | Direction: |
+ Q8	|   1x 13   | North      |
+ $8	|   0x 12   | West       |
+ $4	|   2x  6   | South      |
+ Q6	|   1x  9   | North      |
+ $3	|   2x  9   | West       |
+Running a round!
+Moving player Q8 on the field in the 0 direction
+Checking for a collision at point 0x13
+people of both teams are alive!
+Moving player $6 on the field in the 2 direction
+Nevermind, the player has been hit & can't move.
+people of both teams are alive!
+Moving player Q5 on the field in the 3 direction
+Nevermind, the player has been hit & can't move.
+people of both teams are alive!
+Moving player $8 on the field in the 3 direction
+Checking for a collision at point 0x11
+people of both teams are alive!
+Moving player $4 on the field in the 2 direction
+Moving player $4 on the field in the 0 direction
+Checking for a collision at point 1x6
+people of both teams are alive!
+Moving player Q6 on the field in the 0 direction
+Checking for a collision at point 0x9
+people of both teams are alive!
+Moving player $5 on the field in the 2 direction
+Nevermind, the player has been hit & can't move.
+people of both teams are alive!
+Moving player $1 on the field in the 1 direction
+Nevermind, the player has been hit & can't move.
+people of both teams are alive!
+Moving player Q7 on the field in the 2 direction
+Nevermind, the player has been hit & can't move.
+people of both teams are alive!
+Moving player $2 on the field in the 2 direction
+Nevermind, the player has been hit & can't move.
+people of both teams are alive!
+Moving player $3 on the field in the 3 direction
+Checking for a collision at point 2x8
+people of both teams are alive!
+Moving player $7 on the field in the 0 direction
+Nevermind, the player has been hit & can't move.
+people of both teams are alive!
+Moving player Q1 on the field in the 3 direction
+Nevermind, the player has been hit & can't move.
+people of both teams are alive!
+Moving player Q3 on the field in the 2 direction
+Nevermind, the player has been hit & can't move.
+people of both teams are alive!
+Moving player Q2 on the field in the 3 direction
+Nevermind, the player has been hit & can't move.
+people of both teams are alive!
+Moving player Q4 on the field in the 3 direction
+Nevermind, the player has been hit & can't move.
+people of both teams are alive!
+Turn: 24
+---------------------------------------------------------
+|                            Q6    $8    Q8             |
+|                   $4                                  |
+|                         $3                            |
+---------------------------------------------------------
+Player:	| Location: | Direction: |
+ Q8	|   0x 13   | North      |
+ $8	|   0x 11   | West       |
+ $4	|   1x  6   | North      |
+ Q6	|   0x  9   | North      |
+ $3	|   2x  8   | West       |
+Running a round!
+Moving player Q8 on the field in the 0 direction
+Moving player Q8 on the field in the 2 direction
+Checking for a collision at point 1x13
+people of both teams are alive!
+Moving player $6 on the field in the 2 direction
+Nevermind, the player has been hit & can't move.
+people of both teams are alive!
+Moving player Q5 on the field in the 3 direction
+Nevermind, the player has been hit & can't move.
+people of both teams are alive!
+Moving player $8 on the field in the 3 direction
+Checking for a collision at point 0x10
+people of both teams are alive!
+Moving player $4 on the field in the 0 direction
+Checking for a collision at point 0x6
+people of both teams are alive!
+Moving player Q6 on the field in the 0 direction
+Moving player Q6 on the field in the 2 direction
+Checking for a collision at point 1x9
+people of both teams are alive!
+Moving player $5 on the field in the 2 direction
+Nevermind, the player has been hit & can't move.
+people of both teams are alive!
+Moving player $1 on the field in the 1 direction
+Nevermind, the player has been hit & can't move.
+people of both teams are alive!
+Moving player Q7 on the field in the 2 direction
+Nevermind, the player has been hit & can't move.
+people of both teams are alive!
+Moving player $2 on the field in the 2 direction
+Nevermind, the player has been hit & can't move.
+people of both teams are alive!
+Moving player $3 on the field in the 3 direction
+Checking for a collision at point 2x7
+people of both teams are alive!
+Moving player $7 on the field in the 0 direction
+Nevermind, the player has been hit & can't move.
+people of both teams are alive!
+Moving player Q1 on the field in the 3 direction
+Nevermind, the player has been hit & can't move.
+people of both teams are alive!
+Moving player Q3 on the field in the 2 direction
+Nevermind, the player has been hit & can't move.
+people of both teams are alive!
+Moving player Q2 on the field in the 3 direction
+Nevermind, the player has been hit & can't move.
+people of both teams are alive!
+Moving player Q4 on the field in the 3 direction
+Nevermind, the player has been hit & can't move.
+people of both teams are alive!
+Turn: 25
+---------------------------------------------------------
+|                   $4          $8                      |
+|                            Q6          Q8             |
+|                      $3                               |
+---------------------------------------------------------
+Player:	| Location: | Direction: |
+ Q8	|   1x 13   | South      |
+ $8	|   0x 10   | West       |
+ $4	|   0x  6   | North      |
+ Q6	|   1x  9   | South      |
+ $3	|   2x  7   | West       |
+Running a round!
+Moving player Q8 on the field in the 2 direction
+Checking for a collision at point 2x13
+people of both teams are alive!
+Moving player $6 on the field in the 2 direction
+Nevermind, the player has been hit & can't move.
+people of both teams are alive!
+Moving player Q5 on the field in the 3 direction
+Nevermind, the player has been hit & can't move.
+people of both teams are alive!
+Moving player $8 on the field in the 3 direction
+Checking for a collision at point 0x9
+people of both teams are alive!
+Moving player $4 on the field in the 0 direction
+Moving player $4 on the field in the 2 direction
+Checking for a collision at point 1x6
+people of both teams are alive!
+Moving player Q6 on the field in the 2 direction
+Checking for a collision at point 2x9
+people of both teams are alive!
+Moving player $5 on the field in the 2 direction
+Nevermind, the player has been hit & can't move.
+people of both teams are alive!
+Moving player $1 on the field in the 1 direction
+Nevermind, the player has been hit & can't move.
+people of both teams are alive!
+Moving player Q7 on the field in the 2 direction
+Nevermind, the player has been hit & can't move.
+people of both teams are alive!
+Moving player $2 on the field in the 2 direction
+Nevermind, the player has been hit & can't move.
+people of both teams are alive!
+Moving player $3 on the field in the 3 direction
+Checking for a collision at point 2x6
+people of both teams are alive!
+Moving player $7 on the field in the 0 direction
+Nevermind, the player has been hit & can't move.
+people of both teams are alive!
+Moving player Q1 on the field in the 3 direction
+Nevermind, the player has been hit & can't move.
+people of both teams are alive!
+Moving player Q3 on the field in the 2 direction
+Nevermind, the player has been hit & can't move.
+people of both teams are alive!
+Moving player Q2 on the field in the 3 direction
+Nevermind, the player has been hit & can't move.
+people of both teams are alive!
+Moving player Q4 on the field in the 3 direction
+Nevermind, the player has been hit & can't move.
+people of both teams are alive!
+Turn: 26
+---------------------------------------------------------
+|                            $8                         |
+|                   $4                                  |
+|                   $3       Q6          Q8             |
+---------------------------------------------------------
+Player:	| Location: | Direction: |
+ Q8	|   2x 13   | South      |
+ $8	|   0x  9   | West       |
+ $4	|   1x  6   | South      |
+ Q6	|   2x  9   | South      |
+ $3	|   2x  6   | West       |
+Running a round!
+Moving player Q8 on the field in the 2 direction
+Moving player Q8 on the field in the 0 direction
+Checking for a collision at point 1x13
+people of both teams are alive!
+Moving player $6 on the field in the 2 direction
+Nevermind, the player has been hit & can't move.
+people of both teams are alive!
+Moving player Q5 on the field in the 3 direction
+Nevermind, the player has been hit & can't move.
+people of both teams are alive!
+Moving player $8 on the field in the 3 direction
+Checking for a collision at point 0x8
+people of both teams are alive!
+Moving player $4 on the field in the 2 direction
+Checking for a collision at point 2x6
+Player of team $ is hopping onto space 2x6
+Player $3 has been hopped over
+Moving player $4 on the field in the 2 direction
+Moving player $4 on the field in the 0 direction
+Checking for a collision at point 1x6
+people of both teams are alive!
+Moving player Q6 on the field in the 2 direction
+Moving player Q6 on the field in the 0 direction
+Checking for a collision at point 1x9
+people of both teams are alive!
+Moving player $5 on the field in the 2 direction
+Nevermind, the player has been hit & can't move.
+people of both teams are alive!
+Moving player $1 on the field in the 1 direction
+Nevermind, the player has been hit & can't move.
+people of both teams are alive!
+Moving player Q7 on the field in the 2 direction
+Nevermind, the player has been hit & can't move.
+people of both teams are alive!
+Moving player $2 on the field in the 2 direction
+Nevermind, the player has been hit & can't move.
+people of both teams are alive!
+Moving player $3 on the field in the 3 direction
+Checking for a collision at point 2x5
+people of both teams are alive!
+Moving player $7 on the field in the 0 direction
+Nevermind, the player has been hit & can't move.
+people of both teams are alive!
+Moving player Q1 on the field in the 3 direction
+Nevermind, the player has been hit & can't move.
+people of both teams are alive!
+Moving player Q3 on the field in the 2 direction
+Nevermind, the player has been hit & can't move.
+people of both teams are alive!
+Moving player Q2 on the field in the 3 direction
+Nevermind, the player has been hit & can't move.
+people of both teams are alive!
+Moving player Q4 on the field in the 3 direction
+Nevermind, the player has been hit & can't move.
+people of both teams are alive!
+Turn: 27
+---------------------------------------------------------
+|                         $8                            |
+|                   $4       Q6          Q8             |
+|                $3                                     |
+---------------------------------------------------------
+Player:	| Location: | Direction: |
+ Q8	|   1x 13   | North      |
+ $8	|   0x  8   | West       |
+ $4	|   1x  6   | North      |
+ Q6	|   1x  9   | North      |
+ $3	|   2x  5   | West       |
+Running a round!
+Moving player Q8 on the field in the 0 direction
+Checking for a collision at point 0x13
+people of both teams are alive!
+Moving player $6 on the field in the 2 direction
+Nevermind, the player has been hit & can't move.
+people of both teams are alive!
+Moving player Q5 on the field in the 3 direction
+Nevermind, the player has been hit & can't move.
+people of both teams are alive!
+Moving player $8 on the field in the 3 direction
+Checking for a collision at point 0x7
+people of both teams are alive!
+Moving player $4 on the field in the 0 direction
+Checking for a collision at point 0x6
+people of both teams are alive!
+Moving player Q6 on the field in the 0 direction
+Checking for a collision at point 0x9
+people of both teams are alive!
+Moving player $5 on the field in the 2 direction
+Nevermind, the player has been hit & can't move.
+people of both teams are alive!
+Moving player $1 on the field in the 1 direction
+Nevermind, the player has been hit & can't move.
+people of both teams are alive!
+Moving player Q7 on the field in the 2 direction
+Nevermind, the player has been hit & can't move.
+people of both teams are alive!
+Moving player $2 on the field in the 2 direction
+Nevermind, the player has been hit & can't move.
+people of both teams are alive!
+Moving player $3 on the field in the 3 direction
+Checking for a collision at point 2x4
+people of both teams are alive!
+Moving player $7 on the field in the 0 direction
+Nevermind, the player has been hit & can't move.
+people of both teams are alive!
+Moving player Q1 on the field in the 3 direction
+Nevermind, the player has been hit & can't move.
+people of both teams are alive!
+Moving player Q3 on the field in the 2 direction
+Nevermind, the player has been hit & can't move.
+people of both teams are alive!
+Moving player Q2 on the field in the 3 direction
+Nevermind, the player has been hit & can't move.
+people of both teams are alive!
+Moving player Q4 on the field in the 3 direction
+Nevermind, the player has been hit & can't move.
+people of both teams are alive!
+Turn: 28
+---------------------------------------------------------
+|                   $4 $8    Q6          Q8             |
+|                                                       |
+|             $3                                        |
+---------------------------------------------------------
+Player:	| Location: | Direction: |
+ Q8	|   0x 13   | North      |
+ $8	|   0x  7   | West       |
+ $4	|   0x  6   | North      |
+ Q6	|   0x  9   | North      |
+ $3	|   2x  4   | West       |
+Running a round!
+Moving player Q8 on the field in the 0 direction
+Moving player Q8 on the field in the 2 direction
+Checking for a collision at point 1x13
+people of both teams are alive!
+Moving player $6 on the field in the 2 direction
+Nevermind, the player has been hit & can't move.
+people of both teams are alive!
+Moving player Q5 on the field in the 3 direction
+Nevermind, the player has been hit & can't move.
+people of both teams are alive!
+Moving player $8 on the field in the 3 direction
+Checking for a collision at point 0x6
+Player of team $ is hopping onto space 0x6
+Player $4 has been hopped over
+Moving player $8 on the field in the 3 direction
+Checking for a collision at point 0x5
+people of both teams are alive!
+Moving player $4 on the field in the 0 direction
+Moving player $4 on the field in the 2 directi

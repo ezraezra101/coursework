@@ -1,0 +1,89 @@
+--------------------------------------------------------------------------------
+Release 14.5 Trace  (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx\14.5\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 3
+-n 3 -fastpaths -xml Hex2Seg.twx Hex2Seg.ncd -o Hex2Seg.twr Hex2Seg.pcf -ucf
+Hex2seg.ucf
+
+Design file:              Hex2Seg.ncd
+Physical constraint file: Hex2Seg.pcf
+Device,package,speed:     xc6slx16,csg324,C,-3 (PRODUCTION 1.23 2013-03-26)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Pad to Pad
+---------------+---------------+---------+
+Source Pad     |Destination Pad|  Delay  |
+---------------+---------------+---------+
+D<0>           |segs<0>        |    7.390|
+D<0>           |segs<1>        |    7.691|
+D<0>           |segs<2>        |    7.482|
+D<0>           |segs<3>        |    8.112|
+D<0>           |segs<4>        |    7.760|
+D<0>           |segs<5>        |    7.931|
+D<0>           |segs<6>        |    8.455|
+D<1>           |segs<0>        |    7.382|
+D<1>           |segs<1>        |    7.989|
+D<1>           |segs<2>        |    7.474|
+D<1>           |segs<3>        |    7.829|
+D<1>           |segs<4>        |    8.058|
+D<1>           |segs<5>        |    8.070|
+D<1>           |segs<6>        |    8.172|
+D<2>           |segs<0>        |    7.566|
+D<2>           |segs<1>        |    7.782|
+D<2>           |segs<2>        |    7.658|
+D<2>           |segs<3>        |    8.138|
+D<2>           |segs<4>        |    7.851|
+D<2>           |segs<5>        |    7.840|
+D<2>           |segs<6>        |    8.481|
+D<3>           |segs<0>        |    7.515|
+D<3>           |segs<1>        |    7.959|
+D<3>           |segs<2>        |    7.607|
+D<3>           |segs<3>        |    8.203|
+D<3>           |segs<4>        |    8.028|
+D<3>           |segs<5>        |    7.997|
+D<3>           |segs<6>        |    8.546|
+decPt          |DP             |   11.250|
+sgn            |DP             |   10.619|
+sgn            |segs<0>        |   11.046|
+sgn            |segs<1>        |   11.048|
+sgn            |segs<2>        |   11.138|
+sgn            |segs<3>        |   10.681|
+sgn            |segs<4>        |   11.117|
+sgn            |segs<5>        |   10.849|
+sgn            |segs<6>        |   11.024|
+---------------+---------------+---------+
+
+
+Analysis completed Thu Dec 05 08:46:12 2013 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 219 MB
+
+
+

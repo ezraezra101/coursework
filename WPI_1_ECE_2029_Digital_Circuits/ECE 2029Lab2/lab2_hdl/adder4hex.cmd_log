@@ -1,0 +1,33 @@
+xst -intstyle ise -ifn "E:/ECE 2029/lab2_hdl/adder4hex.xst" -ofn "E:/ECE 2029/lab2_hdl/adder4hex.syr" 
+xst -intstyle ise -ifn "E:/ECE 2029/lab2_hdl/adder4hex.xst" -ofn "E:/ECE 2029/lab2_hdl/adder4hex.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc adder4hex.ucf -p xc6slx16-csg324-3 "adder4hex.ngc" adder4hex.ngd  
+xst -intstyle ise -ifn "E:/ECE 2029/lab2_hdl/adder4hex.xst" -ofn "E:/ECE 2029/lab2_hdl/adder4hex.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc adder4hex.ucf -p xc6slx16-csg324-3 "adder4hex.ngc" adder4hex.ngd  
+xst -intstyle ise -ifn "E:/ECE 2029/lab2_hdl/adder4hex.xst" -ofn "E:/ECE 2029/lab2_hdl/adder4hex.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc adder4hex.ucf -p xc6slx16-csg324-3 "adder4hex.ngc" adder4hex.ngd  
+xst -intstyle ise -ifn "E:/ECE 2029/lab2_hdl/adder4hex.xst" -ofn "E:/ECE 2029/lab2_hdl/adder4hex.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc adder4hex.ucf -p xc6slx16-csg324-3 "adder4hex.ngc" adder4hex.ngd  
+xst -intstyle ise -ifn "E:/ECE 2029/lab2_hdl/adder4hex.xst" -ofn "E:/ECE 2029/lab2_hdl/adder4hex.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc adder4hex.ucf -p xc6slx16-csg324-3 "adder4hex.ngc" adder4hex.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o adder4hex_map.ncd adder4hex.ngd adder4hex.pcf 
+par -w -intstyle ise -ol high -mt off adder4hex_map.ncd adder4hex.ncd adder4hex.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml adder4hex.twx adder4hex.ncd -o adder4hex.twr adder4hex.pcf -ucf adder4hex.ucf 
+bitgen -intstyle ise -f adder4hex.ut adder4hex.ncd 
+xst -intstyle ise -ifn "E:/ECE 2029/lab2_hdl/adder4hex.xst" -ofn "E:/ECE 2029/lab2_hdl/adder4hex.syr" 
+xst -intstyle ise -ifn "E:/ECE 2029/lab2_hdl/adder4hex.xst" -ofn "E:/ECE 2029/lab2_hdl/adder4hex.syr" 
+xst -intstyle ise -ifn "E:/ECE 2029/lab2_hdl/adder4hex.xst" -ofn "E:/ECE 2029/lab2_hdl/adder4hex.syr" 
+xst -intstyle ise -ifn "E:/ECE 2029/lab2_hdl/adder4hex.xst" -ofn "E:/ECE 2029/lab2_hdl/adder4hex.syr" 
+xst -intstyle ise -ifn "E:/ECE 2029/lab2_hdl/adder4hex.xst" -ofn "E:/ECE 2029/lab2_hdl/adder4hex.syr" 
+xst -intstyle ise -ifn "E:/ECE 2029/lab2_hdl/adder4hex.xst" -ofn "E:/ECE 2029/lab2_hdl/adder4hex.syr" 
+xst -intstyle ise -ifn "E:/ECE 2029/lab2_hdl/adder4hex.xst" -ofn "E:/ECE 2029/lab2_hdl/adder4hex.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc adder4hex.ucf -p xc6slx16-csg324-3 "adder4hex.ngc" adder4hex.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o adder4hex_map.ncd adder4hex.ngd adder4hex.pcf 
+par -w -intstyle ise -ol high -mt off adder4hex_map.ncd adder4hex.ncd adder4hex.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml adder4hex.twx adder4hex.ncd -o adder4hex.twr adder4hex.pcf -ucf adder4hex.ucf 
+bitgen -intstyle ise -f adder4hex.ut adder4hex.ncd 
+xst -intstyle ise -ifn "E:/ECE 2029/lab2_hdl/adder4hex.xst" -ofn "E:/ECE 2029/lab2_hdl/adder4hex.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc adder4hex.ucf -p xc6slx16-csg324-3 "adder4hex.ngc" adder4hex.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o adder4hex_map.ncd adder4hex.ngd adder4hex.pcf 
+par -w -intstyle ise -ol high -mt off adder4hex_map.ncd adder4hex.ncd adder4hex.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml adder4hex.twx adder4hex.ncd -o adder4hex.twr adder4hex.pcf -ucf adder4hex.ucf 
+bitgen -intstyle ise -f adder4hex.ut adder4hex.ncd 

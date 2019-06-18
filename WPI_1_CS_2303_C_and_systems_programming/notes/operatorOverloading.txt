@@ -1,0 +1,76 @@
+
+
+
+To delete an array:
+
+delete [] arrayPtr;
+
+
+
+Operator Overloading:
+
+An operator is overloaded by:
+	Writing a NON-STATIC member function
+	or a GLOBAL (not in class) FUNCTION
+	
+
+One of the types an overload operates on must be user defined.
+
+Can't create new operators
+
+Note: the Address operator (&) is overloadable.
+	So is assignment (=) (its dangerous for pointer members)
+	And comma (,) - Yikes
+
+(), [], ->, or any assignment operator can't be overloaded globally (only in member function)
+
+
+To get a commutative operator, it needs to be written twice.
+	
+EG:
+
+class Bigger {
+
+	//Would allow int > Bigger to access private variables of Bigger class
+	friend bool operator>(int &, const Bigger);
+
+public:
+	//Overloading Bigger > x
+	operator>(int x)
+	{
+		//Biggers are always greater than any int ;-P
+		//Note: this only defines Bigger > int, not int > Bigger
+		return true;
+	}
+
+};
+
+bool operator>(int x, Bigger b) { return false; }
+
+//Or:
+ostream &operator<<( ostream & out, PsuedoString x)
+{
+	//This function has to be global, because the leftmost argument is not user defined
+	//Can be a friend of class PsuedoString.
+	out << x.toString();
+	return out;
+}
+
+
+
+
+His program 5 run has over 12000 events
+
+
+
+
+Operators that can be overloaded:
++	-	*	/	%	^	&	|
+~	!	=	<	>	+=	-=	*=
+/=	%=	^=	&=	|=	<<	>>	>>=
+<<=	==	!=	<=	>=	&&	||	++
+--	->*	,	->	[]	()	new	delete
+new[]	delete[]
+
+Note:
+not . * :: or ?: (conditional)

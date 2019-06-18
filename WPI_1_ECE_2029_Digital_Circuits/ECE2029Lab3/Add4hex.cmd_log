@@ -1,0 +1,18 @@
+xst -intstyle ise -ifn "M:/ECE 2029/Lab3/Add4hex.xst" -ofn "M:/ECE 2029/Lab3/Add4hex.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc add4hex.ucf -p xc6slx16-csg324-3 "Add4hex.ngc" Add4hex.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc add4hex.ucf -p xc6slx16-csg324-3 "Add4hex.ngc" Add4hex.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Add4hex_map.ncd Add4hex.ngd Add4hex.pcf 
+par -w -intstyle ise -ol high -mt off Add4hex_map.ncd Add4hex.ncd Add4hex.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Add4hex.twx Add4hex.ncd -o Add4hex.twr Add4hex.pcf -ucf add4hex.ucf 
+bitgen -intstyle ise -f Add4hex.ut Add4hex.ncd 
+xst -intstyle ise -ifn "M:/ECE 2029/Lab3/Add4hex.xst" -ofn "M:/ECE 2029/Lab3/Add4hex.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc add4hex.ucf -p xc6slx16-csg324-3 "Add4hex.ngc" Add4hex.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Add4hex_map.ncd Add4hex.ngd Add4hex.pcf 
+par -w -intstyle ise -ol high -mt off Add4hex_map.ncd Add4hex.ncd Add4hex.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Add4hex.twx Add4hex.ncd -o Add4hex.twr Add4hex.pcf -ucf add4hex.ucf 
+bitgen -intstyle ise -f Add4hex.ut Add4hex.ncd 
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Add4hex_map.ncd Add4hex.ngd Add4hex.pcf 
+par -w -intstyle ise -ol high -mt off Add4hex_map.ncd Add4hex.ncd Add4hex.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Add4hex.twx Add4hex.ncd -o Add4hex.twr Add4hex.pcf -ucf add4hex.ucf 
+bitgen -intstyle ise -f Add4hex.ut Add4hex.ncd 
+xst -intstyle ise -ifn "M:/ECE 2029/Lab3/Add4hex.xst" -ofn "M:/ECE 2029/Lab3/Add4hex.syr" 

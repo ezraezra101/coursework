@@ -1,0 +1,27 @@
+
+
+
+CREATE TABLE Surgeon (
+	id NUMBER(32) Primary Key, -- 32 bit integer physician ID
+	name VARCHAR2(256),
+	address VARCHAR2(1024), -- address with \n newlines
+	speciality VARHAR2(128) DEFAULT 'Emergency',
+);
+
+CREATE TABLE Patient (
+	id NUMBER(32) Primary Key,
+	name VARCHAR2(256),
+	condition VARCHAR2(64),
+	major_injury VARCHAR2(256) NOT NULL,
+	minor_injury VARCHAR2(256),
+	CONSTRAINT conditionVal CHECK (condition in('Critical', 'Serious'))
+);
+
+CREATE TABLE Operation (
+	date DATE,
+	id NUMBER(32),
+	surgeonId NUMBER(32) FOREIGN KEY REFERENCES Surgeon (id),
+	patientId NUMBER(32) FOREIGN KEY REFERENCES Patient (id),
+	CONSTRAINT Operation_PK Primary Key (id)
+	-- For a second, I thought I'd have to cobble together the key with date and foreign keys
+);

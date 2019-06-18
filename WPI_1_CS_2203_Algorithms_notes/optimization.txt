@@ -1,0 +1,32 @@
+
+Optimization:
+	Many approaches:
+		Minimax
+		Dynamic programming
+		Greedy algorithms
+	Good to have an optimal substructure
+		(When you do your divide and conquer, your subproblems are optimal)
+		Optimal solutions use optimal solutions of subproblems.
+	Sometimes almost optimal is good enough
+		Some algorithms will tell us the optimal value but not how to get it.
+
+
+
+Minimax = minimize the maximum payoff for your opponent
+	In some cases == maximin (maximize minimum payoff for self)
+	By John von Neumann, 1928 (2 person zero sum game)
+	
+	
+Dynamic Programming:
+	Programming = use a table.
+	Uses memoization (remembering intermediate results for reuse)
+	(more in 2 weeks)
+
+Greedy Algorithms
+	Choosing the locally optimal solution, hopefully ending in an optimal one later.
+	
+	The Greedy choice property:
+	To use a Greedy Algorithm to find a globally optimal solution, one must prove:
+		That by making the greedy choice, one leaves an Optimal Substructure (the rest of the problem contains an optimal solution).
+		
+	Greedy algorithms fail on things like the knapsack problem.

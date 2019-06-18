@@ -1,0 +1,8 @@
+Release 14.5 Drc P.58f (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Sun Nov 24 17:24:57 2013
+
+drc -z ALU4bit.ncd ALU4bit.pcf
+
+DRC detected 0 errors and 0 warnings.

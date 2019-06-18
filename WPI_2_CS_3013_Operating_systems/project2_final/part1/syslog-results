@@ -1,0 +1,50 @@
+Feb 12 13:18:30 edavis-VirtualBox kernel: [  407.813247] User 1000 is closing file descriptor:	5
+Feb 12 13:18:30 edavis-VirtualBox kernel: [  407.813257] User 1000 is opening file:	/lib/i386-linux-gnu/libc.so.6
+Feb 12 13:18:30 edavis-VirtualBox kernel: [  407.813281] User 1000 is closing file descriptor:	5
+Feb 12 13:18:30 edavis-VirtualBox kernel: [  407.813452] User 1000 is opening file:	/usr/lib/locale/locale-archive
+Feb 12 13:18:30 edavis-VirtualBox kernel: [  407.813468] User 1000 is closing file descriptor:	5
+Feb 12 13:18:30 edavis-VirtualBox kernel: [  407.813516] User 1000 is closing file descriptor:	1
+Feb 12 13:18:30 edavis-VirtualBox kernel: [  407.813521] User 1000 is closing file descriptor:	4
+Feb 12 13:18:30 edavis-VirtualBox kernel: [  407.813532] User 1000 is closing file descriptor:	2
+Feb 12 13:18:30 edavis-VirtualBox kernel: [  407.813607] User 1000 is closing file descriptor:	5
+Feb 12 13:18:30 edavis-VirtualBox kernel: [  407.813651] User 1000 is closing file descriptor:	5
+Feb 12 13:18:30 edavis-VirtualBox kernel: [  407.813716] User 1000 is opening file:	/etc/ld.so.cache
+Feb 12 13:18:30 edavis-VirtualBox kernel: [  407.813723] User 1000 is closing file descriptor:	5
+Feb 12 13:18:30 edavis-VirtualBox kernel: [  407.813732] User 1000 is opening file:	/lib/i386-linux-gnu/libc.so.6
+Feb 12 13:18:30 edavis-VirtualBox kernel: [  407.813754] User 1000 is closing file descriptor:	5
+Feb 12 13:18:30 edavis-VirtualBox kernel: [  407.813915] User 1000 is opening file:	/usr/lib/locale/locale-archive
+Feb 12 13:18:30 edavis-VirtualBox kernel: [  407.813930] User 1000 is closing file descriptor:	5
+Feb 12 13:18:30 edavis-VirtualBox kernel: [  407.813979] User 1000 is closing file descriptor:	1
+Feb 12 13:18:30 edavis-VirtualBox kernel: [  407.813984] User 1000 is closing file descriptor:	4
+Feb 12 13:18:30 edavis-VirtualBox kernel: [  407.813992] User 1000 is closing file descriptor:	2
+Feb 12 13:18:30 edavis-VirtualBox kernel: [  407.814240] User 1000 read from file descriptor 3, but that read contained a VIRUS!
+Feb 12 13:18:30 edavis-VirtualBox kernel: [  407.814255] User 1000 is closing file descriptor:	3
+Feb 12 13:18:30 edavis-VirtualBox kernel: [  407.815755] User 1000 is closing file descriptor:	4
+Feb 12 13:18:30 edavis-VirtualBox kernel: [  407.815906] User 1000 is opening file:	/etc/ld.so.cache
+Feb 12 13:18:30 edavis-VirtualBox kernel: [  407.815914] User 1000 is closing file descriptor:	3
+Feb 12 13:18:30 edavis-VirtualBox kernel: [  407.815923] User 1000 is opening file:	/lib/i386-linux-gnu/libc.so.6
+Feb 12 13:18:30 edavis-VirtualBox kernel: [  407.815946] User 1000 is closing file descriptor:	3
+Feb 12 13:18:30 edavis-VirtualBox kernel: [  407.816264] User 1000 is opening file:	/usr/lib/locale/locale-archive
+Feb 12 13:18:30 edavis-VirtualBox kernel: [  407.816281] User 1000 is closing file descriptor:	3
+Feb 12 13:18:30 edavis-VirtualBox kernel: [  407.816304] User 1000 is opening file:	cleanfile.txt
+Feb 12 13:18:30 edavis-VirtualBox kernel: [  407.817255] User 1000 is closing file descriptor:	3
+Feb 12 13:18:30 edavis-VirtualBox kernel: [  407.817429] User 1000 is closing file descriptor:	1
+Feb 12 13:18:30 edavis-VirtualBox kernel: [  407.817433] User 1000 is closing file descriptor:	2
+Feb 12 13:18:30 edavis-VirtualBox kernel: [  407.817737] User 1000 is opening file:	/etc/ld.so.cache
+Feb 12 13:18:30 edavis-VirtualBox kernel: [  407.817746] User 1000 is closing file descriptor:	3
+Feb 12 13:18:30 edavis-VirtualBox kernel: [  407.817756] User 1000 is opening file:	/lib/i386-linux-gnu/libc.so.6
+Feb 12 13:18:30 edavis-VirtualBox kernel: [  407.817779] User 1000 is closing file descriptor:	3
+Feb 12 13:18:30 edavis-VirtualBox kernel: [  407.817945] User 1000 is opening file:	/usr/lib/locale/locale-archive
+Feb 12 13:18:30 edavis-VirtualBox kernel: [  407.817960] User 1000 is closing file descriptor:	3
+Feb 12 13:18:30 edavis-VirtualBox kernel: [  407.817982] User 1000 is opening file:	infectedfile.txt
+Feb 12 13:18:30 edavis-VirtualBox kernel: [  407.818787] User 1000 read from file descriptor 3, but that read contained a VIRUS!
+Feb 12 13:18:30 edavis-VirtualBox kernel: [  407.818814] User 1000 read from file descriptor 14, but that read contained a VIRUS!
+Feb 12 13:18:30 edavis-VirtualBox kernel: [  407.819045] User 1000 read from file descriptor 3, but that read contained a VIRUS!
+Feb 12 13:18:30 edavis-VirtualBox kernel: [  407.819048] User 1000 is closing file descriptor:	3
+Feb 12 13:18:30 edavis-VirtualBox kernel: [  407.819165] User 1000 is closing file descriptor:	1
+Feb 12 13:18:30 edavis-VirtualBox kernel: [  407.819167] User 1000 is closing file descriptor:	2
+Feb 12 13:18:30 edavis-VirtualBox kernel: [  407.819411] User 1000 is opening file:	/etc/ld.so.cache
+Feb 12 13:18:30 edavis-VirtualBox kernel: [  407.819417] User 1000 is closing file descriptor:	3
+Feb 12 13:18:30 edavis-VirtualBox kernel: [  407.819425] User 1000 is opening file:	/lib/i386-linux-gnu/libc.so.6
+Feb 12 13:18:30 edavis-VirtualBox kernel: [  407.819444] User 1000 is closing file descriptor:	3
+Feb 12 13:18:30 edavis-VirtualBox kernel: [  407.822830] User 1000 is opening file:	./syslog-results

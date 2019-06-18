@@ -1,0 +1,72 @@
+Queues and Trees:
+
+
+3 ways to traverse binary trees: (know by heart for final)
+
+Inorder traversal:
+	Go to the leftmost subtree, then the node, then the right subtree.
+	(prints the tree in increasing order)
+
+Preorder traversal:
+	Visit the Node first, then left subtree, then right subtree
+
+Postorder traversal:
+	Left subtree, right subtree, then node.
+
+LOOK AT POWERPOINT: Data structures
+
+
+
+Stacks:
+
+LIFO (Last In, First Out)
+push & pop
+
+Note: pop usually returns a boolean: whether or not it was successfully popped (that the stack wasn't empty)
+
+Stacks are important because it ts the data structure for calling and returning from function or subroutine calls.
+
+
+Hashing:
+
+	On old compilers, is just represented using an array.
+	Buckets are often represented as short arrays with a few slots
+
+	Symbol tables used by a compiler traditionally use hashes.
+
+	Static hashing is when identifiers (names) are stored in a fixed size table called a hash table.
+
+Standard operations:
+	Determine if name is in table
+	Retrieve attributes of that name
+	Modify the attributes of that name
+	Insert a new name and its attributes in the table
+	(I assume including removing the name should be an operation)
+
+
+	Router example:
+	Downloading packets of data is called the "flow"
+	Flashcrowd is when a whole bunch of flows arrive at the same time.
+	Routers need to keep track of the different flows so that 'hogs' can be punished.
+
+	"Coalescing": Clustering in hash tables are called "coalescing"
+	
+	"Chaining": is when each bucket is represented as a linked list with a header node.
+
+	"Hash function": a hash function f(x) is used to determine the location of an identifier in the hash table.
+	
+	A good hash function is easy to compute and minimizes bucket collisions (ie. be unbiased, & uniformly distribute the symbols)
+
+	An example of a hash function, mid-square, takes the middle two digits of an integer.
+		Modulo is also used as a hash function, f(x) = x % M.   M is the number of buckets or a prime number
+		
+	
+
+MISC::
+	
+	Circular linked list is when a linked list has a maximum size, and when that size is exceeded... look up.########
+	
+	Double buffering is when one buffer gets too full, so another buffer is created. (used when the CPU is faster than I/O)
+	
+Note:
+	Sometimes first node in a linked list is a special head node that contains metadata (like length of list, or location of last item)

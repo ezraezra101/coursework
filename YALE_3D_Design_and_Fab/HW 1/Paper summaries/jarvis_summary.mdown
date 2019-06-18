@@ -1,0 +1,144 @@
+## Techniques discussted in Jarvis' 1983 paper on Range Finding techniques.
+
+### Contrived lighting range finding
+
+##### Striped lighting
+A line of light is projected onto the object being scanned with a camera nearby. The camera's distance and angle to the light projector is well known, so the distance to a particular point can be triangulated using the angle between the light line, the camera, and the projector.
+Once the currently illuminated points (and their angles to the camera) are recorded, the light source is moved over to repeat the process.
+
+- Pros:
+	- Can provide highly accurate results
+	- Relatively straightforward
+	- With a bright light, can work in ambient lighting
+	- Works of curved surfaces
+- Cons:
+	- Doesn't work on dark, brightly lit, or mirrored objects
+	- Shadows (occlusions between parts of the object and the light source) can't be scanned
+	- Slow
+
+#### Grid coding
+
+I didn't fully understand grid coding, so I read the paper Jarvis cites, Grid Coding: A Preprocessing Technique for Robot and Machine Vision (Will and Pennington, 1971). The basic idea is that by projecting a grid onto an object with flat planes, you can segment the image and determine angles between planes, giving relative depth of the object.
+
+- Pros:
+	- Relatively fast - one picture
+- Cons:
+	- Requires a projector
+	- Doesn't give absolute distances
+	- Works best on objects with flat sides
+
+### Relative range from occlusion cues
+
+Finding the relative range from occlusion cues looking at a segmented (objects that touch each other are obviously different in terms of color and/or texture) is relatively simple - if a region is "surrounded" (and thus occluding it) by another, we assume that the first region is in front of the other.
+
+- Pros:
+	- Works on pre-existing images
+- Cons:
+	- Requires a segmented image, which can be tricky to get
+	- Sometimes image does not contain enough clues to order all the features
+	- Not perfectly reliable
+	- Doesn't provide actual distances
+
+Question:
+How do you determine which area is occluding the other? Convexity? Or differentiability at the edge?
+
+### Depth from texture gradient
+
+Determining the depth from texture gradient is basically a fancy way of saying that if an object is farther away, we expect the texture on it to be smaller.
+
+- Pros:
+	- Requires just a picture
+- Cons:
+	- Requires objects to have a standard texture
+	- Moderate computation costs
+
+### Range from focusing
+
+Determining the range from camera focus is one of the simpler methods, adjusting the camera focus, and then determining the distance based on when objects are the least blurred.
+
+- Pros:
+	- Just uses a camera
+	- Simple in concept
+- Cons:
+	- Slowish, requires multiple pictures
+	- Won't work on non-textured images
+
+### Surface Orientation from Image Brightness
+
+Using an image with a known lighting setup and materials in the image, it is possible to determine the normal (and thus get some guesses as to the position) by using the object's BRDF, lighting, and brightness of a pixel.
+
+- Pros:
+	- Intuitive, like human vision
+	- Uses single picture, fast
+- Cons:
+	- Need to control environment (lighting, materials...)
+	- Gives Normal directions, not distance
+
+### Range from Stereo Disparity
+
+Using two pictures from different cameras at a known distance from each other, if you can figure out which pixels from the first image correspond to the second one, you can figure out the depth via triangulation.
+
+- Pros:
+	- Intuitive
+	- Fast
+- Cons:
+	- Need to find matching points, which is tricky
+
+
+### Range from camera motion
+
+TODO
+
+Moving a camera closer to the object being scanned changes the angles to all the objects
+
+
+- Pros:
+
+- Cons:
+	- Computation
+	- Doesn't provide actual distance
+
+### Moiré Fringe Range Contours
+
+By projecting light onto a scene through a screen, and then using a camera through another identical screen provides shadow patterns on the object that reveal its contours. You need to take multiple images (with one of the screens shifted over) to tell the difference between valleys and hills.
+
+- Pros:
+	- Relatively fast
+- Cons:
+	- Can't do on objects with too strong a pattern...
+	- Doesn't give distance, only contours
+
+### Simple Triangulation Range Finder
+
+Straightforward triangulation method: shine a beam of light at a point on the object being scanned and triangulate it based on the angle and distance to a camera. Basically a simpler version of striped lighting.
+
+- Pros:
+	- Simple
+- Cons:
+	- Very slow
+
+### Time-of-Flight Range Finders
+#### Ultrasonic Range Finders
+
+Bat style echo-location (that typically uses multiple frequencies to avoid interference issues).
+
+- Pros:
+	- Works on mirrors
+- Cons:
+	- Low resolution
+	- Bad for planes with a normal not facing the camera (~40° off)
+#### Laser Range Finders
+
+Bounces a laser off an object and measures how long time it takes to make a round trip (or what phase it is when it returns to the source).
+
+- Pros:
+	- No triangulation necessary!
+- Cons:
+	- Expensive, high resolution equipment
+	- Slow, one pixel at a time
+#### Streak Camera Range Finders
+
+A particular type of laser range finder that uses a "streak camera" which can accurately figure out light transit times accurately for a laser pulse.
+
+
+- Pros and cons are similar to other laser range finders.

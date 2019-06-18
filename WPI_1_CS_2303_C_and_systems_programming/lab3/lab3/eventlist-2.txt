@@ -1,0 +1,22 @@
+pid: 1124 time: 5 cpu: 15
+pid: 58623 time: 2 cpu: 3
+pid: 12356 time: 4 cpu: 5
+pid: 83409 time: 7 cpu: 1
+Process ID	| Arrival time	| CPU time	|
+----------------+---------------+---------------|
+PID: 58623	| Time:    2	| CPU:     3	|
+PID: 12356	| Time:    4	| CPU:     5	|
+PID:  1124	| Time:    5	| CPU:    15	|
+PID: 83409	| Time:    7	| CPU:     1	|
+
+The first element's data:
+PID: 58623	| Time:    2	| CPU:     3	|
+
+The second element's data:
+PID: 12356	| Time:    4	| CPU:     5	|
+
+The rest of the list's data:
+Process ID	| Arrival time	| CPU time	|
+----------------+---------------+---------------|
+PID:  1124	| Time:    5	| CPU:    15	|
+PID: 83409	| Time:    7	| CPU:     1	|

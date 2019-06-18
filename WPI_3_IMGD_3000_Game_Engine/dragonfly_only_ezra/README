@@ -1,0 +1,36 @@
+# README
+
+A game engine based *very* closely on Prof. Claypool's Dragonfly text-only teaching game engine.
+
+http://dragonfly.wpi.edu
+
+## Assignment
+Project 2C, complete Dragonfly
+
+## Date
+September 29th 2015
+
+## Author
+Ezra Davis edavis@wpi.edu
+
+## Platform:
+Mac OSX (built on 10.10.5)
+Using SFML 2.3 (installed in usr/local/Cellar/sfml by Homebrew)
+
+## Code Structure:
+All header files are in the "include" directory.
+C++ source files are in the "src" directory.
+The "obj" directory becomes populated with .o files during compilation.
+"unit_tests" contains automatable unit tests' source.
+"integration_tests" contains the source for tests that deal with multiple files/classes and/or require human input.
+
+"unit_tests_exec" and "integration_tests_exec" contain the executables for their respective test types.
+
+The Makefile, resulting archive file, and dragonfly log from testing are in the root directory.
+
+## Notes:
+View Objects are not currently working.
+
+## How to compile:
+Run `make`
+Running `make tests` will build the tests, where `make run_tests`

@@ -1,0 +1,66 @@
+Round trip time of my httpserver running on ccc1.wpi.edu and www.google.com.
+-------------
+(Ezra Davis)
+
+Round trip time.
+----------------
+	Local | Remote   | Laptop->CCC
+	----- | -------- | -----------
+	0ms   |  66ms    |  27ms
+	0ms   |  68ms    |  23ms
+	0ms   |  68ms    |  23ms
+	0ms   |  70ms    |  26ms
+	0ms   |  62ms    |  22ms
+	0ms   |  71ms    |  23ms
+	0ms   |  69ms    |  23ms
+	0ms   |  74ms    |  23ms
+	0ms   |  69ms    |  23ms
+	0ms   |  65ms    |  23ms
+	--------Average-----------
+	0ms   |  68.2ms  |  23.6ms
+
+Detailed printouts of the tests:
+--------------------------------
+
+* Here's a printout of running ./test_round_trip_time.sh on ccc1.wpi.edu:
+
+		Starting server
+		Started server at on port 12345
+		Date: Mon, 16 Nov 18:49:07 GMT
+		Local round trip time:
+		Round trip time: 0ms
+		Round trip time: 0ms
+		Round trip time: 0ms
+		Round trip time: 0ms
+		Round trip time: 0ms
+		Round trip time: 0ms
+		Round trip time: 0ms
+		Round trip time: 0ms
+		Round trip time: 0ms
+		Round trip time: 0ms
+		Shutting server down...
+		Remote www.google.com round trip time:
+		Round trip time: 66ms
+		Round trip time: 68ms
+		Round trip time: 68ms
+		Round trip time: 70ms
+		Round trip time: 62ms
+		Round trip time: 71ms
+		Round trip time: 69ms
+		Round trip time: 74ms
+		Round trip time: 69ms
+		Round trip time: 65ms
+
+
+* I ran a similar test from my laptop to the httpserver running on ccc1.wpi.edu:12345 with these results:
+
+		Round trip time: 27ms
+		Round trip time: 23ms
+		Round trip time: 23ms
+		Round trip time: 26ms
+		Round trip time: 22ms
+		Round trip time: 23ms
+		Round trip time: 23ms
+		Round trip time: 23ms
+		Round trip time: 23ms
+		Round trip time: 23ms

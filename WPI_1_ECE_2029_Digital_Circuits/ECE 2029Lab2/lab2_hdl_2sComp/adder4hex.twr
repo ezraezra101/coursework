@@ -1,0 +1,140 @@
+--------------------------------------------------------------------------------
+Release 14.5 Trace  (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx\14.5\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 3
+-n 3 -fastpaths -xml adder4hex.twx adder4hex.ncd -o adder4hex.twr adder4hex.pcf
+-ucf adder4hex.ucf
+
+Design file:              adder4hex.ncd
+Physical constraint file: adder4hex.pcf
+Device,package,speed:     xc6slx16,csg324,C,-3 (PRODUCTION 1.23 2013-03-26)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Pad to Pad
+---------------+---------------+---------+
+Source Pad     |Destination Pad|  Delay  |
+---------------+---------------+---------+
+A<0>           |OverFlow       |    7.608|
+A<0>           |Sum<0>         |    7.616|
+A<0>           |Sum<1>         |    7.762|
+A<0>           |Sum<2>         |    7.453|
+A<0>           |Sum<3>         |    8.300|
+A<0>           |period         |    8.357|
+A<0>           |segs7<0>       |    9.108|
+A<0>           |segs7<1>       |    8.971|
+A<0>           |segs7<2>       |    7.651|
+A<0>           |segs7<3>       |    7.360|
+A<0>           |segs7<4>       |    8.979|
+A<0>           |segs7<5>       |    8.381|
+A<0>           |segs7<6>       |    9.251|
+A<1>           |OverFlow       |    8.083|
+A<1>           |Sum<1>         |    7.813|
+A<1>           |Sum<2>         |    8.011|
+A<1>           |Sum<3>         |    8.775|
+A<1>           |period         |    8.832|
+A<1>           |segs7<0>       |    9.583|
+A<1>           |segs7<1>       |    9.446|
+A<1>           |segs7<2>       |    8.266|
+A<1>           |segs7<3>       |    7.802|
+A<1>           |segs7<4>       |    9.454|
+A<1>           |segs7<5>       |    8.856|
+A<1>           |segs7<6>       |    9.726|
+A<2>           |OverFlow       |    7.180|
+A<2>           |Sum<2>         |    6.991|
+A<2>           |Sum<3>         |    7.872|
+A<2>           |period         |    7.929|
+A<2>           |segs7<0>       |    8.680|
+A<2>           |segs7<1>       |    8.543|
+A<2>           |segs7<2>       |    7.532|
+A<2>           |segs7<3>       |    7.264|
+A<2>           |segs7<4>       |    8.551|
+A<2>           |segs7<5>       |    7.953|
+A<2>           |segs7<6>       |    8.823|
+A<3>           |OverFlow       |    7.604|
+A<3>           |Sum<3>         |    8.296|
+A<3>           |period         |    8.353|
+A<3>           |segs7<0>       |    9.104|
+A<3>           |segs7<1>       |    8.967|
+A<3>           |segs7<4>       |    8.975|
+A<3>           |segs7<5>       |    7.727|
+A<3>           |segs7<6>       |    9.247|
+B<0>           |OverFlow       |    7.602|
+B<0>           |Sum<0>         |    7.680|
+B<0>           |Sum<1>         |    7.826|
+B<0>           |Sum<2>         |    7.418|
+B<0>           |Sum<3>         |    8.294|
+B<0>           |period         |    8.351|
+B<0>           |segs7<0>       |    9.102|
+B<0>           |segs7<1>       |    8.965|
+B<0>           |segs7<2>       |    7.364|
+B<0>           |segs7<3>       |    7.697|
+B<0>           |segs7<4>       |    8.973|
+B<0>           |segs7<5>       |    8.375|
+B<0>           |segs7<6>       |    9.245|
+B<1>           |OverFlow       |    7.986|
+B<1>           |Sum<1>         |    7.896|
+B<1>           |Sum<2>         |    7.645|
+B<1>           |Sum<3>         |    8.678|
+B<1>           |period         |    8.735|
+B<1>           |segs7<0>       |    9.486|
+B<1>           |segs7<1>       |    9.349|
+B<1>           |segs7<2>       |    7.681|
+B<1>           |segs7<3>       |    7.752|
+B<1>           |segs7<4>       |    9.357|
+B<1>           |segs7<5>       |    8.759|
+B<1>           |segs7<6>       |    9.629|
+B<2>           |OverFlow       |    7.551|
+B<2>           |Sum<2>         |    7.366|
+B<2>           |Sum<3>         |    8.243|
+B<2>           |period         |    8.300|
+B<2>           |segs7<0>       |    9.051|
+B<2>           |segs7<1>       |    8.914|
+B<2>           |segs7<2>       |    7.209|
+B<2>           |segs7<3>       |    7.493|
+B<2>           |segs7<4>       |    8.922|
+B<2>           |segs7<5>       |    8.324|
+B<2>           |segs7<6>       |    9.194|
+B<3>           |OverFlow       |    7.066|
+B<3>           |Sum<3>         |    7.758|
+B<3>           |period         |    7.815|
+B<3>           |segs7<0>       |    8.566|
+B<3>           |segs7<1>       |    8.429|
+B<3>           |segs7<4>       |    8.437|
+B<3>           |segs7<5>       |    8.218|
+B<3>           |segs7<6>       |    8.709|
+---------------+---------------+---------+
+
+
+Analysis completed Thu Nov 14 17:30:03 2013 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 219 MB
+
+
+

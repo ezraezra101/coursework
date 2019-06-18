@@ -1,0 +1,79 @@
+Discrete Event Driven Simulation
+
+Computer/Network Performance should be as efficient & fair as possible
+
+It can be managed 3 ways:
+Empirical (running experiments, keep the data fed into afterwards)
+Analytics (with mathematics, usually assuming random arrival time)
+Simulation ()
+
+
+Queues:
+	2 versions: mathematical, & data structure
+	
+	
+	
+	m/m/1 m=markovian (poissant, or random), 1 = 1 server
+	
+	FCFS = FIFO (first in/come first out/served)
+	
+	Note: when in service, people aren't in a queue
+	
+	
+A typical program bounces between the CPUs and I/Os
+
+			3		X -- H3
+		  /	  \    / 
+Host1 -	1  - 2 - 5						
+		 \	    /  \ 	Routing!
+Host2	  4	- X - X	- H4
+(4 is also connected to 5)
+(this is project 5)
+
+This type of simulation is called
+Discrete Event Driven Simulation
+	(Time is discrete & we only care about events and when they complete)
+	
+Event lists are a special kind of linked list
+
+CPU Queue example:
+ID	Arrival time	CPU time needed
+33		0					3 //sims always run from time 0
+67		1					2		//ID is remembered, but not terribly important
+68		1					1
+69		9					10
+70		10					2
+71		7					5 //Note: not sorted by time, put in place in event list
+
+CPU is represented as a queue
+(ground symbol means empty queue)
+
+(usually as a linked list, sorted by time)
+Event:
+	Next in list (starts as NULL)
+	Arrival time
+	ID
+	CPU time required
+	Event type (arrival)
+	
+once the arrivals are in order, begin simulation.
+Start by getting the front of the list & add it to CPU queue. If the queue is empty (which it is) it goes to the CPU
+
+May want to keep booleans for business of CPU & emptiness of CPU queue
+
+The finished process gets added to the event list (with a new event type)
+
+Then it goes to the next time tick.
+
+If there are multiple events at a tick, then the 2nd (and possibly first) is added to the CPU list
+
+When someone finishes, their response time is recorded & their struct is removed (& triggers other events)
+
+
+
+
+That was a FIFO queue.
+
+Round Robin is fair:
+	Round robin only allows programs to run for X cycles, then go to the end of the queue
+ 

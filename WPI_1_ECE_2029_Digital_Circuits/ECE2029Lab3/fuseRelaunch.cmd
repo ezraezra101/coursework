@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "M:/ECE 2029/Lab3/Hex2seg_Test_isim_beh.exe" -prj "M:/ECE 2029/Lab3/Hex2seg_Test_beh.prj" "work.Hex2seg_Test" "work.glbl" 

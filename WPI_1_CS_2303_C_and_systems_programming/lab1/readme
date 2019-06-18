@@ -1,0 +1,32 @@
+
+
+/*
+Author:				Ezra Davis
+Date:				1/17/2013
+Version:			1
+Project ID:			Lab 1
+CS Class:			CS 2303
+Programming Language:		C
+OS/Hardware dependencies:	how does the program rely on the operating system,
+				   or on the hardware?
+
+Problem Description:		Create a program that averages integers input and prints the average to the screen after the sentinel 9999
+
+Overall Design:			Simple program flow with a for loop in the main function
+
+Program Assumptions 
+      and Restrictions:		User can only enter integers, and enters at least one before the sentinel (9999)
+
+Interfaces:			Simple commandline input.
+				User inputs one integer per line
+
+Implementation Details:		Very simple program
+
+How to build the program:	gcc lab1.c
+
+Program Source:			lab1.c
+
+Additional Files:		requires stdio.h library
+
+References:			C How To Program 7/e  Deitel problem 4.10
+*/

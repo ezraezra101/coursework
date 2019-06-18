@@ -1,0 +1,6 @@
+> Running shell with statistics disabled.
+> > 
+Num	PID	CMD
+[2]	2481	sleep 0.5 
+> Job finished: [2]	2481	sleep 0.5 
+> 

@@ -1,0 +1,94 @@
+Author:				Ezra Davis
+Date:				Thursday, January 30th, 2014
+Version:			2.0
+Project ID:			prog2 (Smashball or Motion Collision Simulation using Arrays in C)
+CS Class:			CS2303
+Programming Language:		C
+OS/Hardware dependencies:	No significant OS/Hardware dependencies
+				
+Problem Description:		
+
+	This is variant one (I) of smashball (the hardest).
+
+	Runs a simple bloody 2 team turn based game. Players move forward, crush opponents, jump over teammates, and bounce off walls.
+	
+	Turn Order Note:
+		By default, this version of smashball picks a team to go first, and then alternates turns between the two teams. It then uses this order for each turn.
+
+Other notes:
+	If the team size is greater than 9, teammembers of higher number will be printed out with only the last digit of their number on the field.
+
+Overall Design:
+		prog2 is (very) roughly organized by the Model-View-Contoller software pattern.
+		This means that controller.c contains most of the functions that perform operations on the data (like main), model.c contains most of the functions that access data, and view.c controls output to screen.
+
+Modifiable attributes:
+	Easily changable attributes are located at the top of header.h
+	They include the size of the smashball field (height & width), the maximum number of turns, the teamsize, teamnames, turns between printouts, randomizing turn order, and how verbose the program is.
+
+Implementation Details:
+	All of the information related to the playing field is in an array (of Player structs) usually called field.
+
+How to build the program:	
+	make			(also removes all .o files in the directory)
+	
+	run the newly created file called prog2 to run the program
+
+Program Source:			controller.c model.c view.c header.h
+
+Additional Files:		
+	README Makefile output1.txt output2.txt output3.txt output4.txt
+
+Results:
+	Each file listed below contains the output of a single execution. The options changed are in header.h, as are more information about what they do.
+
+	output1.txt
+		Options:
+			HEIGHT 3
+			WIDTH 18
+			MAXROUNDS 100
+			TEAMSIZE 8
+			TEAM1 'Q'
+			TEAM2 '$'
+			TURNSBETWEENPRINTS 12
+			RANDOMIZEDTURNORDER true
+			VERBOSE true
+			
+	output2.txt
+		Options:
+			HEIGHT 5
+			WIDTH 5
+			MAXROUNDS 105
+			TEAMSIZE 8
+			TEAM1 'Z'
+			TEAM2 'r'
+			TURNSBETWEENPRINTS 15
+			RANDOMIZEDTURNORDER false
+			VERBOSE false
+			
+	output3.txt (May go off your screen if your terminal isn't extra wide)
+		Options:
+			HEIGHT 50
+			WIDTH 50
+			MAXROUNDS 555
+			TEAMSIZE 17
+			TEAM1 'A'
+			TEAM2 'B'
+			TURNSBETWEENPRINTS 15
+			RANDOMIZEDTURNORDER false
+			VERBOSE false
+	
+	output4.txt
+		Options:
+			HEIGHT 25
+			WIDTH 25
+			MAXROUNDS 100
+			TEAMSIZE 9
+			TEAM1 'A'
+			TEAM2 'B'
+			TURNSBETWEENPRINTS 10
+			RANDOMIZEDTURNORDER false
+			VERBOSE false
+
+References:	
+	Assignment PDF: http://web.cs.wpi.edu/~rek/Systems/C14/Program2_C14.pdf

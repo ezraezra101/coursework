@@ -1,0 +1,40 @@
+Tests run on the virtual memory manager:
+
+
+test_simple_allocate
+    Allocates a single page in memory, and then accesses it multiple times to verify
+    that the value saved does not change. This test uses all API functions provided.
+
+test_simple_allocate (thread-based)
+    As above, but with multiple threads running the same test simultaneously. This
+    allows us to test the thread safety of our manager. 
+
+test_allocate_until_swap
+    This allocates pages until the manager is forced to swap a page from RAM to the
+    backing store (specifically SSD). It then accesses these pages to verify that
+    they may be swapped back into memory.
+
+test_allocate_until_swap_to_disk
+    This allocates pages until the manager is forced to swap a page from the SSD to
+    the hard disk. It then accesses all pages created to verify that they can be
+    successfully swapped back into memory.
+
+memoryMaxer
+    This allocates 1000 pages, the maximum that the virtual memory manager can handle.
+    This is a good way to stretch the virtual memory to its limits. (Note: this test
+    was included in the original project specification and was not written by us.)
+
+test_too_much_mem
+    First, this test allocates 1000 pages, as above. However, it then attempts to
+    allocate one more page, and prints an alert if the 1001st page is allocated
+    successfully (there should not be room in virtual memory)
+
+test_allocate_when_ram_locked
+    This test allocates and locks 25 pages in RAM. It then attempts to allocate one
+    more page, expecting an error because there are no unlocked pages in RAM.
+
+test_freeing
+    This test allocates and immediately frees 2000 pages. If pages were not being
+    freed properly, it would cause this test to print out an error.
+
+Together, these tests verify each aspect of the project specification.

@@ -1,0 +1,40 @@
+pid: 20166 time: 1 cpu: 100
+pid: 14465 time: 10 cpu: 1
+pid: 18732 time: 7 cpu: 7
+pid: 7 time: 0 cpu: 5
+pid: 21213 time: 10 cpu: 16
+pid: 21214 time: 18 cpu: 345
+pid: 11111 time: 11 cpu: 111
+pid: 65437 time: 20 cpu: 22
+pid: 10109 time: 1 cpu: 99
+pid: 88888 time: 88 cpu: 8
+Process ID	| Arrival time	| CPU time	|
+----------------+---------------+---------------|
+PID:     7	| Time:    0	| CPU:     5	|
+PID: 10109	| Time:    1	| CPU:    99	|
+PID: 20166	| Time:    1	| CPU:   100	|
+PID: 18732	| Time:    7	| CPU:     7	|
+PID: 21213	| Time:   10	| CPU:    16	|
+PID: 14465	| Time:   10	| CPU:     1	|
+PID: 11111	| Time:   11	| CPU:   111	|
+PID: 21214	| Time:   18	| CPU:   345	|
+PID: 65437	| Time:   20	| CPU:    22	|
+PID: 88888	| Time:   88	| CPU:     8	|
+
+The first element's data:
+PID:     7	| Time:    0	| CPU:     5	|
+
+The second element's data:
+PID: 10109	| Time:    1	| CPU:    99	|
+
+The rest of the list's data:
+Process ID	| Arrival time	| CPU time	|
+----------------+---------------+---------------|
+PID: 20166	| Time:    1	| CPU:   100	|
+PID: 18732	| Time:    7	| CPU:     7	|
+PID: 21213	| Time:   10	| CPU:    16	|
+PID: 14465	| Time:   10	| CPU:     1	|
+PID: 11111	| Time:   11	| CPU:   111	|
+PID: 21214	| Time:   18	| CPU:   345	|
+PID: 65437	| Time:   20	| CPU:    22	|
+PID: 88888	| Time:   88	| CPU:     8	|

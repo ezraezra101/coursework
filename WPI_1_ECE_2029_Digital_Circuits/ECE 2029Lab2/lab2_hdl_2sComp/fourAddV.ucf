@@ -1,0 +1,16 @@
+NET "B[0]" LOC = "T10";
+NET "B[1]" LOC = "T9";
+NET "B[2]" LOC = "V9";
+NET "B[3]" LOC = "M8";
+
+NET "A[0]" LOC = "N8";
+NET "A[1]" LOC = "U8";
+NET "A[2]" LOC = "V8";
+NET "A[3]" LOC = "T5";
+
+NET "Sum[0]" LOC = "U16";
+NET "Sum[1]" LOC = "V16";
+NET "Sum[2]" LOC = "U15";
+NET "Sum[3]" LOC = "V15";
+
+NET "OverFlow" LOC = "T11";

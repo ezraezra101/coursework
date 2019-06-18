@@ -1,0 +1,31 @@
+## Methods discussed in Kodama's 1981 paper on 3D printing
+
+
+### Mask methods (A and B)
+#### Summary of method A
+Method A lowers the model into a bath of the phtoto-polymer and, using a mask, hardens the top layer by exposing it to UV light.
+
+#### Summary of method B
+Method B mounts a light underneath the photo-polymer bath, and hardens the plastic against a platform that is slowly raised away from the polymer.
+
+#### Findings
+
+The relationship between layer width and time to harden is non-linear, to the point that is is faster to create two 2mm layers instead of a 4 mm layer (for the Xenon lamp)
+
+Layers do not have vertical sides meaning that for layers thicker than 0.5 mm there is a sawtooth pattern on the side of the model.
+
+The thickness of the layers corresponds to the possible resolution, thinner layers means better resolution, and it was easy to get layers as thin as 0.2 mm, though if those layers are overhangs, they can warp.
+
+Method B takes longer to fabricate than method A.
+
+### C
+#### Summary
+Method C is the method most like most modern 3D printers. The model is lowered into a bath of the photo-hardening polymer, and the top layer is exposed to light through a fiber optic cable held by a XY plotter instead of a mask like methods A and B.
+
+#### Findings
+
+The layer thickness solidified depends on the scanning speed and beam diameter.
+When drawing a line that is thicker than the light emitter can solidify in one pass, the emitter needs to make multiple overlapping passes. The passes must be overlapping, or the adjacent lines don't connect and "a continuous layer was not obtained". Overlapping multiple passes doesn't appear to have any effect on the depth of the layer.
+
+Unsurprisingly, method C is much slower than A or B.
+

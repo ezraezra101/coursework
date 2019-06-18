@@ -1,0 +1,141 @@
+20:17:28: GraphicsManager started successfully
+20:17:28: Resource manager starting up!
+20:17:28: Reading in sprites/Instruction1.txt sprite file.
+20:17:28: Reading in sprites/Instruction2.txt sprite file.
+20:17:28: Reading in sprites/The_Gunwale.txt sprite file.
+20:17:28: Reading in sprites/The_Forecastle.txt sprite file.
+20:17:28: Reading in sprites/The_Deck.txt sprite file.
+20:17:28: Reading in sprites/The_Brig.txt sprite file.
+20:17:28: Reading in sprites/The_Hold.txt sprite file.
+20:17:28: Reading in sprites/Chest.txt sprite file.
+20:17:28: Reading in sprites/Bullet_Left.txt sprite file.
+20:17:28: Reading in sprites/Bullet_Right.txt sprite file.
+20:17:28: Reading in sprites/Dolphin.txt sprite file.
+20:17:28: Reading in sprites/Pirate1.txt sprite file.
+20:17:28: Reading in sprites/Pirate1_Walk_Left.txt sprite file.
+20:17:28: Reading in sprites/Pirate1_Walk_Right.txt sprite file.
+20:17:28: Reading in sprites/Pirate1_Stab_Left.txt sprite file.
+20:17:28: Reading in sprites/Pirate1_Stab_Right.txt sprite file.
+20:17:28: Reading in sprites/Pirate1_Shoot_Left.txt sprite file.
+20:17:28: Reading in sprites/Pirate1_Shoot_Right.txt sprite file.
+20:17:28: Reading in sprites/Pirate1.txt sprite file.
+20:17:28: Reading in sprites/Pirate1_Walk_Left.txt sprite file.
+20:17:28: Reading in sprites/Pirate1_Walk_Right.txt sprite file.
+20:17:28: Reading in sprites/Pirate1_Stab_Left.txt sprite file.
+20:17:28: Reading in sprites/Pirate1_Stab_Right.txt sprite file.
+20:17:28: Reading in sprites/Pirate1_Shoot_Left.txt sprite file.
+20:17:28: Reading in sprites/Pirate1_Shoot_Right.txt sprite file.
+20:17:28: Reading in sprites/Hat.txt sprite file.
+20:17:28: Reading in sprites/Hat_Walk_Left.txt sprite file.
+20:17:28: Reading in sprites/Hat_Walk_Right.txt sprite file.
+20:17:28: Reading in sprites/Hat_Stab_Left.txt sprite file.
+20:17:28: Reading in sprites/Hat_Stab_Right.txt sprite file.
+20:17:28: Reading in sprites/Hat_Shoot_Left.txt sprite file.
+20:17:28: Reading in sprites/Hat_Shoot_Right.txt sprite file.
+20:17:28: Reading in sprites/Pirate1.txt sprite file.
+20:17:28: Reading in sprites/Pirate1_Walk_Left.txt sprite file.
+20:17:28: Reading in sprites/Pirate1_Walk_Right.txt sprite file.
+20:17:28: Reading in sprites/Pirate1_Stab_Left.txt sprite file.
+20:17:28: Reading in sprites/Pirate1_Stab_Right.txt sprite file.
+20:17:28: Reading in sprites/Pirate1_Shoot_Left.txt sprite file.
+20:17:28: Reading in sprites/Pirate1_Shoot_Right.txt sprite file.
+20:17:28: Reading in sprites/Fancy_Ground.txt sprite file.
+20:17:28: Loading music file sounds/Piece_For_Game.ogg
+20:17:28: Loading sound sounds/Gunshot.wav
+20:17:28: Loading sound sounds/Swing.wav
+20:17:28: Attempting to set illegal sprite index!
+20:17:31: Resource manager shutting down!
+20:57:40: GraphicsManager started successfully
+20:57:40: Resource manager starting up!
+20:57:40: Reading in sprites/Instruction1.txt sprite file.
+20:57:40: Reading in sprites/Instruction2.txt sprite file.
+20:57:40: Reading in sprites/The_Gunwale.txt sprite file.
+20:57:40: Reading in sprites/The_Forecastle.txt sprite file.
+20:57:40: Reading in sprites/The_Deck.txt sprite file.
+20:57:40: Reading in sprites/The_Brig.txt sprite file.
+20:57:40: Reading in sprites/The_Hold.txt sprite file.
+20:57:40: Reading in sprites/Chest.txt sprite file.
+20:57:40: Reading in sprites/Bullet_Left.txt sprite file.
+20:57:40: Reading in sprites/Bullet_Right.txt sprite file.
+20:57:40: Reading in sprites/Dolphin.txt sprite file.
+20:57:40: Reading in sprites/Pirate1.txt sprite file.
+20:57:40: Reading in sprites/Pirate1_Walk_Left.txt sprite file.
+20:57:40: Reading in sprites/Pirate1_Walk_Right.txt sprite file.
+20:57:40: Reading in sprites/Pirate1_Stab_Left.txt sprite file.
+20:57:40: Reading in sprites/Pirate1_Stab_Right.txt sprite file.
+20:57:40: Reading in sprites/Pirate1_Shoot_Left.txt sprite file.
+20:57:40: Reading in sprites/Pirate1_Shoot_Right.txt sprite file.
+20:57:40: Reading in sprites/Pirate1.txt sprite file.
+20:57:40: Reading in sprites/Pirate1_Walk_Left.txt sprite file.
+20:57:40: Reading in sprites/Pirate1_Walk_Right.txt sprite file.
+20:57:40: Reading in sprites/Pirate1_Stab_Left.txt sprite file.
+20:57:40: Reading in sprites/Pirate1_Stab_Right.txt sprite file.
+20:57:40: Reading in sprites/Pirate1_Shoot_Left.txt sprite file.
+20:57:40: Reading in sprites/Pirate1_Shoot_Right.txt sprite file.
+20:57:40: Reading in sprites/Hat.txt sprite file.
+20:57:40: Reading in sprites/Hat_Walk_Left.txt sprite file.
+20:57:40: Reading in sprites/Hat_Walk_Right.txt sprite file.
+20:57:40: Reading in sprites/Hat_Stab_Left.txt sprite file.
+20:57:40: Reading in sprites/Hat_Stab_Right.txt sprite file.
+20:57:40: Reading in sprites/Hat_Shoot_Left.txt sprite file.
+20:57:40: Reading in sprites/Hat_Shoot_Right.txt sprite file.
+20:57:40: Reading in sprites/Pirate1.txt sprite file.
+20:57:40: Reading in sprites/Pirate1_Walk_Left.txt sprite file.
+20:57:40: Reading in sprites/Pirate1_Walk_Right.txt sprite file.
+20:57:40: Reading in sprites/Pirate1_Stab_Left.txt sprite file.
+20:57:40: Reading in sprites/Pirate1_Stab_Right.txt sprite file.
+20:57:40: Reading in sprites/Pirate1_Shoot_Left.txt sprite file.
+20:57:40: Reading in sprites/Pirate1_Shoot_Right.txt sprite file.
+20:57:40: Reading in sprites/Fancy_Ground.txt sprite file.
+20:57:40: Loading music file sounds/Piece_For_Game.ogg
+20:57:40: Loading sound sounds/Gunshot.wav
+20:57:40: Loading sound sounds/Swing.wav
+20:57:40: Attempting to set illegal sprite index!
+20:57:44: Resource manager shutting down!
+21:07:43: GraphicsManager started successfully
+21:07:43: Resource manager starting up!
+21:07:43: Reading in sprites/Instruction1.txt sprite file.
+21:07:43: Reading in sprites/Instruction2.txt sprite file.
+21:07:43: Reading in sprites/The_Gunwale.txt sprite file.
+21:07:43: Reading in sprites/The_Forecastle.txt sprite file.
+21:07:43: Reading in sprites/The_Deck.txt sprite file.
+21:07:43: Reading in sprites/The_Brig.txt sprite file.
+21:07:43: Reading in sprites/The_Hold.txt sprite file.
+21:07:43: Reading in sprites/Chest.txt sprite file.
+21:07:43: Reading in sprites/Bullet_Left.txt sprite file.
+21:07:43: Reading in sprites/Bullet_Right.txt sprite file.
+21:07:43: Reading in sprites/Dolphin.txt sprite file.
+21:07:43: Reading in sprites/Pirate1.txt sprite file.
+21:07:43: Reading in sprites/Pirate1_Walk_Left.txt sprite file.
+21:07:43: Reading in sprites/Pirate1_Walk_Right.txt sprite file.
+21:07:43: Reading in sprites/Pirate1_Stab_Left.txt sprite file.
+21:07:43: Reading in sprites/Pirate1_Stab_Right.txt sprite file.
+21:07:43: Reading in sprites/Pirate1_Shoot_Left.txt sprite file.
+21:07:43: Reading in sprites/Pirate1_Shoot_Right.txt sprite file.
+21:07:43: Reading in sprites/Pirate1.txt sprite file.
+21:07:43: Reading in sprites/Pirate1_Walk_Left.txt sprite file.
+21:07:43: Reading in sprites/Pirate1_Walk_Right.txt sprite file.
+21:07:43: Reading in sprites/Pirate1_Stab_Left.txt sprite file.
+21:07:43: Reading in sprites/Pirate1_Stab_Right.txt sprite file.
+21:07:43: Reading in sprites/Pirate1_Shoot_Left.txt sprite file.
+21:07:43: Reading in sprites/Pirate1_Shoot_Right.txt sprite file.
+21:07:43: Reading in sprites/Hat.txt sprite file.
+21:07:43: Reading in sprites/Hat_Walk_Left.txt sprite file.
+21:07:43: Reading in sprites/Hat_Walk_Right.txt sprite file.
+21:07:43: Reading in sprites/Hat_Stab_Left.txt sprite file.
+21:07:43: Reading in sprites/Hat_Stab_Right.txt sprite file.
+21:07:43: Reading in sprites/Hat_Shoot_Left.txt sprite file.
+21:07:43: Reading in sprites/Hat_Shoot_Right.txt sprite file.
+21:07:43: Reading in sprites/Pirate1.txt sprite file.
+21:07:43: Reading in sprites/Pirate1_Walk_Left.txt sprite file.
+21:07:43: Reading in sprites/Pirate1_Walk_Right.txt sprite file.
+21:07:43: Reading in sprites/Pirate1_Stab_Left.txt sprite file.
+21:07:43: Reading in sprites/Pirate1_Stab_Right.txt sprite file.
+21:07:43: Reading in sprites/Pirate1_Shoot_Left.txt sprite file.
+21:07:43: Reading in sprites/Pirate1_Shoot_Right.txt sprite file.
+21:07:43: Reading in sprites/Fancy_Ground.txt sprite file.
+21:07:43: Loading music file sounds/Piece_For_Game.ogg
+21:07:43: Loading sound sounds/Gunshot.wav
+21:07:43: Loading sound sounds/Swing.wav
+21:07:43: Attempting to set illegal sprite index!
+21:07:45: Resource manager shutting down!

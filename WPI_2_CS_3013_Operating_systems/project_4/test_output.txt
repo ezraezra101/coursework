@@ -1,0 +1,25 @@
+Clock eviction algorithm selected.
+
+Testing threads (with 20 threads)
+Now running at 10000.000 times normal speed, using clock algorithm
+....................
+Non-thread related tests
+Note that all times given below are relative to their time scales.
+The theoretical times are based on the optimal page eviction algorithm.
+
+Now running at 10000.000 times normal speed, using clock algorithm
+	Testing simple allocation; it should finish in negligible time
+	It actually took 0.030000 seconds
+	Testing swapping to ssd; it should take at least 0.5 seconds
+	It actually took 5.590000 seconds
+	Testing swapping to disk; it should take at least 55.5 seconds
+	It actually took 865.209981 seconds
+	Testing maximum memory; it should take at least 2431.25 seconds
+	It actually took 6573.209853 seconds
+	Testing memory overflow; it should take at least 2431.25 seconds
+	It actually took 6271.809860 seconds
+	Testing allocation with locked RAM; it should finish in negligible time
+	It actually took 0.140000 seconds
+Now running at 1.000 times normal speed, using clock algorithm
+	Tests freeing memory; it should finish in negligible time
+	It actually took 0.000466 seconds

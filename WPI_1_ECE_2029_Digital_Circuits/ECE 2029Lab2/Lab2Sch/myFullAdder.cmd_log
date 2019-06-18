@@ -1,0 +1,16 @@
+xst -intstyle ise -ifn "M:/ECE 2029/Lab2Sch/myFullAdder.xst" -ofn "M:/ECE 2029/Lab2Sch/myFullAdder.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xa6slx16-csg324-3 "myFullAdder.ngc" myFullAdder.ngd  
+map -intstyle ise -p xa6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o myFullAdder_map.ncd myFullAdder.ngd myFullAdder.pcf 
+par -w -intstyle ise -ol high -mt off myFullAdder_map.ncd myFullAdder.ncd myFullAdder.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml myFullAdder.twx myFullAdder.ncd -o myFullAdder.twr myFullAdder.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xa6slx16-csg324-3 "myFullAdder.ngc" myFullAdder.ngd  
+map -intstyle ise -p xa6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o myFullAdder_map.ncd myFullAdder.ngd myFullAdder.pcf 
+par -w -intstyle ise -ol high -mt off myFullAdder_map.ncd myFullAdder.ncd myFullAdder.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml myFullAdder.twx myFullAdder.ncd -o myFullAdder.twr myFullAdder.pcf 
+bitgen -intstyle ise -f myFullAdder.ut myFullAdder.ncd 
+xst -intstyle ise -ifn "M:/ECE 2029/Lab2Sch/myFullAdder.xst" -ofn "M:/ECE 2029/Lab2Sch/myFullAdder.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc fullAdder_sch.ucf -p xc6slx16-csg324-3 "myFullAdder.ngc" myFullAdder.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o myFullAdder_map.ncd myFullAdder.ngd myFullAdder.pcf 
+par -w -intstyle ise -ol high -mt off myFullAdder_map.ncd myFullAdder.ncd myFullAdder.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml myFullAdder.twx myFullAdder.ncd -o myFullAdder.twr myFullAdder.pcf -ucf fullAdder_sch.ucf 
+bitgen -intstyle ise -f myFullAdder.ut myFullAdder.ncd 

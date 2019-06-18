@@ -1,0 +1,11 @@
+ISim log file
+Running: C:\Users\edavis\Desktop\ECE2029\lab1ECE2029\tut_tut_sch_tb_isim_par.exe -intstyle ise -gui -tclbatch isim.cmd -wdb C:/Users/edavis/Desktop/ECE2029/lab1ECE2029/tut_tut_sch_tb_isim_par.wdb 
+ISim P.58f (signature 0x7708f090)
+This is a Full version of ISim.
+Time resolution is 1 ps
+# onerror resume
+# wave add /
+# run 1000 ns
+Simulator is doing circuit initialization process.
+INFO: SDF backannotation was successful with SDF file netgen/par/tut_timesim.sdf, for root module /tut_tut_sch_tb/UUT/.
+Finished circuit initialization process.

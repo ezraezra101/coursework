@@ -1,0 +1,132 @@
+--------------------------------------------------------------------------------
+Release 14.5 Trace  (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx\14.5\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 3
+-n 3 -fastpaths -xml fourDigitDisplay.twx fourDigitDisplay.ncd -o
+fourDigitDisplay.twr fourDigitDisplay.pcf -ucf fourDigitDisplay.ucf
+
+Design file:              fourDigitDisplay.ncd
+Physical constraint file: fourDigitDisplay.pcf
+Device,package,speed:     xc6slx16,csg324,C,-3 (PRODUCTION 1.23 2013-03-26)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Clock to Setup on destination clock CLK
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+CLK            |    2.930|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Pad to Pad
+---------------+---------------+---------+
+Source Pad     |Destination Pad|  Delay  |
+---------------+---------------+---------+
+X<0>           |segs<0>        |    8.477|
+X<0>           |segs<1>        |    8.730|
+X<0>           |segs<2>        |    8.554|
+X<0>           |segs<3>        |    8.694|
+X<0>           |segs<4>        |    8.650|
+X<0>           |segs<5>        |    8.843|
+X<0>           |segs<6>        |    9.064|
+X<1>           |segs<0>        |    9.168|
+X<1>           |segs<1>        |    9.083|
+X<1>           |segs<2>        |    9.245|
+X<1>           |segs<3>        |    8.855|
+X<1>           |segs<4>        |    9.003|
+X<1>           |segs<5>        |    9.236|
+X<1>           |segs<6>        |    9.225|
+X<2>           |segs<0>        |    8.538|
+X<2>           |segs<1>        |    8.696|
+X<2>           |segs<2>        |    8.615|
+X<2>           |segs<3>        |    8.167|
+X<2>           |segs<4>        |    8.616|
+X<2>           |segs<5>        |    9.167|
+X<2>           |segs<6>        |    8.537|
+X<3>           |segs<0>        |    8.729|
+X<3>           |segs<1>        |    8.996|
+X<3>           |segs<2>        |    8.806|
+X<3>           |segs<3>        |    8.833|
+X<3>           |segs<4>        |    8.916|
+X<3>           |segs<5>        |    9.424|
+X<3>           |segs<6>        |    9.203|
+Z<0>           |segs<0>        |    8.164|
+Z<0>           |segs<1>        |    8.417|
+Z<0>           |segs<2>        |    8.241|
+Z<0>           |segs<3>        |    8.381|
+Z<0>           |segs<4>        |    8.337|
+Z<0>           |segs<5>        |    8.530|
+Z<0>           |segs<6>        |    8.751|
+Z<1>           |segs<0>        |    9.101|
+Z<1>           |segs<1>        |    9.016|
+Z<1>           |segs<2>        |    9.178|
+Z<1>           |segs<3>        |    8.788|
+Z<1>           |segs<4>        |    8.936|
+Z<1>           |segs<5>        |    9.169|
+Z<1>           |segs<6>        |    9.158|
+Z<2>           |segs<0>        |    8.625|
+Z<2>           |segs<1>        |    8.783|
+Z<2>           |segs<2>        |    8.702|
+Z<2>           |segs<3>        |    8.254|
+Z<2>           |segs<4>        |    8.703|
+Z<2>           |segs<5>        |    9.254|
+Z<2>           |segs<6>        |    8.624|
+Z<3>           |segs<0>        |    8.446|
+Z<3>           |segs<1>        |    8.713|
+Z<3>           |segs<2>        |    8.523|
+Z<3>           |segs<3>        |    8.550|
+Z<3>           |segs<4>        |    8.633|
+Z<3>           |segs<5>        |    9.141|
+Z<3>           |segs<6>        |    8.920|
+decPts<0>      |DP             |   11.326|
+decPts<2>      |DP             |   10.342|
+signs<0>       |segs<0>        |   10.980|
+signs<0>       |segs<1>        |   11.384|
+signs<0>       |segs<2>        |   11.057|
+signs<0>       |segs<3>        |   10.943|
+signs<0>       |segs<4>        |   11.304|
+signs<0>       |segs<5>        |   10.873|
+signs<0>       |segs<6>        |   11.313|
+signs<2>       |segs<0>        |   11.333|
+signs<2>       |segs<1>        |   11.737|
+signs<2>       |segs<2>        |   11.410|
+signs<2>       |segs<3>        |   11.296|
+signs<2>       |segs<4>        |   11.657|
+signs<2>       |segs<5>        |   11.226|
+signs<2>       |segs<6>        |   11.666|
+---------------+---------------+---------+
+
+
+Analysis completed Thu Dec 05 10:49:17 2013 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 219 MB
+
+
+

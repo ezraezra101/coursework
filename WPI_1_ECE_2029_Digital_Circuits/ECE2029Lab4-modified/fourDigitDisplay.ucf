@@ -1,0 +1,56 @@
+NET "CLK" LOC = "V10" ; # system clock
+
+#Input switches - there aren't enough switches on the board to connect to the inputs, so there may be some unexpected results
+
+
+	#for displaying to base 4 digits
+NET "Z[0]" LOC = "T10";
+NET "Z[1]" LOC = "T9";
+
+NET "Y[0]" LOC = "V9";
+NET "Y[1]" LOC = "M8";
+
+NET "X[0]" LOC = "N8";
+NET "X[1]" LOC = "U8";
+
+NET "W[0]" LOC = "V8";
+NET "W[1]" LOC = "T5";
+
+
+	#for displaying base 16 digits on the second and 4th(least significant) digits
+#NET "Z[0]" LOC = "T10";
+#NET "Z[1]" LOC = "T9";
+#NET "Z[2]" LOC = "V9";
+#NET "Z[3]" LOC = "M8";
+
+#NET "X[0]" LOC = "N8";
+#NET "X[1]" LOC = "U8";
+#NET "X[2]" LOC = "V8";
+#NET "X[3]" LOC = "T5";
+
+	# Attaching decimal point inputs and sgn to buttons
+NET "decPts[0]" LOC = "C4";
+NET "signs[0]" LOC = "A8";
+
+NET "signs[2]" LOC = "C9";
+NET "decPts[2]" LOC = "D9";
+
+#Seven segment display:
+
+	#Selecting which digit to change:
+NET "anodes[0]" LOC = "N16"; #"AN0"
+NET "anodes[1]" LOC = "N15"; #"AN1"
+NET "anodes[2]" LOC = "P18"; #"AN2"
+NET "anodes[3]" LOC = "P17"; #"AN3"
+
+	#Selecting the segments on the digit:
+
+NET "segs[0]" LOC = "L14"; #"CG"
+NET "segs[1]" LOC = "N14"; #"CF"
+NET "segs[2]" LOC = "M14"; #"CE"
+NET "segs[3]" LOC = "U18"; #"CD"
+NET "segs[4]" LOC = "U17"; #"CC"
+NET "segs[5]" LOC = "T18"; #"CB"
+NET "segs[6]" LOC = "T17"; #"CA"	
+NET "DP" LOC = "M13"; # decimal point
+

@@ -1,0 +1,88 @@
+Author:						Team 4J: Ezra Davis & Artian Kica
+Date:						February 21, 2014
+Version:					1.0
+Project ID:					prog4
+CS Class:					CS2303
+Programming Language:		C++
+OS/Hardware dependencies:	No significant OS/Hardware dependencies
+	
+				
+Problem Description:
+	Creating a case-insensitive cross reference generator.
+	Takes a text file as input and prints out an alphabetized 
+	list of all words in the file, including their count and which
+	lines they appeared on.
+
+
+Overall Design:
+
+	We approached this assignment using binary trees. Each tree node contains
+	a string (the word), its count, and a linked list of which lines that word
+	appears on. Each node points to two other nodes. 
+	
+	Alphabetization is created because of the use of left and right 
+	nodes. Left nodes are alphabetically lower than their parent. 
+	Right nodes are alphabetically greater than their parent. 
+
+	Punctuation is considered to be any of the following characters: ? !\"()./-;:[]{}`,
+	All punctuation is removed and is not considered to be a word.
+
+	We used command line arguments to grab the input file. No redirection necessary.
+	
+	
+Modifiable attributes:
+
+	The width of the columns in the output may be increased by
+	increasing the values of the following definitions in the header file.
+	
+	SCREEN_SIZE 80 //Controls when the line numbers wrap down to the next line
+	COUNT_INDENT 25 //Controls the indentation of the first column
+		 //(should be longer than any of the words in the input document)
+	LINES_INDENT 10 //The width of the column that lists the number of occurrences of words
+
+
+Implementation Details:
+	We use a command line argument for the file rather
+	than redirecting the terminal input stream.
+	
+	The Binary Search Tree is implemented using 
+	a recursive data holding class and a wrapper class (RootNode).
+	
+	We also implemented LinkedLists recursively.
+
+
+How to build the program:	
+	
+	In order to build and compile the program, simply type: make.
+	
+	With the way the source files are set up, we do not create any
+	.o files with our makefile. Therefore, there is no need to clean
+	anything.
+	
+	
+How to run the program:
+
+	To run the program, type the following:
+	
+			./prog4 INPUTFILE
+			
+	where INPUTFILE is the file that the cross-reference generator
+	is to be created for. If you just give it the file name, it will
+	assume that the file is in the same directory as the program.
+	
+	
+Program Source:
+	prog4.cc Tree.cpp LinkedList.cpp RootNode.cpp header.h
+
+
+Additional Files:		
+	README Makefile output.txt
+
+
+Results:
+	Results of the program running on US_Constitution.txt are in the output.txt file.
+
+
+References:	
+	Assignment PDF: http://web.cs.wpi.edu/~rek/Systems/C14/Program4_C14.pdf
+	Code involving iterators:	http://www.cplusplus.com/reference/string/string/begin/

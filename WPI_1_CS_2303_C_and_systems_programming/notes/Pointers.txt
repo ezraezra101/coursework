@@ -1,0 +1,25 @@
+Pointers!!
+
+& = get address
+* = pointed to value
+
+int i = 0;
+&i //returns the address of the variable (unsigned int (sortof))
+
+int *ptr = &i; //sets ptr to the address of i
+//If you do this after initialization:
+ptr = &i; //(don't ask)
+
+*ptr //the same as writing i //called the indirection operator
+
+&ptr //is the address of the *pointer*
+
+int array[2] = {1} // creates array {1, 0}
+
+int *arrPtr = array; //sets arrPtr to the address of array[0]
+
+(arrPtr + 1) //pointer arithmatic is different. This is the address of array[1]
+
+
+printf("%p", ptr); //prints the address pointed to in hexadecimal
+

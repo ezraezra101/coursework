@@ -1,0 +1,30 @@
+
+Tour Guide (first name, last name, hire date, phone number, title, salary, driver license, street, city, state )
+primary key: (first name, last name, and hire date)
+
+Tour Guide Vehicle Type (tour guide first name, tour guide last name, tour guide hire date, type)
+primary key: (tour guide first name, tour guide last name, tour guide hire date, type)
+
+Customer (customer id, first name, last name, age,	phone number, street, city, state)
+primary key: customer id
+
+Location (location id, name, longitude, latitude, type, street, city, state)
+primary key: location id
+
+Tour vehicle (vin, type, license number, make, model, year, max occupancy)
+primary key: vin
+
+Tour (tour id, name, description, city, state, activity level, duration, transport type, is disabled friendly, child cost, adult cost)
+primary key: tour id
+
+Visits (tour id, location id)
+primary key: (tour id, location id)
+
+Booking (customer id, tour id, vin, purchase date, tour date, total price)
+primary key: (customer id, tour id, tour date)
+
+Companion (customer id, tour id, tour date, Name, Age)
+primary key: (customer id, tour id, tour date, name)
+
+Leads (tour guide first name, tour guide last name, tour guide hire date, customer id, tour id, tour date)
+primary key: (tour guide first name, tour guide last name, tour guide hire date, customer id, tour id, tour date)

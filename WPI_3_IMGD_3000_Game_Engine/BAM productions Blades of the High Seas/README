@@ -1,0 +1,49 @@
+Blades of the High Seas game, and Dragonfly Engine
+BAM productions - Brian Rubenstein (blrubenstein) & Ezra Davis (edavis)
+
+--------------------------------------------------------------------
+
+You and a friend can be pirates fighting their way through a ship to sweet loot! Swing your cutlass or shoot your revolver. Progress through multiple rooms of increasing difficulty as you fight your way to the treasure.
+
+Promotional video:
+https://youtu.be/XWELBxzxmL4
+
+--------------------------------------------------------------------
+
+To build:
+
+0) Setup development environment for MacOS.
+See http://dragonfly.wpi.edu/ for details.
+It's probably possible to use a different engine, but the currently included one is built for MacOS.
+
+1) Go to the blades_of_the_high_seas directory. (`cd blades_of_the_high_seas`)
+
+2) Run `make` This builds both the game and, if not yet built, the dragonfly engine.
+
+3) Run `./game` to start the game
+
+--------------------------------------------------------------------
+
+How to play:
+
+The game is designed for two players, each controlling a different pirate.
+
+A, or J: Moves your pirate to the left.
+D, or L: Moves your pirate to the right.
+W, or I: Makes your pirate jump. Pirates need a bit of time to make their jump, so make sure you have enough time!
+E, or O: Your standard slash attack. Be careful not to get your hands slashed off!
+R, or P: Fire your pistol! Skilled pirates can shoot other bullets out of the air, but be careful, you only have three!
+ESC: Quit the game.
+
+--------------------------------------------------------------------
+
+Files:
+
+Blades of the High Seas.app - 'standalone' game. Requires SFML’s dependencies to be installed properly or won't start. (rebuilding not automated)
+blades_of_the_high_seas/    - The game code required for building the game executable.
+dragonfly/					- The dragonfly engine. Both the source and the .a file.
+sfml/						- SFML library and it's include files
+Promo picture.png - A promotional picture for BotHS
+rubensteinb_davise_final_gameplan.pdf - a brief description of the game plan.
+
+--------------------------------------------------------------------

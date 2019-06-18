@@ -1,0 +1,17 @@
+frames 3
+width 9
+height 3
+color cyan
+         
+ _/|     
+/ ./     
+end
+  .--'\. 
+_',--/_.\
+ '     \|
+end
+         
+     _|  
+      |\ 
+end
+eof

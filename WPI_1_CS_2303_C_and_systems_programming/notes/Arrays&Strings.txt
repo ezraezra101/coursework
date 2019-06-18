@@ -1,0 +1,42 @@
+Arrays:
+
+Arrays use contiguous memory locations of the same name and type (like forth)
+
+THe position number in an array is called a "subscript"
+arrayName[subscript]
+
+n element array named c:
+	c[0], c[1], ... c[n-1]
+	
+int c[10], anotherArray[27];
+float myArray[3284];
+
+int n[5] = {1,2,3,4,5};
+	-If not enough initializers, rightmost elements become 0
+	
+	If size is omitted initializers determine size:
+		int n[] = {1, 2, 3, 4, 5, 6}
+		//(probably bad style)
+		
+		
+Using unsigned integers for for variables that are used to index arrays is a safe/good practice.
+
+Arrays are dangerous because there is no default initialization
+	There is also no bounds checking
+	
+	
+
+Strings:
+
+In C, Strings are arrays of Chars that end in '\0'
+
+eg: char string[35]= "hello";
+	makes:
+	char string[35] = {'h', 'e', 'l', 'l', 'o', '\0', '\0' ...(more '\0's until the end of the array)}
+	
+	char hiString = "hi";
+	makes:
+	char hiString[3] = {'h', 'i', '\0'};
+	
+	Strings can be stored in an array using scanf
+	(note: don't do this because if the input is too long, it goes beyond the 'string' array)

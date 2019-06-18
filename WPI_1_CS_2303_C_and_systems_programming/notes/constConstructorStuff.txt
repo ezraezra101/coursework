@@ -1,0 +1,61 @@
+Default copy constructor:
+
+	Used to create objects when passed into functions.
+	
+
+Normally pass objects as references, eg:
+
+Class::Class(OtherClass &o)
+{
+	this->o = other.o;
+}
+
+static is initialized once...
+
+CONST:
+	
+const member functions aren't allowed to change the object they are called on
+
+constructors & destructors can't be const.
+
+
+const functions can be overloaded with non-const versions.
+	Const objects will use the const version,
+	non-const objects will use the other version
+	
+	
+Initialization for const member values:
+
+class aClass
+{
+	const int x;
+
+public:
+	aClass(int val)
+	: x(val) {}
+	
+	int const getX(){return x;}
+};
+int main()
+{
+	aClass c(5);
+	
+	std::cout << c.getX();
+}
+
+
+
+
+
+
+
+Unimportant stuff:
+
+void func(int &x) { x = 2; }
+
+int main()
+{
+	int x = 4;
+	func(x);
+	return x;
+}

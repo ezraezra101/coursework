@@ -1,0 +1,24 @@
+echo It's working!
+
+./runCommand ./runCommand echo running runCommand
+
+sleep 0.5 &
+echo Backgrounding...
+pwd
+cd ..
+pwd
+ls -al /
+illegal commands:
+ls l l l l l l l l l l l l l l l l l l l l l l l l l l l l l l l l
+ls jadfk;adjuiahruihjkluienjiahuiahfuihafhaewuhuyoahdfjklshjihauihauifhuiahjdkslafhuyenjhuvynriahjiuahuilhuilfhandjsfjkl;diofaejq
+cd /&
+jobs &
+exit&
+
+jobs
+
+sleep 0.5 &
+sleep 0.3 &
+sleep 0.1
+
+echo our shell should auto exit at end of file...

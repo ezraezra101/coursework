@@ -1,0 +1,50 @@
+Feb 12 13:19:00 edavis-VirtualBox kernel: [  438.176054] User 1000 is opening file:	/lib/i386-linux-gnu/libnih-dbus.so.1
+Feb 12 13:19:00 edavis-VirtualBox kernel: [  438.176054] User 1000 is closing file descriptor:	10
+Feb 12 13:19:00 edavis-VirtualBox kernel: [  438.176054] User 1000 is opening file:	/lib/i386-linux-gnu/libdbus-1.so.3
+Feb 12 13:19:00 edavis-VirtualBox kernel: [  438.176054] User 1000 is closing file descriptor:	10
+Feb 12 13:19:00 edavis-VirtualBox kernel: [  438.176054] User 1000 is opening file:	/lib/i386-linux-gnu/libpam_misc.so.0
+Feb 12 13:19:00 edavis-VirtualBox kernel: [  438.176054] User 1000 is closing file descriptor:	10
+Feb 12 13:19:00 edavis-VirtualBox kernel: [  438.176814] User 1000 is opening file:	/lib/i386-linux-gnu/librt.so.1
+Feb 12 13:19:00 edavis-VirtualBox kernel: [  438.176893] User 1000 is closing file descriptor:	10
+Feb 12 13:19:00 edavis-VirtualBox kernel: [  438.176917] User 1000 is opening file:	/lib/i386-linux-gnu/libpthread.so.0
+Feb 12 13:19:00 edavis-VirtualBox kernel: [  438.176955] User 1000 is closing file descriptor:	10
+Feb 12 13:19:00 edavis-VirtualBox kernel: [  438.177372] User 1000 is closing file descriptor:	9
+Feb 12 13:19:00 edavis-VirtualBox kernel: [  438.177389] User 1000 is closing file descriptor:	8
+Feb 12 13:19:00 edavis-VirtualBox kernel: [  438.177411] User 1000 is opening file:	/var/lib/sudo/edavis/0
+Feb 12 13:19:00 edavis-VirtualBox kernel: [  438.177426] User 1000 is closing file descriptor:	8
+Feb 12 13:19:00 edavis-VirtualBox kernel: [  438.177429] User 1000 is opening file:	/proc/stat
+Feb 12 13:19:00 edavis-VirtualBox kernel: [  438.177479] User 1000 is closing file descriptor:	8
+Feb 12 13:19:00 edavis-VirtualBox kernel: [  438.177487] User 1000 is opening file:	/var/lib/sudo/edavis/0
+Feb 12 13:19:00 edavis-VirtualBox kernel: [  438.177500] User 1000 is closing file descriptor:	8
+Feb 12 13:19:00 edavis-VirtualBox kernel: [  438.177621] User 1000 is closing file descriptor:	5
+Feb 12 13:19:00 edavis-VirtualBox kernel: [  438.177638] User 1000 is closing file descriptor:	3
+Feb 12 13:19:00 edavis-VirtualBox kernel: [  438.177642] User 1000 is closing file descriptor:	4
+Feb 12 13:19:00 edavis-VirtualBox kernel: [  438.177651] User 1000 is opening file:	/etc/passwd
+Feb 12 13:19:00 edavis-VirtualBox kernel: [  438.177657] User 1000 is opening file:	/etc/group
+Feb 12 13:19:00 edavis-VirtualBox kernel: [  438.177665] User 1000 is opening file:	/etc/passwd
+Feb 12 13:19:00 edavis-VirtualBox kernel: [  438.177678] User 1000 is closing file descriptor:	5
+Feb 12 13:19:00 edavis-VirtualBox kernel: [  438.177682] User 1000 is closing file descriptor:	3
+Feb 12 13:19:00 edavis-VirtualBox kernel: [  438.177685] User 1000 is closing file descriptor:	4
+Feb 12 13:19:00 edavis-VirtualBox kernel: [  438.177696] User 1000 is opening file:	/etc/passwd
+Feb 12 13:19:00 edavis-VirtualBox kernel: [  438.177707] User 1000 is closing file descriptor:	3
+Feb 12 13:19:00 edavis-VirtualBox kernel: [  438.178954] Unloaded interceptor!
+Feb 12 13:19:26 edavis-VirtualBox kernel: [  464.147691] Interceptor: Found syscall table at address: 0x0000000000000C1667140
+Feb 12 13:19:26 edavis-VirtualBox kernel: [  464.147695] Loaded interceptor!
+Feb 12 13:19:58 edavis-VirtualBox kernel: [  495.713670] Unloaded interceptor!
+Feb 12 13:20:04 edavis-VirtualBox kernel: [  501.544083] Interceptor: Found syscall table at address: 0x0000000000000C1667140
+Feb 12 13:20:04 edavis-VirtualBox kernel: [  501.544083] Loaded interceptor!
+Feb 12 13:20:05 edavis-VirtualBox kernel: [  502.616044] Unloaded interceptor!
+Feb 12 13:26:33 edavis-VirtualBox kernel: [  890.675618] Interceptor: Found syscall table at address: 0x0000000000000C1667140
+Feb 12 13:26:33 edavis-VirtualBox kernel: [  890.675687] Loaded interceptor!
+Feb 12 13:26:34 edavis-VirtualBox kernel: [  891.768217] Unloaded interceptor!
+Feb 12 13:26:42 edavis-VirtualBox kernel: [  899.993138] Interceptor: Found syscall table at address: 0x0000000000000C1667140
+Feb 12 13:26:42 edavis-VirtualBox kernel: [  899.993142] Loaded interceptor!
+Feb 12 13:26:43 edavis-VirtualBox kernel: [  901.080418] Unloaded interceptor!
+Feb 12 13:26:54 edavis-VirtualBox kernel: [  912.159634] Interceptor: Found syscall table at address: 0x0000000000000C1667140
+Feb 12 13:26:54 edavis-VirtualBox kernel: [  912.159645] Loaded interceptor!
+Feb 12 13:26:55 edavis-VirtualBox kernel: [  913.250183] Unloaded interceptor!
+Feb 12 13:27:20 edavis-VirtualBox kernel: [  938.140854] Interceptor: Found syscall table at address: 0x0000000000000C1667140
+Feb 12 13:27:20 edavis-VirtualBox kernel: [  938.140858] Loaded interceptor!
+Feb 12 13:27:20 edavis-VirtualBox kernel: [  938.176737] User 0 smote process 3683 (spin).
+Feb 12 13:27:21 edavis-VirtualBox kernel: [  939.194692] User 0 unsmote process 3683 (spin).
+Feb 12 13:27:21 edavis-VirtualBox kernel: [  939.240260] Unloaded interceptor!

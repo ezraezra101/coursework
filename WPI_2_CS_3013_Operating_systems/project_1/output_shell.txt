@@ -1,0 +1,104 @@
+> It's working!
+
+--------
+-    1.134 milliseconds passed.
+-    0.000 ms of CPU time (user and system) used
+-        0 involuntary process preemptions
+-        4 voluntary process preemptions
+-        0 page faults
+-      185 page faults satisfied by page reclaims
+--------
+> running runCommand
+
+   9.699 milliseconds passed.
+   0.000 ms of CPU time (user and system) used
+       1 involuntary process preemptions
+       3 voluntary process preemptions
+       0 page faults
+     184 page faults satisfied by page reclaims
+
+  15.030 milliseconds passed.
+   0.000 ms of CPU time (user and system) used
+       2 involuntary process preemptions
+      17 voluntary process preemptions
+       0 page faults
+     340 page faults satisfied by page reclaims
+
+--------
+-   18.420 milliseconds passed.
+-    0.000 ms of CPU time (user and system) used
+-        2 involuntary process preemptions
+-       31 voluntary process preemptions
+-        0 page faults
+-      497 page faults satisfied by page reclaims
+--------
+> /media/sf_Operating_Systems/HW/project_1
+
+--------
+-    3.250 milliseconds passed.
+-    0.000 ms of CPU time (user and system) used
+-        0 involuntary process preemptions
+-        4 voluntary process preemptions
+-        0 page faults
+-      190 page faults satisfied by page reclaims
+--------
+> > /media/sf_Operating_Systems/HW
+
+--------
+-    6.603 milliseconds passed.
+-    0.000 ms of CPU time (user and system) used
+-        0 involuntary process preemptions
+-        4 voluntary process preemptions
+-        0 page faults
+-      191 page faults satisfied by page reclaims
+--------
+> total 100
+drwxr-xr-x  22 root root  4096 Jan 16 15:30 .
+drwxr-xr-x  22 root root  4096 Jan 16 15:30 ..
+drwxr-xr-x   2 root root  4096 Jan 16 15:25 bin
+drwxr-xr-x   3 root root  4096 Jan 17 16:19 boot
+drwxrwxr-x   2 root root  4096 Jan 16 15:08 cdrom
+drwxr-xr-x  15 root root  4100 Jan 26 19:37 dev
+drwxr-xr-x 132 root root 12288 Jan 26 19:37 etc
+drwxr-xr-x   3 root root  4096 Jan 16 15:09 home
+lrwxrwxrwx   1 root root    33 Jan 16 15:30 initrd.img -> boot/initrd.img-3.13.0-44-generic
+lrwxrwxrwx   1 root root    33 Jan 16 15:12 initrd.img.old -> boot/initrd.img-3.13.0-32-generic
+drwxr-xr-x  23 root root  4096 Jan 16 15:23 lib
+drwx------   2 root root 16384 Jan 16 15:06 lost+found
+drwxr-xr-x   4 root root  4096 Jan 16 15:59 media
+drwxr-xr-x   2 root root  4096 Apr 10  2014 mnt
+drwxr-xr-x   3 root root  4096 Jan 16 15:18 opt
+dr-xr-xr-x 167 root root     0 Jan 26 19:37 proc
+drwx------   2 root root  4096 Jul 22  2014 root
+drwxr-xr-x  22 root root   760 Jan 26 20:12 run
+drwxr-xr-x   2 root root 12288 Jan 17 16:28 sbin
+drwxr-xr-x   2 root root  4096 Jul 22  2014 srv
+dr-xr-xr-x  13 root root     0 Jan 26 19:37 sys
+drwxrwxrwt   4 root root  4096 Jan 26 20:21 tmp
+drwxr-xr-x  10 root root  4096 Jul 22  2014 usr
+drwxr-xr-x  13 root root  4096 Jul 22  2014 var
+lrwxrwxrwx   1 root root    30 Jan 16 15:30 vmlinuz -> boot/vmlinuz-3.13.0-44-generic
+lrwxrwxrwx   1 root root    30 Jan 16 15:12 vmlinuz.old -> boot/vmlinuz-3.13.0-32-generic
+
+--------
+-    5.663 milliseconds passed.
+-    0.000 ms of CPU time (user and system) used
+-        0 involuntary process preemptions
+-        4 voluntary process preemptions
+-        0 page faults
+-      397 page faults satisfied by page reclaims
+--------
+> Error: Unix exit code 2
+> Error: command should have less than 32 arguments.
+> Error: Command should be less than 129 characters.
+> our shell should auto exit at end of file...
+
+--------
+-    4.724 milliseconds passed.
+-    0.000 ms of CPU time (user and system) used
+-        0 involuntary process preemptions
+-        6 voluntary process preemptions
+-        0 page faults
+-      235 page faults satisfied by page reclaims
+--------
+> [End of file]

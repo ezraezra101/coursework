@@ -1,0 +1,7 @@
+#The contents of sne1.ucf
+NET "A" LOC = "T10" ;
+NET "B" LOC = "T9" ;
+NET "F" LOC = "U16" ;
+NET "E" LOC = "V16" ;
+NET "D" LOC = "U15" ;
+NET "C" LOC = "V15" ;

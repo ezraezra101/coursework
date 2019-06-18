@@ -1,0 +1,54 @@
+Author:				Ezra Davis
+Date:				January 31 - February 5th
+Version:			2.1
+Project ID:			Lab 3 - Command Line Arguements and Event List Operations
+CS Class:			CS 2303
+Programming Language:		C
+OS/Hardware dependencies:	no significant dependencies
+
+Problem Description:
+	Create an event list (linked list) sorted by arrival time
+	Also demonstrate removing the first element of the linked list.
+
+
+How to build the program:	
+	make
+	make clean #remove .o files
+	
+How to run the program:
+	Input by hand:
+		./edavis_lab3 [source]
+	Run test files:
+		make test
+	Build program, run test files, and clean up:
+		make run
+
+Program Source:
+	add_event.c
+	create_node.c
+	get_nextevent.c
+	lab3.h
+	main.c
+	print_eventList.c
+	print_node.c
+	
+	Makefile
+
+Additional Files:
+	README
+	lab3.dat		#test data
+	lab3-2.dat		#more test data
+	eventlist.txt	#results from the first test file
+	eventlist-2.txt #results from the second test file
+	
+	edavis_lab3		#executable, created from building
+	
+	.o files are used in compiling the program and can be deleted on sight.
+
+Results:	
+
+Test Procedures:
+	make run	# builds the program and runs a test using testData.txt
+
+References:	
+	Assignment document: http://web.cs.wpi.edu/~rek/Systems/C14/Lab3_C14.pdf

@@ -1,0 +1,32 @@
+Project Phase 3 comments
+
+Ezra Davis and Miya Gaskell
+(edavis)		(mgaskell)
+
+Part 2:
+
+2.1:
+We created a single trigger to prevent senior guides from having a salary less than 50,000.
+It is triggered before insert and update for each row on the guide table.
+
+
+2.2:
+We created a single trigger to prevent buses from being older than 2010.
+It is triggered before insert and update for each row on the vehicle table.
+
+2.3:
+We created a single trigger to force all tours in boston to have a amphibious vehicle type.
+It is triggered before insert and update for each row on the tour table.
+
+2.4:
+We created a single trigger to force all new booked tours to have a purchase date three months after the creation date.
+It is triggered before insert for each row on the booked tour table.
+
+2.5:
+We created a single trigger to throw errors when a tour guide has multiple tours in one day.
+It is triggered after insert or update for each statement on the booked tour table.
+
+
+
+
+javac -cp ".:ojdbc6.jar" Reporting.java; java -cp ".:ojdbc6.jar" Reporting edavis EDAVIS 4

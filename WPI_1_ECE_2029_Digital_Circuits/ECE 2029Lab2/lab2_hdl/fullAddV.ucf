@@ -1,0 +1,5 @@
+NET "A" LOC = "T10";
+NET "B" LOC = "T9";
+NET "Cin" LOC = "V9";
+NET "Cout" LOC = "U16";
+NET "Sum" LOC = "V16";

@@ -1,0 +1,7 @@
+verilog work "../ECE 2029Lab2/lab2_hdl_2sComp/fullAdd.v"
+verilog work "../ECE 2029Lab2/lab2_hdl_2sComp/fourAdd.v"
+verilog work "or4bits.v"
+verilog work "Hex2Seg.v"
+verilog work "comp2.v"
+verilog work "and4bits.v"
+verilog work "ALU4bit.v"

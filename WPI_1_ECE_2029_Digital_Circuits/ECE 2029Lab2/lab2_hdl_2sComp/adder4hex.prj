@@ -1,0 +1,5 @@
+verilog work "fullAdd.v"
+verilog work "fourAdd.v"
+verilog work "hex2seg.v"
+verilog work "from2scomplement4bit.v"
+verilog work "adder4hex.v"

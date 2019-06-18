@@ -1,0 +1,710 @@
+Release 14.5 - xst P.58f (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.13 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.14 secs
+ 
+--> Reading design: secondsDisplay.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "secondsDisplay.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "secondsDisplay"
+Output Format                      : NGC
+Target Device                      : xc6slx16-3-csg324
+
+---- Source Options
+Top Module Name                    : secondsDisplay
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "\\ece-homes.ece.wpi.edu\edavis\ECE2029Lab4-modified\mux4to1.v" into library work
+Parsing module <mux4to1>.
+Analyzing Verilog file "\\ece-homes.ece.wpi.edu\edavis\ECE2029Lab4-modified\mux1bit4to1.v" into library work
+Parsing module <mux1bit4to1>.
+Analyzing Verilog file "\\ece-homes.ece.wpi.edu\edavis\ECE2029Lab5\clkDiv10K.v" into library work
+Parsing module <clkDiv10K>.
+Analyzing Verilog file "\\ece-homes.ece.wpi.edu\edavis\ECE2029Lab5\bin_cnt4.v" into library work
+Parsing module <bin_cnt4>.
+Analyzing Verilog file "\\ece-homes.ece.wpi.edu\edavis\ECE2029Lab4-modified\Hex2Seg.v" into library work
+Parsing module <Hex2Seg>.
+Analyzing Verilog file "\\ece-homes.ece.wpi.edu\edavis\ECE2029Lab4-modified\digitChooser.v" into library work
+Parsing module <digitChooser>.
+Analyzing Verilog file "\\ece-homes.ece.wpi.edu\edavis\ECE2029Lab4-modified\bin_cnt2.v" into library work
+Parsing module <bin_cnt2>.
+Analyzing Verilog file "\\ece-homes.ece.wpi.edu\edavis\ECE2029Lab5\mod10cnt.v" into library work
+Parsing module <mod10cnt>.
+Analyzing Verilog file "\\ece-homes.ece.wpi.edu\edavis\ECE2029Lab5\clkDiv1K.v" into library work
+Parsing module <clkDiv1K>.
+Analyzing Verilog file "\\ece-homes.ece.wpi.edu\edavis\ECE2029Lab4-modified\fourDigitDisplay.v" into library work
+Parsing module <fourDigitDisplay>.
+Analyzing Verilog file "\\ece-homes.ece.wpi.edu\edavis\ECE2029Lab5\secondsDisplay.v" into library work
+Parsing module <secondsDisplay>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <secondsDisplay>.
+
+Elaborating module <clkDiv10K>.
+
+Elaborating module <clkDiv1K>.
+
+Elaborating module <mod10cnt>.
+WARNING:HDLCompiler:413 - "\\ece-homes.ece.wpi.edu\edavis\ECE2029Lab5\mod10cnt.v" Line 29: Result of 32-bit expression is truncated to fit in 1-bit target.
+
+Elaborating module <bin_cnt4>.
+WARNING:HDLCompiler:1127 - "\\ece-homes.ece.wpi.edu\edavis\ECE2029Lab5\secondsDisplay.v" Line 43: Assignment to R_out2 ignored, since the identifier is never used
+
+Elaborating module <fourDigitDisplay>.
+
+Elaborating module <digitChooser>.
+
+Elaborating module <mux4to1>.
+
+Elaborating module <mux1bit4to1>.
+
+Elaborating module <Hex2Seg>.
+
+Elaborating module <bin_cnt2>.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <secondsDisplay>.
+    Related source file is "\\ece-homes.ece.wpi.edu\edavis\ECE2029Lab5\secondsDisplay.v".
+INFO:Xst:3210 - "\\ece-homes.ece.wpi.edu\edavis\ECE2029Lab5\secondsDisplay.v" line 43: Output port <R_out> of the instance <U4> is unconnected or connected to loadless signal.
+    Summary:
+	no macro.
+Unit <secondsDisplay> synthesized.
+
+Synthesizing Unit <clkDiv10K>.
+    Related source file is "\\ece-homes.ece.wpi.edu\edavis\ECE2029Lab5\clkDiv10K.v".
+    Found 1-bit register for signal <clk_out>.
+    Found 14-bit register for signal <div_count>.
+    Found 14-bit adder for signal <div_count[13]_GND_2_o_add_4_OUT> created at line 44.
+    Found 14-bit comparator greater for signal <div_count[13]_GND_2_o_LessThan_2_o> created at line 37
+    Found 14-bit comparator greater for signal <div_count[13]_PWR_2_o_LessThan_4_o> created at line 42
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  15 D-type flip-flop(s).
+	inferred   2 Comparator(s).
+Unit <clkDiv10K> synthesized.
+
+Synthesizing Unit <clkDiv1K>.
+    Related source file is "\\ece-homes.ece.wpi.edu\edavis\ECE2029Lab5\clkDiv1K.v".
+    Found 1-bit register for signal <clk_out>.
+    Found 14-bit register for signal <div_count>.
+    Found 14-bit adder for signal <div_count[13]_GND_3_o_add_4_OUT> created at line 40.
+    Found 14-bit comparator greater for signal <div_count[13]_GND_3_o_LessThan_2_o> created at line 33
+    Found 14-bit comparator greater for signal <div_count[13]_GND_3_o_LessThan_4_o> created at line 38
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  15 D-type flip-flop(s).
+	inferred   2 Comparator(s).
+Unit <clkDiv1K> synthesized.
+
+Synthesizing Unit <mod10cnt>.
+    Related source file is "\\ece-homes.ece.wpi.edu\edavis\ECE2029Lab5\mod10cnt.v".
+    Summary:
+	no macro.
+Unit <mod10cnt> synthesized.
+
+Synthesizing Unit <bin_cnt4>.
+    Related source file is "\\ece-homes.ece.wpi.edu\edavis\ECE2029Lab5\bin_cnt4.v".
+    Found 4-bit register for signal <cnt>.
+    Found finite state machine <FSM_0> for signal <cnt>.
+    -----------------------------------------------------------------------
+    | States             | 16                                             |
+    | Transitions        | 32                                             |
+    | Inputs             | 1                                              |
+    | Outputs            | 4                                              |
+    | Clock              | clk (rising_edge)                              |
+    | Reset              | Reset (positive)                               |
+    | Reset type         | synchronous                                    |
+    | Reset State        | 0000                                           |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Summary:
+	inferred   1 Finite State Machine(s).
+Unit <bin_cnt4> synthesized.
+
+Synthesizing Unit <fourDigitDisplay>.
+    Related source file is "\\ece-homes.ece.wpi.edu\edavis\ECE2029Lab4-modified\fourDigitDisplay.v".
+    Summary:
+	no macro.
+Unit <fourDigitDisplay> synthesized.
+
+Synthesizing Unit <digitChooser>.
+    Related source file is "\\ece-homes.ece.wpi.edu\edavis\ECE2029Lab4-modified\digitChooser.v".
+    Found 4x4-bit Read Only RAM for signal <anodes>
+    Summary:
+	inferred   1 RAM(s).
+Unit <digitChooser> synthesized.
+
+Synthesizing Unit <mux4to1>.
+    Related source file is "\\ece-homes.ece.wpi.edu\edavis\ECE2029Lab4-modified\mux4to1.v".
+    Found 4-bit 3-to-1 multiplexer for signal <Out> created at line 27.
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <mux4to1> synthesized.
+
+Synthesizing Unit <mux1bit4to1>.
+    Related source file is "\\ece-homes.ece.wpi.edu\edavis\ECE2029Lab4-modified\mux1bit4to1.v".
+    Found 1-bit 4-to-1 multiplexer for signal <out> created at line 24.
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <mux1bit4to1> synthesized.
+
+Synthesizing Unit <Hex2Seg>.
+    Related source file is "\\ece-homes.ece.wpi.edu\edavis\ECE2029Lab4-modified\Hex2Seg.v".
+    Summary:
+	inferred   2 Multiplexer(s).
+Unit <Hex2Seg> synthesized.
+
+Synthesizing Unit <bin_cnt2>.
+    Related source file is "\\ece-homes.ece.wpi.edu\edavis\ECE2029Lab4-modified\bin_cnt2.v".
+    Found 2-bit register for signal <cnt>.
+    Found 4x2-bit Read Only RAM for signal <cnt[1]_GND_11_o_mux_10_OUT>
+    HDL ADVISOR - Describing an operational reset or an explicit power-up state for register <cnt> would allow inference of a finite state machine and as consequence better performance and smaller area.
+    Summary:
+	inferred   1 RAM(s).
+	inferred   2 D-type flip-flop(s).
+Unit <bin_cnt2> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 2
+ 4x2-bit single-port Read Only RAM                     : 1
+ 4x4-bit single-port Read Only RAM                     : 1
+# Adders/Subtractors                                   : 3
+ 14-bit adder                                          : 3
+# Registers                                            : 7
+ 1-bit register                                        : 3
+ 14-bit register                                       : 3
+ 2-bit register                                        : 1
+# Comparators                                          : 6
+ 14-bit comparator greater                             : 6
+# Multiplexers                                         : 5
+ 1-bit 2-to-1 multiplexer                              : 1
+ 1-bit 4-to-1 multiplexer                              : 2
+ 4-bit 3-to-1 multiplexer                              : 1
+ 7-bit 2-to-1 multiplexer                              : 1
+# FSMs                                                 : 2
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+Synthesizing (advanced) Unit <bin_cnt2>.
+INFO:Xst:3231 - The small RAM <Mram_cnt[1]_GND_11_o_mux_10_OUT> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 4-word x 2-bit                      |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <cnt>           |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+Unit <bin_cnt2> synthesized (advanced).
+
+Synthesizing (advanced) Unit <clkDiv10K>.
+The following registers are absorbed into counter <div_count>: 1 register on signal <div_count>.
+Unit <clkDiv10K> synthesized (advanced).
+
+Synthesizing (advanced) Unit <clkDiv1K>.
+The following registers are absorbed into counter <div_count>: 1 register on signal <div_count>.
+Unit <clkDiv1K> synthesized (advanced).
+
+Synthesizing (advanced) Unit <digitChooser>.
+INFO:Xst:3231 - The small RAM <Mram_anodes> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 4-word x 4-bit                      |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <Q>             |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to signal <anodes>        |          |
+    -----------------------------------------------------------------------
+Unit <digitChooser> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 2
+ 4x2-bit single-port distributed Read Only RAM         : 1
+ 4x4-bit single-port distributed Read Only RAM         : 1
+# Counters                                             : 3
+ 14-bit up counter                                     : 3
+# Registers                                            : 5
+ Flip-Flops                                            : 5
+# Comparators                                          : 6
+ 14-bit comparator greater                             : 6
+# Multiplexers                                         : 5
+ 1-bit 2-to-1 multiplexer                              : 1
+ 1-bit 4-to-1 multiplexer                              : 2
+ 4-bit 3-to-1 multiplexer                              : 1
+ 7-bit 2-to-1 multiplexer                              : 1
+# FSMs                                                 : 2
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <FSM_0> on signal <cnt[1:4]> with user encoding.
+Optimizing FSM <FSM_0> on signal <cnt[1:4]> with user encoding.
+-------------------
+ State | Encoding
+-------------------
+ 0000  | 0000
+ 0001  | 0001
+ 0010  | 0010
+ 0011  | 0011
+ 0100  | 0100
+ 0101  | 0101
+ 0110  | 0110
+ 0111  | 0111
+ 1000  | 1000
+ 1001  | 1001
+ 1010  | 1010
+ 1011  | 1011
+ 1100  | 1100
+ 1101  | 1101
+ 1110  | 1110
+ 1111  | 1111
+-------------------
+
+Optimizing unit <secondsDisplay> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block secondsDisplay, actual ratio is 1.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 55
+ Flip-Flops                                            : 55
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : secondsDisplay.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 211
+#      GND                         : 1
+#      INV                         : 4
+#      LUT1                        : 39
+#      LUT2                        : 6
+#      LUT3                        : 2
+#      LUT4                        : 14
+#      LUT5                        : 6
+#      LUT6                        : 57
+#      MUXCY                       : 39
+#      VCC                         : 1
+#      XORCY                       : 42
+# FlipFlops/Latches                : 55
+#      FD                          : 50
+#      FDR                         : 5
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 14
+#      IBUF                        : 2
+#      OBUF                        : 12
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx16csg324-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:              55  out of  18224     0%  
+ Number of Slice LUTs:                  128  out of   9112     1%  
+    Number used as Logic:               128  out of   9112     1%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:    128
+   Number with an unused Flip Flop:      73  out of    128    57%  
+   Number with an unused LUT:             0  out of    128     0%  
+   Number of fully used LUT-FF pairs:    55  out of    128    42%  
+   Number of unique control sets:         6
+
+IO Utilization: 
+ Number of IOs:                          15
+ Number of bonded IOBs:                  15  out of    232     6%  
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRL/BUFHCEs:         1  out of     16     6%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+-------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)   | Load  |
+-----------------------------------+-------------------------+-------+
+U5/U1/clk_out                      | NONE(U5/U4/cnt_1)       | 2     |
+U2/clk_out                         | NONE(U3/U1/cnt_FSM_FFd4)| 8     |
+U1/clk_out                         | NONE(U2/clk_out)        | 15    |
+CLK                                | BUFGP                   | 30    |
+-----------------------------------+-------------------------+-------+
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: 3.835ns (Maximum Frequency: 260.760MHz)
+   Minimum input arrival time before clock: 3.842ns
+   Maximum output required time after clock: 6.110ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'U5/U1/clk_out'
+  Clock period: 2.190ns (frequency: 456.663MHz)
+  Total number of paths / destination ports: 3 / 2
+-------------------------------------------------------------------------
+Delay:               2.190ns (Levels of Logic = 1)
+  Source:            U5/U4/cnt_0 (FF)
+  Destination:       U5/U4/cnt_0 (FF)
+  Source Clock:      U5/U1/clk_out rising
+  Destination Clock: U5/U1/clk_out rising
+
+  Data Path: U5/U4/cnt_0 to U5/U4/cnt_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q              10   0.447   0.856  U5/U4/cnt_0 (U5/U4/cnt_0)
+     INV:I->O              1   0.206   0.579  U5/U4/Mram_cnt[1]_GND_11_o_mux_10_OUT12_INV_0 (U5/U4/Mram_cnt[1]_GND_11_o_mux_10_OUT)
+     FD:D                      0.102          U5/U4/cnt_0
+    ----------------------------------------
+    Total                      2.190ns (0.755ns logic, 1.435ns route)
+                                       (34.5% logic, 65.5% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'U2/clk_out'
+  Clock period: 2.901ns (frequency: 344.697MHz)
+  Total number of paths / destination ports: 54 / 12
+-------------------------------------------------------------------------
+Delay:               2.901ns (Levels of Logic = 2)
+  Source:            U3/U1/cnt_FSM_FFd2 (FF)
+  Destination:       U4/U1/cnt_FSM_FFd1 (FF)
+  Source Clock:      U2/clk_out rising
+  Destination Clock: U2/clk_out rising
+
+  Data Path: U3/U1/cnt_FSM_FFd2 to U4/U1/cnt_FSM_FFd1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              4   0.447   0.912  U3/U1/cnt_FSM_FFd2 (U3/U1/cnt_FSM_FFd2)
+     LUT6:I3->O            8   0.205   1.031  U3/R_GND_4_o_OR_32_o1 (R_out1)
+     LUT6:I3->O            1   0.205   0.000  U4/U1/cnt_FSM_FFd1_rstpot (U4/U1/cnt_FSM_FFd1_rstpot)
+     FD:D                      0.102          U4/U1/cnt_FSM_FFd1
+    ----------------------------------------
+    Total                      2.901ns (0.959ns logic, 1.942ns route)
+                                       (33.1% logic, 66.9% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'U1/clk_out'
+  Clock period: 3.835ns (frequency: 260.760MHz)
+  Total number of paths / destination ports: 283 / 16
+-------------------------------------------------------------------------
+Delay:               3.835ns (Levels of Logic = 2)
+  Source:            U2/div_count_5 (FF)
+  Destination:       U2/clk_out (FF)
+  Source Clock:      U1/clk_out rising
+  Destination Clock: U1/clk_out rising
+
+  Data Path: U2/div_count_5 to U2/clk_out
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               2   0.447   0.864  U2/div_count_5 (U2/div_count_5)
+     LUT4:I0->O           16   0.203   1.109  U2/div_count[13]_GND_3_o_LessThan_2_o1111 (U2/div_count[13]_GND_3_o_LessThan_2_o111)
+     LUT6:I4->O            1   0.203   0.579  U2/div_count[13]_GND_3_o_LessThan_2_o11 (U2/div_count[13]_GND_3_o_LessThan_2_o)
+     FDR:R                     0.430          U2/clk_out
+    ----------------------------------------
+    Total                      3.835ns (1.283ns logic, 2.552ns route)
+                                       (33.5% logic, 66.5% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'CLK'
+  Clock period: 3.295ns (frequency: 303.504MHz)
+  Total number of paths / destination ports: 558 / 30
+-------------------------------------------------------------------------
+Delay:               3.295ns (Levels of Logic = 2)
+  Source:            U1/div_count_12 (FF)
+  Destination:       U1/clk_out (FF)
+  Source Clock:      CLK rising
+  Destination Clock: CLK rising
+
+  Data Path: U1/div_count_12 to U1/clk_out
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q              19   0.447   1.416  U1/div_count_12 (U1/div_count_12)
+     LUT5:I0->O            1   0.203   0.924  U1/clk_out_rstpot_SW1 (N10)
+     LUT6:I1->O            1   0.203   0.000  U1/clk_out_rstpot (U1/clk_out_rstpot)
+     FD:D                      0.102          U1/clk_out
+    ----------------------------------------
+    Total                      3.295ns (0.955ns logic, 2.340ns route)
+                                       (29.0% logic, 71.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'U2/clk_out'
+  Total number of paths / destination ports: 24 / 12
+-------------------------------------------------------------------------
+Offset:              3.842ns (Levels of Logic = 3)
+  Source:            CE (PAD)
+  Destination:       U4/U1/cnt_FSM_FFd1 (FF)
+  Destination Clock: U2/clk_out rising
+
+  Data Path: CE to U4/U1/cnt_FSM_FFd1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             5   1.222   1.079  CE_IBUF (CE_IBUF)
+     LUT6:I0->O            8   0.203   1.031  U3/R_GND_4_o_OR_32_o1 (R_out1)
+     LUT6:I3->O            1   0.205   0.000  U4/U1/cnt_FSM_FFd1_rstpot (U4/U1/cnt_FSM_FFd1_rstpot)
+     FD:D                      0.102          U4/U1/cnt_FSM_FFd1
+    ----------------------------------------
+    Total                      3.842ns (1.732ns logic, 2.110ns route)
+                                       (45.1% logic, 54.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'U5/U1/clk_out'
+  Total number of paths / destination ports: 66 / 12
+-------------------------------------------------------------------------
+Offset:              6.110ns (Levels of Logic = 3)
+  Source:            U5/U4/cnt_0 (FF)
+  Destination:       segs<6> (PAD)
+  Source Clock:      U5/U1/clk_out rising
+
+  Data Path: U5/U4/cnt_0 to segs<6>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q              10   0.447   1.085  U5/U4/cnt_0 (U5/U4/cnt_0)
+     LUT4:I1->O            7   0.205   1.021  U5/U2/U1/Mmux_Out41 (U5/inputCurrent<3>)
+     LUT4:I0->O            1   0.203   0.579  U5/U3/GND_10_o_GND_10_o_mux_30_OUT<6>1 (segs_1_OBUF)
+     OBUF:I->O                 2.571          segs_1_OBUF (segs<1>)
+    ----------------------------------------
+    Total                      6.110ns (3.426ns logic, 2.684ns route)
+                                       (56.1% logic, 43.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'U2/clk_out'
+  Total number of paths / destination ports: 56 / 7
+-------------------------------------------------------------------------
+Offset:              5.872ns (Levels of Logic = 3)
+  Source:            U3/U1/cnt_FSM_FFd4 (FF)
+  Destination:       segs<6> (PAD)
+  Source Clock:      U2/clk_out rising
+
+  Data Path: U3/U1/cnt_FSM_FFd4 to segs<6>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              6   0.447   0.849  U3/U1/cnt_FSM_FFd4 (U3/U1/cnt_FSM_FFd4)
+     LUT4:I2->O            7   0.203   1.021  U5/U2/U1/Mmux_Out11 (U5/inputCurrent<0>)
+     LUT4:I0->O            1   0.203   0.579  U5/U3/GND_10_o_GND_10_o_mux_30_OUT<5>1 (segs_2_OBUF)
+     OBUF:I->O                 2.571          segs_2_OBUF (segs<2>)
+    ----------------------------------------
+    Total                      5.872ns (3.424ns logic, 2.448ns route)
+                                       (58.3% logic, 41.7% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock CLK
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+CLK            |    3.295|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock U1/clk_out
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+U1/clk_out     |    3.835|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock U2/clk_out
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+U2/clk_out     |    2.901|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock U5/U1/clk_out
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+U5/U1/clk_out  |    2.190|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 6.00 secs
+Total CPU time to Xst completion: 5.87 secs
+ 
+--> 
+
+Total memory usage is 257432 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    2 (   0 filtered)
+Number of infos    :    4 (   0 filtered)
+

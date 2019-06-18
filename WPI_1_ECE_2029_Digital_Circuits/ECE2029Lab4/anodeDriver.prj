@@ -1,0 +1,5 @@
+verilog work "Hex2Seg.v"
+verilog work "decodeAnode.v"
+verilog work "clkDiv10K.v"
+verilog work "bin_cnt2.v"
+verilog work "anodeDriver.v"

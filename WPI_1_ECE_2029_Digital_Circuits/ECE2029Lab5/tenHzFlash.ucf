@@ -1,0 +1,2 @@
+NET "CLK" LOC = "V10";
+NET "clk10Hz" LOC = "V16";

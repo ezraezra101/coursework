@@ -1,0 +1,2 @@
+verilog isim_temp "netgen/par/lab1_verilog_timesim.v"
+verilog isim_temp "lab1_verilog_test.v"

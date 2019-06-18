@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "simprims_ver" -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "C:/Users/edavis/Desktop/ECE2029/lab1ECE2029/tut_tut_sch_tb_isim_par.exe" -prj "C:/Users/edavis/Desktop/ECE2029/lab1ECE2029/tut_tut_sch_tb_par.prj" "work.tut_tut_sch_tb" "work.glbl" 

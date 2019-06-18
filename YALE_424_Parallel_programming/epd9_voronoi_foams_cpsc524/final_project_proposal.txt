@@ -1,0 +1,10 @@
+I would like to implement the algorithm described in the paper "Procedural Voronoi Foams for Additive Manufacturing", which is an embarrassingly parallel algorithm for determining a 3D open cell Voronoi diagram in preparation for 3D printing. It performs a calculation for each voxel in the final product. There are a few more subtleties than that, most notably handling mesh intersection and ensuring the result is printable, so it isn't an entirely straightforward problem.
+
+The paper implements the algorithm using CUDA, and I probably will as well, but I may instead choose to use a combination of MPI and OpenMP.
+
+For a previous class I implemented (part of) this algorithm serially in Python... which was incredibly slow, even after I swapped out to a less parallel Voronoi diagram algorithm (using the qhull library). My difficulties with that project is what helped me decide to take both this class and Computational Complexity. I don't think that I'll be able to re-use any parts of that project except for the understanding that I gained.
+
+I also plan on writing a report on the complexity of the algorithms used for my Computational Complexity class' final report. The report will be far more theoretical than my efforts for this course.
+
+
+Martínez, J., Dumas, J., Lefebvre, S. 2016. Procedural Voronoi Foams for Additive Manufacturing. ACM Trans. Graph. 35, 4, Article 44 (July 2016), 12 pages. DOI = 10.1145/2897824.2925922 http://doi.acm.org/10.1145/2897824.2925922.

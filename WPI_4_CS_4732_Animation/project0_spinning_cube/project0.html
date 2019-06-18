@@ -1,0 +1,115 @@
+<html>
+<head>
+	<title> Ezra's Project 0 - Simple cube animation</title>
+
+	<!-- Creates a simple animation of a spinning cube -->
+
+	<!-- There are some superficial similarities with 
+	http://learningwebgl.com/blog/?p=28 (intro to WebGL tutorial)
+	and the example code on http://twgljs.org/ and this code, but nothing substantial. -->
+
+
+	<!-- This is a minimal library that is basically syntactic sugar for some WebGL setup tasks. -->
+	<!-- It's much simpler than three.js -->
+	<!-- http://twgljs.org/ -->
+	<script type="text/javascript" src="./twgl.js"></script>
+
+	<!-- Fragment Shader - very simple -->
+	<script id="fs" type="x-shader/x-fragment">
+	precision mediump float;
+	varying vec4 color;
+	void main() {
+		gl_FragColor = color;
+	}
+	</script>
+
+	<!-- Vertex Shader - sets color based on vertex position. -->
+	<script id="vs" type="x-shader/x-vertex">
+	attribute vec4 position;
+	varying vec4 color;
+	uniform mat4 modelMat;
+
+	// These mat4s should really be combined with the other matrix, but I don't think I need to be efficient... yet.
+	// I just didn't want to worry about matrix multiplication in js yet.
+	// Maybe next time I'll use http://glmatrix.net/ or mathjs
+	uniform mat4 rotMatOne;
+	uniform mat4 rotMatTwo;
+	void main() {
+		color = position;
+		gl_Position = rotMatTwo * rotMatOne * modelMat * position;
+	}
+	</script>
+
+	<script type="text/javascript">
+
+	// Cube model from https://twgljs.org/ that's been modified to be double sided.
+	var indices = [0,1,2,0,2,3,4,5,6,4,6,7,8,9,10,8,10,11,12,13,14,12,14,15,16,17,18,16,18,19,20,21,22,20,22,23];
+	var arrays = {
+		position: [1,1,-1,1,1,1,1,-1,1,1,-1,-1,-1,1,1,-1,1,-1,-1,-1,-1,-1,-1,1,-1,1,1,1,1,1,1,1,-1,-1,1,-1,-1,-1,-1,1,-1,-1,1,-1,1,-1,-1,1,1,1,1,-1,1,1,-1,-1,1,1,-1,1,-1,1,-1,1,1,-1,1,-1,-1,-1,-1,-1],
+		indices: indices.concat(indices.map(function(_, i, arr) { return arr[arr.length-i-1]})),
+	};
+
+	var gl; // The webgl context of the primary canvas
+	// The current program uses a single webgl program and VAO/bufferset.
+	// Both of these are twgl objects
+	var programInfo, 
+		bufferInfo;
+
+
+	// Starts up the animation and initializes variables
+	function start() {
+		var canvas = document.querySelector('canvas#project-canvas');
+		gl = canvas.getContext('webgl');
+
+		programInfo = twgl.createProgramInfo(gl, ['vs', 'fs'])
+
+		bufferInfo = twgl.createBufferInfoFromArrays(gl, arrays);
+
+		requestAnimationFrame(render);
+	}
+
+	// Renders a frame of the animation. Intended to be called requestAnimationFrame()
+	// This particular version renders a rotating cube
+	function render(time) {
+		// note: time = performance.now()
+		twgl.resizeCanvasToDisplaySize(gl.canvas);
+		gl.viewport(0,0,gl.canvas.width, gl.canvas.width);
+
+		var rotation = 0.001 * time
+		var uniforms = {
+			modelMat: [0.5,0,0,0, 0,0.5,0,0, 0,0,0.5,0, 0,0,0,1],
+			rotMatOne: [Math.cos(rotation), -Math.sin(rotation), 0, 0,
+					 Math.sin(rotation), Math.cos(rotation), 0, 0,
+					 0,0,1,0,
+					 0,0,0,1],
+			 rotMatTwo: [Math.cos(rotation), 0, Math.sin(rotation), 0,
+					 0, 1, 0, 0,
+					 -Math.sin(rotation), 0, Math.cos(rotation), 0,
+					 0,0,0,1],
+		};
+		gl.enable(gl.DEPTH_TEST);
+		gl.depthFunc(gl.LESS);
+
+		gl.useProgram(programInfo.program);
+		twgl.setBuffersAndAttributes(gl, programInfo, bufferInfo);
+		twgl.setUniforms(programInfo, uniforms);
+		
+		twgl.drawBufferInfo(gl, gl.TRIANGLES, bufferInfo);
+
+		requestAnimationFrame(render);
+	}
+
+	</script>
+
+	<style>
+		#project-canvas {
+			width:100%;
+			min-height:500px;
+			border:none;
+		}
+	</style>
+</head>
+<body onload="start();">
+	<canvas id="project-canvas">
+</body>
+</html>

@@ -1,0 +1,120 @@
+<html>
+<head>
+</head>
+<body>
+<canvas id=sphere></canvas>
+<br/>
+
+<label name="radius">Radius</label><input onchange="onChange();" name="radius" type="range" min="0" max="1" value="1.0" class="slider" step="0.05" id="radius">
+
+<br>
+
+<label name="color R">color R</label><input onchange="onChange();" name="color R" type="range" min="0" max="1" value="0.8" class="slider" step="0.05" id="color R">
+
+<label name="color G">color G</label><input onchange="onChange();" name="color G" type="range" min="0" max="1" value="0.7" class="slider" step="0.05" id="color G">
+
+<label name="color B">color B</label><input onchange="onChange();" name="color B" type="range" min="0" max="1" value="0.3" class="slider" step="0.05" id="color B">
+
+<br>
+
+<label name="light x">light x</label><input onchange="onChange();" name="light x" type="range" min="-1" max="1" value="0.5" class="slider" step="0.05" id="light x">
+<label name="light y">light y</label><input onchange="onChange();" name="light y" type="range" min="-1" max="1" value="0.2" class="slider" step="0.05" id="light y">
+<label name="light z">light z</label><input onchange="onChange();" name="light z" type="range" min="-1" max="1" value="1" class="slider" step="0.05" id="light z">
+
+<script>
+var lightdir = [0.2,0.5,1];
+var sphereColor = [0.8,0.7, 0.3];
+var sphereRadius = 0.8;
+
+function onChange() {
+	sphereRadius = parseFloat(document.getElementById("radius").value);
+
+	sphereColor = [
+		parseFloat(document.getElementById("color R").value),
+		parseFloat(document.getElementById("color G").value),
+		parseFloat(document.getElementById("color B").value)
+	];
+
+	lightdir = [
+		parseFloat(document.getElementById("light y").value),
+		parseFloat(document.getElementById("light x").value),
+		parseFloat(document.getElementById("light z").value)
+	];
+	blinnPrecomp();
+	drawSphere();
+}
+function diffuse(normal) {
+	var n = normal;
+	var l = lightdir;
+	var dot = n[0]*l[0] + n[1]*l[1] + n[2]*l[2];
+
+	return [sphereColor[0] * dot, sphereColor[1]*dot, sphereColor[2]*dot];
+}
+var blinnHalfway = [0,0,0];
+function blinnPrecomp() {
+	var l = lightdir;
+	var v = [0,0,1]; // view vector
+	var h = [(v[0]+l[0]), (v[1]+l[1]), (v[2]+l[2])];
+	var hLen = Math.sqrt(h[0]*h[0] + h[1]*h[1] + h[2]*h[2]);
+	h = [h[0]/hLen, h[1]/hLen, h[2]/hLen];
+	blinnHalfway = h;
+}
+
+function blinnSpec(normal) {
+	var n = normal;
+
+	var alpha = 20; // "Shininess"
+	var specStrength = 0.95;
+	var hDotN = n[0]*blinnHalfway[0] + n[1]*blinnHalfway[1] + n[2]*blinnHalfway[2];
+	var s = Math.max(0,Math.pow(hDotN, alpha)); // Specular intensity
+	s = specStrength * s;
+	return [sphereColor[0] * s, sphereColor[1]*s, sphereColor[2]*s];
+}
+
+function blinnPhong(normal) {
+
+	var diff = diffuse(normal);
+	var specular = blinnSpec(normal);
+	
+	return [diff[0] + specular[0],diff[1] + specular[1],diff[2] + specular[2]];
+}
+
+var shader = blinnPhong;
+
+var getSphereNormal = function(x,y) {
+	// Let's assume that the center is at [0,0,0]
+	var r = sphereRadius;
+	// Distance from 0:
+	var z = Math.sqrt(r*r - (x*x + y*y));
+
+	var normal = [x/r, y/r, z/r];
+	if(isNaN(z)) {
+		return [NaN, NaN, NaN];
+	}
+	return normal;
+}
+// It's highly likely that I mixed up height and width in here somewhere.
+function drawSphere() {
+	var canvas = document.querySelector("#sphere");
+	var context = canvas.getContext('2d');
+	 canvas.height = 512;
+	 canvas.width = 512;
+	 var imagedata = context.getImageData(0,0, canvas.width, canvas.height);
+
+	for(var i=0; i<canvas.height; i++) {
+		for(var j=0; j<canvas.width; j++) {
+			var normal = getSphereNormal(2*j/canvas.width-1, 2*i/canvas.height-1);
+			var color = shader(normal);
+			imagedata.data[4*(i + j * canvas.width)] = color[0]*255;
+			imagedata.data[1+4*(i + j * canvas.width)] = color[1]*255;
+			imagedata.data[2+4*(i + j * canvas.width)] = color[2]*255;
+			imagedata.data[3+4*(i + j * canvas.width)] = 255; // Alpha
+		}
+	}
+	context.putImageData(imagedata, 0,0);
+}
+onChange();
+</script>
+
+</body>
+</html>

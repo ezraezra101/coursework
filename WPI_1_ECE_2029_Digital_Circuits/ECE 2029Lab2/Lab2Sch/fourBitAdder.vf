@@ -1,0 +1,128 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.5
+//  \   \         Application : sch2hdl
+//  /   /         Filename : fourBitAdder.vf
+// /___/   /\     Timestamp : 11/14/2013 09:33:06
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan6 -verilog "M:/ECE 2029/Lab2Sch/fourBitAdder.vf" -w "M:/ECE 2029/Lab2Sch/fourBitAdder.sch"
+//Design Name: fourBitAdder
+//Device: spartan6
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module myFullAdder_MUSER_fourBitAdder(A, 
+                                      B, 
+                                      Cin, 
+                                      Cout, 
+                                      Sum);
+
+    input A;
+    input B;
+    input Cin;
+   output Cout;
+   output Sum;
+   
+   wire XLXN_1;
+   wire XLXN_2;
+   wire XLXN_4;
+   
+   AND2  XLXI_1 (.I0(B), 
+                .I1(Cin), 
+                .O(XLXN_1));
+   AND2  XLXI_2 (.I0(A), 
+                .I1(Cin), 
+                .O(XLXN_2));
+   AND2  XLXI_3 (.I0(B), 
+                .I1(A), 
+                .O(XLXN_4));
+   OR3  XLXI_4 (.I0(XLXN_4), 
+               .I1(XLXN_2), 
+               .I2(XLXN_1), 
+               .O(Cout));
+   XOR3  XLXI_5 (.I0(Cin), 
+                .I1(B), 
+                .I2(A), 
+                .O(Sum));
+endmodule
+`timescale 1ns / 1ps
+
+module fourBitAdder(A0, 
+                    A1, 
+                    A2, 
+                    A3, 
+                    B0, 
+                    B1, 
+                    B2, 
+                    B3, 
+                    OverFlow, 
+                    S0, 
+                    S1, 
+                    S2, 
+                    S3);
+
+    input A0;
+    input A1;
+    input A2;
+    input A3;
+    input B0;
+    input B1;
+    input B2;
+    input B3;
+   output OverFlow;
+   output S0;
+   output S1;
+   output S2;
+   output S3;
+   
+   wire XLXN_1;
+   wire XLXN_2;
+   wire XLXN_3;
+   wire XLXN_29;
+   wire XLXN_30;
+   wire XLXN_31;
+   wire S3_DUMMY;
+   
+   assign S3 = S3_DUMMY;
+   myFullAdder_MUSER_fourBitAdder  XLXI_1 (.A(A0), 
+                                          .B(B0), 
+                                          .Cin(XLXN_29), 
+                                          .Cout(XLXN_1), 
+                                          .Sum(S0));
+   myFullAdder_MUSER_fourBitAdder  XLXI_2 (.A(A1), 
+                                          .B(B1), 
+                                          .Cin(XLXN_1), 
+                                          .Cout(XLXN_2), 
+                                          .Sum(S1));
+   myFullAdder_MUSER_fourBitAdder  XLXI_3 (.A(A2), 
+                                          .B(B2), 
+                                          .Cin(XLXN_2), 
+                                          .Cout(XLXN_3), 
+                                          .Sum(S2));
+   myFullAdder_MUSER_fourBitAdder  XLXI_4 (.A(A3), 
+                                          .B(B3), 
+                                          .Cin(XLXN_3), 
+                                          .Cout(), 
+                                          .Sum(S3_DUMMY));
+   GND  XLXI_5 (.G(XLXN_29));
+   AND3B1  XLXI_6 (.I0(S3_DUMMY), 
+                  .I1(B3), 
+                  .I2(A3), 
+                  .O(XLXN_30));
+   AND3B2  XLXI_7 (.I0(B3), 
+                  .I1(A3), 
+                  .I2(S3_DUMMY), 
+                  .O(XLXN_31));
+   OR2  XLXI_8 (.I0(XLXN_31), 
+               .I1(XLXN_30), 
+               .O(OverFlow));
+endmodule

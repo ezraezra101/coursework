@@ -1,0 +1,26 @@
+Performance Metrics: (general definitions)
+
+Utilization:
+The percentage of time a device is busy servicing a "customer"
+1 - idleTime (for CPUs)
+
+Throughput:
+The number of jobs processed by the "system" per unit time
+(coming out of the processor/system)
+JobsFinished/second
+
+Response time:
+The time required to receive a response to a request (round-trip time)
+
+Delay:
+The time to traverse from one end to the other in a system (not round-trip)
+
+
+
+Round Robin queueing is designed to decrease the mean delay.
+
+Input Load - input that goes to the queue
+
+I(nput load) & G (input coming back from CPU) are called the offered load
+
+a drop-tail queue is a queue that drops the last item of the queue if it gets too full.

@@ -1,0 +1,24 @@
+#Ezra Davis
+#Program 3 CS 2303
+#February 2014
+
+CC = gcc
+CFLAGS = -Wall -c
+LFLAGS = -Wall
+
+edavis_lab4: main.o
+	$(CC) $(LFLAGS) -o edavis_prog3 main.o
+
+main.o:
+	$(CC) $(CFLAGS) main.cpp
+#$(OBJFOLDER)##.o: $(OBJFOLDER)  $(SOURCEFOLDER)##.c $(SOURCEFOLDER)header.h
+#	$(CC) $(CFLAGS) $(SOURCEFOLDER)##.c
+
+	
+#builds, runs tests, and cleans
+run: edavis_lab4
+	make test
+
+test: edavis_lab4 lab4.dat
+	./edavis_prog3 10 <lab4.dat
+	

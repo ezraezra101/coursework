@@ -1,0 +1,47 @@
+Spanning Trees
+==============
+
+Connected graph: Every vertex is reachablefrom every other vertex.
+
+Given a connected graph, find a tree (a rooted acyclic directed graph) with the same set of vertices & a subset of the edges. That is a spanning tree. (Not usually unique.)
+
+
+Spanning Trees are useful for:
+	Breadth-First Search
+	Depth-First Search
+	Preventing bridge loops and broadcast storms in bridged Ethernet LANs.
+		Spanning Tree Protocol in IEEE 802.1D
+			Invented by Radia Perlman while at DEC
+
+
+#Minimum Spanning Trees (MST)
+	AKA a minimum-weight spanning tree.
+	A spanning tree of a connected weighted (undirected) graph that minumizes the sum of the weights present in the tree.
+	Not necessarily unique.
+	
+	Useful for minimizing wiring cost, propagation delay, or other things.
+	
+###Terminology:
+	Start with a connected, undirected graph G = (V, E), where the weight function is w(E)
+	
+	A 'safe edge' is an edge that doesn't break the invariants (has one or less already connected vertices)
+	
+	A 'cut' is a partitioning of a graph.
+		An edge that crosses the cut if the endpoint is in one component of the cut & the other endpoint is in the other component.
+		Respecting the cut: staying in one component.
+	A 'light edge' is the edge with the smallest weight with the correct property.
+	
+###Algorithms:
+	Kruskal's Algorithm
+		Merge trees by finding the edge connecting two trees that has the smallest weight.
+	Prim's Algorithm
+		Similar to Djikstra's shortest-path algorithm.
+		Edges A always form a single tree.
+
+####Prim's Algorithm:
+Start from arbitrary root r.
+	Initially, the only member in A.
+Add a light edge to A.
+	(Consider all the vertices connected by the set of edges A.
+	 Look at all the edges that connect those vertices to a new vertex
+	 Pick one with the smallest weight.)

@@ -1,0 +1,7 @@
+# Written by Ezra Davis for CS 4731 assignment 3
+len: 1
+iter: 5
+rot: 40, 40, 40
+rep: A, 
+start: A
+A:  FF[[+A]-A]A

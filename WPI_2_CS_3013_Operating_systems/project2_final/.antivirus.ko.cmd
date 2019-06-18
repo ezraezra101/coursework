@@ -1,0 +1,1 @@
+cmd_/media/sf_cs3013/projects/project2/antivirus.ko := ld -r -m elf_i386 -T /usr/src/linux-source-3.13.0/linux-source-3.13.0/scripts/module-common.lds --build-id  -o /media/sf_cs3013/projects/project2/antivirus.ko /media/sf_cs3013/projects/project2/antivirus.o /media/sf_cs3013/projects/project2/antivirus.mod.o

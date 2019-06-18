@@ -1,0 +1,13 @@
+
+
+Huffman Codes:
+	A way to compress strings of bytes using variable length encoding.
+	
+	Prefix codes are codes where no codeword is also a prefix of another codeword.
+	
+For Huffman Codes, we make a binary tree.
+	Left child = 0
+	Right child = 1
+	
+	
+	Make a tree. The leaves are individual words (like a character), and the nodes above it have the sum of the frequencies of the leaves.

@@ -1,0 +1,45 @@
+Player:	| Location: | Direction: |
+ r1	|   3x  1   | West       |
+ Z1	|   3x  2   | North      |
+ r2	|   4x  4   | West       |
+ Z2	|   3x  3   | East       |
+ r3	|   4x  0   | West       |
+ Z3	|   4x  2   | North      |
+ r4	|   3x  4   | South      |
+ Z4	|   0x  1   | South      |
+ r5	|   0x  0   | South      |
+ Z5	|   3x  0   | West       |
+ r6	|   0x  2   | North      |
+ Z6	|   2x  2   | South      |
+ r7	|   2x  4   | South      |
+ Z7	|   2x  0   | East       |
+ r8	|   0x  3   | North      |
+ Z8	|   0x  4   | North      |
+Turn: 0
+------------------
+| r5 Z4 r6 r8 Z8 |
+|                |
+| Z7    Z6    r7 |
+| Z5 r1 Z1 Z2 r4 |
+| r3    Z3    r2 |
+------------------
+Turn: 15
+------------------
+|    Z4          |
+| r5          Z8 |
+|                |
+|                |
+|    r3          |
+------------------
+Turn: 30
+------------------
+|                |
+|    Z4          |
+| r5          Z8 |
+|                |
+| r3             |
+------------------
+Turn: 45
+------------------
+|                |
+|       

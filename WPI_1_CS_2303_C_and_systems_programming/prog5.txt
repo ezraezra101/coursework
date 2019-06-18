@@ -1,0 +1,31 @@
+Host --		 Network 	-- Other side
+		(lots of routers)
+		
+		
+		
+Source \
+		M1 - M2 - Receiver
+Source /
+			M1 & M2 are routers (Mule Nodes)
+			
+M1 & M2 both have FCFS queues
+
+Professor Kinicki used a single eventlist for all the nodes
+
+The sources are CONSTANTLY putting out new packets.
+	The second source starts at time 3.
+
+The sources produce packets.
+	Packets have size
+	
+	Transmission time:
+		How long it takes to put the packet onto the wire.
+		 Its a function of the size of the packet and the transmission time.
+	Propagation time:
+		How long the packet takes to actually travel down the wire.
+		
+		
+
+		
+		
+#If two events arrive at the same time, the one that is processed 2nd gets put in the back.

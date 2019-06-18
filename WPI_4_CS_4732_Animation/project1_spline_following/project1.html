@@ -1,0 +1,213 @@
+<html>
+<head>
+	<title> Ezra's Project 1 - Spline following</title>
+
+	<!-- Creates a simple animation of a cube that follows a spline -->
+
+	<!-- This is a minimal library that is basically syntactic sugar for some WebGL setup tasks. -->
+	<!-- It's much simpler than three.js -->
+	<!-- http://twgljs.org/ -->
+	<script type="text/javascript" src="./twgl.js"></script>
+
+	<!-- This is a library that adds WebGL style matrix operations. -->
+	<!-- It's got quaternions, but I don't use them. -->
+	<!-- http://glmatrix.net -->
+	<script type="text/javascript" src="./gl-matrix.js"></script>
+
+	<!-- Fragment Shader - very simple -->
+	<script id="fs" type="x-shader/x-fragment">
+	precision mediump float;
+	varying vec4 color;
+	void main() {
+		gl_FragColor = color;
+	}
+	</script>
+
+	<!-- Vertex Shader - sets color based on vertex position. -->
+	<script id="vs" type="x-shader/x-vertex">
+	attribute vec4 position;
+	varying vec4 color;
+	uniform mat4 modelMat;
+
+	void main() {
+		color = position;
+		gl_Position = modelMat * position;
+	}
+	</script>
+
+	<script type="text/javascript" src="./Quaternion.js"></script>
+	<script type="text/javascript" src="./readSpline.js"></script>
+	<script type="text/javascript" src="./interpolate.js"></script>
+
+
+	<script type="text/javascript">
+
+	// Cube model from https://twgljs.org/ that's been modified to be double sided.
+	var indices = [0,1,2,0,2,3,4,5,6,4,6,7,8,9,10,8,10,11,12,13,14,12,14,15,16,17,18,16,18,19,20,21,22,20,22,23];
+	var arrays = {
+		position: [1,1,-1,1,1,1,1,-1,1,1,-1,-1,-1,1,1,-1,1,-1,-1,-1,-1,-1,-1,1,-1,1,1,1,1,1,1,1,-1,-1,1,-1,-1,-1,-1,1,-1,-1,1,-1,1,-1,-1,1,1,1,1,-1,1,1,-1,-1,1,1,-1,1,-1,1,-1,1,1,-1,1,-1,-1,-1,-1,-1],
+		indices: indices.concat(indices.map(function(_, i, arr) { return arr[arr.length-i-1]})),
+	};
+
+	var gl; // The webgl context of the primary canvas
+	// The current program uses a single webgl program and VAO/bufferset.
+	// Both of these are twgl objects
+	var programInfo,
+		bufferInfo;
+
+	var splines = []
+	function updateSpline() {
+		splines = readSpline();
+	}
+
+	// Starts up the animation and initializes variables
+	function start() {
+		
+		updateSpline()
+		var canvas = document.querySelector('canvas#project-canvas');
+		gl = canvas.getContext('webgl');
+
+		programInfo = twgl.createProgramInfo(gl, ['vs', 'fs'])
+
+		bufferInfo = twgl.createBufferInfoFromArrays(gl, arrays);
+
+		requestAnimationFrame(render);
+		
+	}
+
+	// Renders a frame of the animation. Intended to be called  via requestAnimationFrame()
+	function render(time) {
+		// note: time = performance.now()
+		twgl.resizeCanvasToDisplaySize(gl.canvas);
+		gl.viewport(0,0,gl.canvas.width, gl.canvas.width);
+		gl.enable(gl.DEPTH_TEST);
+		gl.depthFunc(gl.LESS);
+		gl.useProgram(programInfo.program);
+		twgl.setBuffersAndAttributes(gl, programInfo, bufferInfo);
+
+		var modelMat = [];
+		mat4.identity(modelMat);
+				mat4.scale(modelMat, modelMat, [0.05, 0.05, 0.05]);
+				mat4.translate(modelMat, modelMat, getLocation(splines, time/1000));
+				mat4.multiply(modelMat, modelMat, getRotation(splines, time/1000));
+				var uniforms = {
+					modelMat: modelMat,
+				};
+				twgl.setUniforms(programInfo, uniforms);
+				
+				twgl.drawBufferInfo(gl, gl.TRIANGLES, bufferInfo);
+		requestAnimationFrame(render);
+	}
+
+	</script>
+
+	<link rel="stylesheet" href="style.css">
+</head>
+<body onload="start();">
+	<canvas id="project-canvas"></canvas>
+
+	<h3>Spline file</h3>
+	<textarea id="spline" onchange="updateSpline()">
+# This file contains a series of control points for you to read in for defining splines.
+# The file has the following structure:
+# One integer denoting the number of splines ("nSplines") defined within the file.
+# 1
+# For each spline:
+# One integer denoting the number of control points for this spline.
+# 12
+# One float denoting the number of seconds over which to move the object from start to finish.
+# 10.0
+# For each point:
+#   Three floats denoting X, Y, Z position.
+# 0.0, 0.0, 0.0
+#   Three floats denoting XRot, YRot, ZRot Euler angles for orientation.
+# 0.0, 0.0, 0.0
+#
+# Repeat for each spline.
+# --------------------------------------
+#
+# One integer denoting the number of splines ("nSplines") defined within the file.
+1
+
+# For each spline:
+# One integer denoting the number of control points for this spline.
+12
+# One float denoting the number of seconds over which to move the object from start to finish.
+10.0
+# For each point:
+# Control point 1
+#   Three floats denoting X, Y, Z position.
+0.0, 0.0, 0.0
+#   Three floats denoting XRot, YRot, ZRot Euler angles for orientation.
+0.0, 0.0, 0.0
+#
+# Control point 2
+#   Three floats denoting X, Y, Z position.
+0.0, 0.0, 0.0
+#   Three floats denoting XRot, YRot, ZRot Euler angles for orientation.
+0.0, 0.0, 0.0
+#
+# Control point 3
+#   Three floats denoting X, Y, Z position.
+10.0, 0.0, 0.0
+#   Three floats denoting XRot, YRot, ZRot Euler angles for orientation.
+0.0, 0.0, 0.0
+#
+# Control point 4
+#   Three floats denoting X, Y, Z position.
+10.0, 10.0, 0.0
+#   Three floats denoting XRot, YRot, ZRot Euler angles for orientation.
+0.0, 0.0, 0.0
+#
+# Control point 5
+#   Three floats denoting X, Y, Z position.
+0.0, 10.0, 0.0
+#   Three floats denoting XRot, YRot, ZRot Euler angles for orientation.
+0.0, 0.0, 0.0
+#
+# Control point 6
+#   Three floats denoting X, Y, Z position.
+0.0, 0.0, 0.0
+#   Three floats denoting XRot, YRot, ZRot Euler angles for orientation.
+90.0, 0.0, 0.0
+#
+# Control point 7
+#   Three floats denoting X, Y, Z position.
+0.0, 0.0, 0.0
+#   Three floats denoting XRot, YRot, ZRot Euler angles for orientation.
+90.0, -90.0, 0.0
+#
+# Control point 8
+#   Three floats denoting X, Y, Z position.
+0.0, 0.0, 0.0
+#   Three floats denoting XRot, YRot, ZRot Euler angles for orientation.
+90.0, 90.0, 90.0
+#
+# Control point 9
+#   Three floats denoting X, Y, Z position.
+0.0, 0.0, 0.0
+#   Three floats denoting XRot, YRot, ZRot Euler angles for orientation.
+0.0, 90.0, -90.0
+#
+# Control point 10
+#   Three floats denoting X, Y, Z position.
+0.0, 0.0, 0.0
+#   Three floats denoting XRot, YRot, ZRot Euler angles for orientation.
+0.0, 0.0, -90.0
+#
+# Control point 11
+#   Three floats denoting X, Y, Z position.
+0.0, 0.0, 0.0
+#   Three floats denoting XRot, YRot, ZRot Euler angles for orientation.
+0.0, 0.0, 90.0
+#
+# Control point 12
+#   Three floats denoting X, Y, Z position.
+0.0, 0.0, 0.0
+#   Three floats denoting XRot, YRot, ZRot Euler angles for orientation.
+0.0, 0.0, 0.0
+#
+
+	</textarea>
+</body>
+</html>

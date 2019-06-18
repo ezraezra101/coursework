@@ -1,0 +1,88 @@
+P, NP, and NP-Completeness
+==========================
+
+Why we care:
+	Some problems are inherently harder than others
+	Some are especially hard
+		To solve these:
+			Give up
+			Only solve small problems
+			Find a special case
+			Settle for an approximate solution
+				(use Heuristics)
+
+P: solvable in polynomial time (class of problems)
+	I.E. T(n) = O(n^k) where k is a finite constant
+	Tractable problems
+	What is practical changes with current tech
+
+NP: Verifiable in polynomial time (class of problems)
+	IE: if we get a pssible solution, we can confirm it in polynomial time
+
+	More than 3000 known
+	Intractable problems
+	
+	Name may come from Non-Deterministic Polynomial(ly) solvable problem
+		It could be solved on a Non-Deterministic (think: quantum computer?) machine in polynomial time.
+
+P is a subset of NP.
+	(We are fairly sure that P is a proper subset.)
+
+Examples:
+	Paths:
+		Shortest: P
+		Longest: NP
+	Graph traversal:
+		Euler cycle (every edge once): P
+		Hamiltonian cycle (every vertex once): NP
+
+NP-Completeness
+	The class of problems which are as hard as any problem in NP.
+	It is in NP (so it is NP-Hard)
+	It is at least as hard as every other problem in NP (within a polynomial factor)
+	
+	There are known polynomial-time algorithms to transform one NPC problem into another.
+		This is called reducing.
+	If any NPC problem is found to be in P, all of them would be.
+
+NPC proofs: Proving impossibility of solving algorithm in polynomial time.
+
+Decision Problems vs. Optimization Problems:
+	Optimization problem: of all the feasible solutions, find the 'best'
+	
+	Decision Problem: Yes/No answer
+		NPC only applies to decision problems.
+			Can convert an optimization problem to a decision problem,
+				Optimization is at least as hard as the decision problem
+
+
+A problem is in NP iff there is a polynomial time algorithm to verify certificates.
+	These are NP-hard
+	There can be problems that are so hard they can neither be solved nor verified in polynomial time
+
+
+
+NP-complete problems:
+=====================
+	Clique problem:
+		For a graph, find the maximum-size subgraph which is complete.
+	Vertex-cover problem:
+		For a graph G, find a minimum-size set of vertices which covers all the edges.
+		This is the complement of clique.
+	Traveling-salesman problem:
+		Find the hamiltonian cycle with minimum cost.
+	Set-Partition problem:
+		Given a set of numbers, can you divide it into two sets which each have the same sum?
+	Graph coloring:
+		Find the minimum number of colors so no two adjacent nodes are the same color.
+
+
+Things in the book that we won't talk about:
+============================================
+We also might care about solving problems in polynomial space
+(P-space)
+We can often trade-off time & space (but not always)
+	Turing Machines
+	Formal Languages
+	Optimizing space
+	Encoding

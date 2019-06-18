@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "M:/ECE 2029/ECE2029Lab4/decodeAnodetest_isim_beh.exe" -prj "M:/ECE 2029/ECE2029Lab4/decodeAnodetest_beh.prj" "work.decodeAnodetest" "work.glbl" 

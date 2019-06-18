@@ -1,0 +1,148 @@
+Graphs:
+
+	In the book, graph G is defined as a set of
+		Vertices,	and a set of
+		Edges
+		
+	Inside of asymptotic notation, use V or E to indicate size.
+	
+2 types of graphs: Directed Edges & Undirected edges
+	
+###Representations:
+####Ajacency lists:
+		Handy for SPARSE graphs: |E| << |V|^2
+		
+		Array of linkedLists. One list per Vertex.
+		
+####Adjacency Matrix:
+		Handy for dense graphs: |E| ≈ |V|^2
+			An array that is |V| x |V|.
+			Undirected graphs are symetric, so only the top triangle is needed.
+				A B C D E
+			  A X
+			  B X 
+			  C     
+			  D         X
+			  E   X     X
+
+
+Often, Edges have WEIGHTS that represent different things depending on the graphs.
+	(Distance, Speed, Strength of bond...)
+	
+	
+Breadth-First Search:
+=====================
+1.	Start from designated vertex s.
+2.  Follow each of the edges from s to discover all the vertices reached from s by following any one edge.
+3.  Follow edges from those vertices to find the set of vertices that are distance 2 from x.
+4.  Repeat.
+	
+If you want to construct a breadth-first tree:
+	Each vertex u has an attribute u.color = white, grey, or black.
+		All start as white
+	The first time a vertex is discovered, turn it grey.
+	Maintain a FIFO queue to hold the grey vertices.
+	After you find the vertices you can reach from a grey vertex, turn it black & remove it from the queue.
+
+	Analysis:
+		Initialization:
+			T = O(V)
+		Each vertex is added to the queue once and deleted once.
+			T = O(V)
+		Each adjacency list is scanned once.
+			T = O(E)
+		So, T = O(V + E)
+		
+		
+	The predecessor subgraph is the subset of a graph that forms a breadth-first tree
+		Depth of a tree node == shortest path from the source.
+		
+		It contains all the Vertices (unless there is no path to certain nodes), but not all the edges.
+		
+		
+		
+Depth first search:
+===================
+	Runtime T = Θ(V + E)
+
+	Each node is colored:
+		White initially.
+		Grey when first discovered.
+		Black when finished. (all adjacent nodes have been examined)
+	Each vertex has 2 timestamps, when it is discovered, and when it is finished
+	
+	Depth first search explores the edges out from the current node first, then backtracks to its predecessor.
+
+###Predecessor Subgraph:
+If you discover v by first discovering u, v's predessor is u:
+	v.parent = u
+Definition:
+	Gp = (V, Eparent), where:
+	Ep = {(v.parent, v): vεV and v.parent != nil }
+This forms a depth-first forest made of disjoint depth-first trees.
+Ep are tree edges.
+
+The resulting 'forest' isn't guaranteed to be unique, and usually isn't.
+
+
+###Parenthesis Theorem:
+For any u & v in a graph, one of these must be true
+	.d = .discoverTime,		.f = .finishTime
+	[u.d, u.f] and [v.d, v.f] are disjoint.
+		Neither is a descendant of the other in the DFF (Depth First Forest)
+	[u.d, u.f] is entirely within [v.d, v.f]
+		u is a descendant of v.
+	[v.d, v.f] is entirely within [u.d, u.f]
+		v is a descendant of u.
+		
+###Edge classification in a Graph with a Depth First Forest
+	Tree edges are in DFF
+	Back edges are edges connecting a vertex to an ancestor
+	Forward edges connect a vertex to a descendant, but not in the DFF.
+	Cross edges are all the rest.
+		Between vertices in the DFT, but not ancestor/descendant.
+		Between vertices in defferent DFTs.
+		
+	Edges can be colored too:
+		For edge (u,v), based on color of *v* at time of exploration.
+			'white'	-> tree edge
+			'grey'	-> back edge
+			'black'	-> forward or cross edge.
+
+
+
+
+Directed Acyclic Graphs (dags)
+==============================
+	All trees are dags.
+		(Converse is not true: there are non-rooted dags)
+	
+	For a dag: G = (V, E):
+		The transpose GT = (V, ET),
+		where ET = {(u,v): (v, u) in E}
+		(The transpose has all the edges switched in direction)
+		Still a dag.
+
+###Topological Sort
+	Runtime T = Θ(V + E)
+	
+	Start with a dag G = (V, E)
+	Generate a linear ordering of the nodes such that, if G contains an edge (u, v),
+	then u appears before v in the ordering.
+	
+	It isn't a necessarily unique ordering.
+	
+	Useful when you have dependencies (eg: you need to be wearing socks to put on shoes)
+	
+	Topological-Sort(G)
+		Call Depth-First-Search(G) to compute finishing times v.f for each vertex.
+		As each Vertex is finished insert it into the front of a linkedList.
+			(The last vertex finished is the first one you do.)
+
+
+
+
+##Decomposing a directed graph into strongly-connected components
+	A strongly-connected component of a directed graph is a maximal set of vertices such that:
+		For every pair of vertices u & v int the set, u and v are reachable from each other.
+	(A dag & its transpose have the same components)

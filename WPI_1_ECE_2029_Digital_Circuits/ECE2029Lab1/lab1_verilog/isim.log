@@ -1,0 +1,11 @@
+ISim log file
+Running: C:\Users\edavis\Desktop\ECE2029\lab1_verilog\lab1_verilog_test_isim_par.exe -intstyle ise -gui -tclbatch isim.cmd -wdb C:/Users/edavis/Desktop/ECE2029/lab1_verilog/lab1_verilog_test_isim_par.wdb 
+ISim P.58f (signature 0x7708f090)
+This is a Full version of ISim.
+Time resolution is 1 ps
+# onerror resume
+# wave add /
+# run 1000 ns
+Simulator is doing circuit initialization process.
+INFO: SDF backannotation was successful with SDF file netgen/par/lab1_verilog_timesim.sdf, for root module /lab1_verilog_test/uut/.
+Finished circuit initialization process.

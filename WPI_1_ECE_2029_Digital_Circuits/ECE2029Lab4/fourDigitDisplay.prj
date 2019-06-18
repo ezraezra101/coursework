@@ -1,0 +1,6 @@
+verilog work "mux4to1.v"
+verilog work "Hex2Seg.v"
+verilog work "decodeAnode.v"
+verilog work "clkDiv10K.v"
+verilog work "bin_cnt2.v"
+verilog work "fourDigitDisplay.v"

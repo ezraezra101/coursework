@@ -1,0 +1,10 @@
+echo It's working!
+./runCommand ./runCommand echo running runCommand
+pwd
+cd ..
+pwd
+ls -al /
+illegal commands:
+ls l l l l l l l l l l l l l l l l l l l l l l l l l l l l l l l l
+ls jadfk;adjuiahruihjkluienjiahuiahfuihafhaewuhuyoahdfjklshjihauihauifhuiahjdkslafhuyenjhuvynriahjiuahuilhuilfhandjsfjkl;diofaejq
+echo our shell should auto exit at end of file...

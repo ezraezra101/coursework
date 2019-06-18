@@ -1,0 +1,43 @@
+Crypto:
+
+Codes aren't just ciphers: ASCII, AI32, & Morse are all codes
+
+Cipher/cypher implies transformation of plaintext & secrets.
+
+Cryptography:
+	Starts with *plaintext*
+	Encrypt with some *key*
+		Produces *ciphertext*
+	Later, decrypt with some key to get the plaintext.
+
+Uses:
+	Encryption
+	Authentication
+
+
+symmentric-key encryption:
+	Same key in both directions
+asymmetric-key encryption:
+	Different keys for the two directions
+		Could have public & private keys
+
+Symmetric examples:
+	Caesar cypher
+		(Just shift each letter by n positions)
+	Enigma machine
+		(Rotating disks that changed every day)
+	DES encryption
+	
+
+Public key cryptography
+	AES, RSA
+	
+	2 keys: one public, one private
+		Can encrypt with one & decrypt that message with the other.
+	
+	Alternate Authentication: (as opposed to simply encrypting with private key)
+		Use a signature/hash/checksum/message-digest
+			Just encrypt the checksum with the private key.
+			(Much faster)
+	
+	

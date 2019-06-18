@@ -1,0 +1,32 @@
+//! **************************************************************************
+// Written by: Map P.58f on Fri Dec 06 14:42:18 2013
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "decPts<2>" LOCATE = SITE "D9" LEVEL 1;
+COMP "Y<1>" LOCATE = SITE "M8" LEVEL 1;
+COMP "Z<0>" LOCATE = SITE "T10" LEVEL 1;
+COMP "Z<1>" LOCATE = SITE "T9" LEVEL 1;
+COMP "DP" LOCATE = SITE "M13" LEVEL 1;
+COMP "segs<0>" LOCATE = SITE "L14" LEVEL 1;
+COMP "segs<1>" LOCATE = SITE "N14" LEVEL 1;
+COMP "segs<2>" LOCATE = SITE "M14" LEVEL 1;
+COMP "segs<3>" LOCATE = SITE "U18" LEVEL 1;
+COMP "segs<4>" LOCATE = SITE "U17" LEVEL 1;
+COMP "anodes<0>" LOCATE = SITE "N16" LEVEL 1;
+COMP "segs<5>" LOCATE = SITE "T18" LEVEL 1;
+COMP "anodes<1>" LOCATE = SITE "N15" LEVEL 1;
+COMP "segs<6>" LOCATE = SITE "T17" LEVEL 1;
+COMP "anodes<2>" LOCATE = SITE "P18" LEVEL 1;
+COMP "signs<0>" LOCATE = SITE "A8" LEVEL 1;
+COMP "anodes<3>" LOCATE = SITE "P17" LEVEL 1;
+COMP "signs<2>" LOCATE = SITE "C9" LEVEL 1;
+COMP "W<0>" LOCATE = SITE "V8" LEVEL 1;
+COMP "W<1>" LOCATE = SITE "T5" LEVEL 1;
+COMP "CLK" LOCATE = SITE "V10" LEVEL 1;
+COMP "X<0>" LOCATE = SITE "N8" LEVEL 1;
+COMP "X<1>" LOCATE = SITE "U8" LEVEL 1;
+COMP "decPts<0>" LOCATE = SITE "C4" LEVEL 1;
+COMP "Y<0>" LOCATE = SITE "V9" LEVEL 1;
+SCHEMATIC END;
+

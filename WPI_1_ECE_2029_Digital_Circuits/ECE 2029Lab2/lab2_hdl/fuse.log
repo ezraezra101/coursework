@@ -1,0 +1,18 @@
+Running: C:\Xilinx\14.5\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -lib secureip -o M:/ECE 2029/lab2_hdl/fullAdd_tb_isim_beh.exe -prj M:/ECE 2029/lab2_hdl/fullAdd_tb_beh.prj work.fullAdd_tb work.glbl 
+ISim P.58f (signature 0x7708f090)
+Number of CPUs detected in this system: 8
+Turning on mult-threading, number of parallel sub-compilation jobs: 16 
+Determining compilation order of HDL files
+Analyzing Verilog file "M:/ECE 2029/lab2_hdl/fullAdd.v" into library work
+Analyzing Verilog file "M:/ECE 2029/lab2_hdl/fullAdd_tb.v" into library work
+Analyzing Verilog file "C:/Xilinx/14.5/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Starting static elaboration
+Completed static elaboration
+Compiling module fullAdd
+Compiling module fullAdd_tb
+Compiling module glbl
+Time Resolution for simulation is 1ps.
+Compiled 3 Verilog Units
+Built simulation executable M:/ECE 2029/lab2_hdl/fullAdd_tb_isim_beh.exe
+Fuse Memory Usage: 28484 KB
+Fuse CPU Usage: 390 ms

@@ -1,0 +1,26 @@
+How our solution avoids depriving any job type:
+-----------------------------------------------
+
+We manage each job type separately - each has its own queue that jobs come into 
+the cluster from.
+Each job type has a turn in the cluster; if five jobs with a given job type
+run, the next job type is given access to the cluster when space is available.
+If there are no jobs of a given job type, the next job type is given a turn in
+the cluster.
+
+Given a job type, the next job type to run is determined by the macro
+NEXT_CLASSIFICATION(s, m)
+* If the current turn's job type is SECRET, the next job type is UNCLASSIFIED.
+* If the current turn's job type is UNCLASSIFIED, the next job type is 
+  TOP_SECRET.
+* If the current turn's job type is TOP_SECRET, the next job type oscillates
+  between SECRET and UNCLASSIFIED. This means that if the last time we switched
+  from TOP_SECRET's turn to SECRET, we will now go to UNCLASSIFIED.
+
+In addition to this, if there are more than two TOP_SECRET jobs, it immediately
+becomes TOP_SECRET's turn, as according to the spec.
+
+
+This method assures that no job type is ignored, unless there are constantly
+two or more TOP_SECRET jobs. It also favors UNCLASSIFIED jobs slightly, which
+is acceptable because there are more UNCLASSIFIED jobs than the other two types.

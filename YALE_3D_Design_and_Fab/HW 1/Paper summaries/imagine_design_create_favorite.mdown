@@ -1,0 +1,11 @@
+
+
+The project in the Imagine Design Create document that most interested me was probably the Shanghai tower.
+It seemed one of the more practical architectural designs in the document and also more aesthetically pleasing than the rest of them, to me, at least. It also qualifies for LEED Gold.
+
+During the design process, the skyscraper was designed primarily with Autodesk's Building Information Modeling software (BIM), Revit, Ecotect and Navis, but even after modeling its wind resistance, the design team ran physical wind tunnel tests, which surprised me a bit.
+
+The designers used BIM to calculate numerous safety concerns - calculating wind resistance, response to earthquakes, fires, and even picked the glass using a design tool to reduce glare. These tools allowed them to try to meet their performance objectives even before talking to experts.
+
+According to Autodesk's ['success story' publication on their website](https://damassets.autodesk.net/content/dam/autodesk/www/products/autodesk-revit-family/docs/pdf/shanghai_tower_story_usletter_template_FY14.pdf), maintenance for the tower will continue to use the same BIM systems that it was built with.
+

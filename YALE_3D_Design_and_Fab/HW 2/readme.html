@@ -1,0 +1,147 @@
+
+<link rel="stylesheet" href="https://raw.githubusercontent.com/sindresorhus/github-markdown-css/gh-pages/github-markdown.css">
+<style>
+	.markdown-body {
+		min-width: 200px;
+		max-width: 790px;
+		margin: 0 auto;
+		padding: 30px;
+	}
+</style>
+<article class="markdown-body">
+
+<h2>Overview</h2>
+
+<p>My homework is divided into several files:</p>
+
+<ul>
+<li><code>3D printing/</code> where my scanning and printing files are.
+
+<ul>
+<li><code>beethoven...</code> - Files related to the 3D scan of Beethoven&#39;s head</li>
+<li><code>squirrels.stl</code> and <code>squirrels.blend</code> - I smoothed my squirrel, and just for the fun of it, I made a new squirrel in blender in about 3 minutes.</li>
+<li><code>prints.jpg</code> - a photo of the final prints for both squirrels and Beethoven.</li>
+<li><code>squirrels_and_beethoven.gcode</code> - gcode file for the printer</li>
+</ul></li>
+<li><code>sum_triangle/</code> - files associated with part 1A of the homework.</li>
+<li><code>polyhedron_prog_subdiv_off/</code> - part 1B of the homework</li>
+<li><code>Voronoi_diagram_2/</code> - part 1C</li>
+</ul>
+
+<h2>1A Convex hull and minkowski sum operations</h2>
+
+<h5>Build instructions:</h5>
+
+<pre lang="bash"><code>cd sum_triangle
+cmake .
+make
+</code></pre>
+
+<h6>Run instructions</h6>
+
+<pre lang="bash"><code># To generate a set of triangles:
+ruby generate_triangles.rb
+
+./sum_triangle_triangle triangles_100.txt # creates ms_triangles_100.txt
+./sum_triangle_triangle_ch triangles_100.txt # creates ch_triangles_100.txt
+</code></pre>
+
+<h6>Description and results:</h6>
+
+<p>Unsurprisingly, the convex hull operation produces fewer ouput points than just the minkowski sum, and not always the same number for the number of input points given. (Also, the minkowski sum prints out the number of points returned, whereas the convex hull version part doesn&#39;t)</p>
+
+<p>Creating the convex hull is a neglidgable part of the process - taking only roughly 1/20th of a second longer than just performing the minkowski sum.</p>
+
+<pre lang="bash"><code>time  ./sum_triangle_triangle ../triangles_10000.txt;  time  ./sum_triangle_triangle_ch ../triangles_10000.txt
+    real    0m3.943s
+    user    0m3.876s
+    sys 0m0.061s
+
+    real    0m3.981s
+    user    0m3.921s
+    sys 0m0.058s
+</code></pre>
+
+<h2>1B Subdivision of OFF file</h2>
+
+<h5>Build instructions:</h5>
+
+<pre lang="bash"><code>cd polyhedron_prog_subdiv_off
+cmake .
+make
+</code></pre>
+
+<h6>Run instructions:</h6>
+
+<pre lang="bash"><code>./polyhedron_prog_subdiv_off ./corner.off
+# produces corner_sd.off
+
+</code></pre>
+
+<h6>Description:</h6>
+
+<p>This program subdivides each face into smaller, smoother faces, causing the number of faces to increase by a factor of roughly four, depending on the shape of the faces in the model. Incidentally, the program triangulates the mesh.<br>
+The number of vertices in the new mesh is equal to the sum of the vertices and faces in the old mesh.</p>
+
+<h2>1C</h2>
+
+<h5>Build instructions:</h5>
+
+<pre lang="bash"><code>cd Voronoi_diagram_2
+cmake .
+make
+</code></pre>
+
+<h6>Run instructions:</h6>
+
+<pre lang="bash"><code>./vd_my_program.cpp
+</code></pre>
+
+<h6>Description:</h6>
+
+<p><code>vd_2_point_location</code>, the original example for <code>Voronoi_diagram_2</code> creates a voronoi diagram based on the contents of <code>data/data1.dt.cin</code>, and then finds out where the points in <code>data/queries1.dt.cin</code> are and prints out some information about the points&#39; location in the voronoi diagram.</p>
+
+<p>I modified the program to print out the boundaries of all the faces adjacent to the original point.</p>
+
+<h2>2</h2>
+
+<p>All files relevant to this section are in the <code>3D printing/</code> directory.</p>
+
+<p>I used the NextEngine scanner with Professor Brown&#39;s software to scan a bust of Beethoven, which I then printed along with a smoothed version of my squirrel and a new squirrel I threw together for the fun of it.</p>
+
+<h2>3</h2>
+
+<h3>Scanning principles</h3>
+
+<h4>Sturctured Light Camera</h4>
+
+<pre><code>In the structured light approach is an active stereo- vision technique. A sequence of known patterns is sequentially projected onto an object, which gets deformed by geometric shape of the object. The object is then observed from a camera from a different direction. By analyzing the distortion of the observed pattern, i.e. the disparity from the original projected pattern, depth information can be extracted... - *page 4*
+</code></pre>
+
+<p>The structured light version of the Kinect uses a dot pattern projected by a near infrared laser which is viewed from a camera 7.5 cm away (there is also a RGB camera between the two, but this isn&#39;t used for 3D scanning). The Kinect uses a single dot pattern to calculate depths, so each the correspondence between pixels and locations in the pattern is detected using a window that is usually 9x9 pixels.</p>
+
+<h4>Time of Flight</h4>
+
+<p>The newer version of the Kinect uses &quot;Continuous Wave Intensity Modulation&quot;, which modulates a light source according to some pattern - typically a sine wave. An IR camera picks up peaks (or troughs) in the returning light, and uses that to determine the phase offset in the signal for each pixel.<br>
+The Kinect uses 10 images, 3 photos at different phases at 3 different frequencies to calculate the distance. The 10th image is used for mysterious purposes.</p>
+
+<p>This runs counter to my previous (incorrect) belief that the camera was somehow determining the phase of the emitted light (the phase of the 850nm signal), instead of a slower signal with the infrared frequencies acting as a carrier wave.</p>
+
+<h3>Quality of results</h3>
+
+<p>Comparing the two scanners, the structured light scanner is more accurate when exposed to ambient light or translucent liquids, but cannot read anything when past a certain threshold. It is also slightly more inaccurate for farther away objects. The time of flight scanner handles reflective objects pointing towards the camera worse, but is better at marking invalid pixels on moving objects.</p>
+
+<p>If we have multiple scanners in the same room, the time of flight scanner will have spikes of error periodically, whereas the structured light scanner is more consistent, except when the second scanner is placed at very specific positions.</p>
+
+<hr>
+
+<h2>Outside sources</h2>
+
+<ul>
+<li>I had a brief conversation with Nathan and Sherry comparing the output of our sum_triangle_triangle program.</li>
+<li>I quickly googled how to use the <code>time</code> terminal command.</li>
+<li>I also used cplusplus.com to learn a bit about C++</li>
+<li>I received Professor Brown&#39;s help with scanning Beethoven&#39;s head</li>
+<li>I used the CGAL documentation to puzzle out what Voronoi&#39;s examples actually does (incidently, Voronoi&#39;s circulators don&#39;t match the general circulator documentation for <code>operator==</code>)</li>
+</ul>
+</article>

@@ -1,0 +1,5 @@
+echo Running shell with statistics disabled.
+sleep 0.5&
+jobs
+sleep 0.7
+exit

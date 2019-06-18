@@ -1,0 +1,7 @@
+NET "a" LOC = "T10" ;
+NET "b" LOC = "T9" ;
+NET "f" LOC = "U16" ;
+NET "e" LOC = "V16" ;
+NET "d" LOC = "U15" ;
+NET "c" LOC = "V15" ;
+//copied from the other lab1's ucf file

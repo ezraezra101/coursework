@@ -1,0 +1,20 @@
+xst -intstyle ise -ifn "M:/ECE 2029/lab2_hdl/fourAdd.xst" -ofn "M:/ECE 2029/lab2_hdl/fourAdd.syr" 
+xst -intstyle ise -ifn "M:/ECE 2029/lab2_hdl/fourAdd.xst" -ofn "M:/ECE 2029/lab2_hdl/fourAdd.syr" 
+xst -intstyle ise -ifn "M:/ECE 2029/lab2_hdl/fourAdd.xst" -ofn "M:/ECE 2029/lab2_hdl/fourAdd.syr" 
+xst -intstyle ise -ifn "M:/ECE 2029/lab2_hdl/fourAdd.xst" -ofn "M:/ECE 2029/lab2_hdl/fourAdd.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc fullAddV.ucf -p xc6slx16-csg324-3 "fourAdd.ngc" fourAdd.ngd  
+xst -intstyle ise -ifn "M:/ECE 2029/lab2_hdl/fourAdd.xst" -ofn "M:/ECE 2029/lab2_hdl/fourAdd.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc fullAddV.ucf -p xc6slx16-csg324-3 "fourAdd.ngc" fourAdd.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx16-csg324-3 "fourAdd.ngc" fourAdd.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o fourAdd_map.ncd fourAdd.ngd fourAdd.pcf 
+par -w -intstyle ise -ol high -mt off fourAdd_map.ncd fourAdd.ncd fourAdd.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml fourAdd.twx fourAdd.ncd -o fourAdd.twr fourAdd.pcf 
+bitgen -intstyle ise -f fourAdd.ut fourAdd.ncd 
+xst -intstyle ise -ifn "M:/ECE 2029/lab2_hdl/fourAdd.xst" -ofn "M:/ECE 2029/lab2_hdl/fourAdd.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc fourAddV.ucf -p xc6slx16-csg324-3 "fourAdd.ngc" fourAdd.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o fourAdd_map.ncd fourAdd.ngd fourAdd.pcf 
+par -w -intstyle ise -ol high -mt off fourAdd_map.ncd fourAdd.ncd fourAdd.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml fourAdd.twx fourAdd.ncd -o fourAdd.twr fourAdd.pcf -ucf fourAddV.ucf 
+bitgen -intstyle ise -f fourAdd.ut fourAdd.ncd 
+xst -intstyle ise -ifn "E:/ECE 2029/lab2_hdl/fourAdd.xst" -ofn "E:/ECE 2029/lab2_hdl/fourAdd.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc hex2seg.ucf -p xc6slx16-csg324-3 "fourAdd.ngc" fourAdd.ngd  

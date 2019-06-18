@@ -1,0 +1,38 @@
+Player:	| Location: | Direction: |
+ Z1	|   4x  0   | East       |
+ r1	|   1x  3   | South      |
+ Z2	|   4x  2   | South      |
+ r2	|   4x  1   | East       |
+ Z3	|   0x  3   | West       |
+ r3	|   0x  4   | West       |
+ Z4	|   2x  0   | South      |
+ r4	|   0x  2   | East       |
+ Z5	|   0x  0   | North      |
+ r5	|   2x  1   | West       |
+ Z6	|   2x  2   | North      |
+ r6	|   3x  1   | North      |
+ Z7	|   1x  0   | East       |
+ r7	|   3x  0   | East       |
+ Z8	|   3x  2   | East       |
+ r8	|   4x  3   | South      |
+Turn: 0
+----------------------
+| Z5      r4  Z3  r3 |
+| Z7          r1     |
+| Z4  r5  Z6         |
+| r7  r6  Z8         |
+| Z1  r2  Z2  r8     |
+----------------------
+Turn: 13
+----------------------
+|             Z3     |
+|                    |
+| Z4                 |
+|                    |
+|         Z2         |
+----------------------
+Player:	| Location: | Direction: |
+ Z2	|   4x  2   | South      |
+ Z3	|   0x  3   | East       |
+ Z4	|   2x  0   | North      |
+Team Z wins!
